@@ -1,6 +1,6 @@
-package logic.level;
+package main.java.logic.level;
 
-import logic.brick.Brick;
+import main.java.logic.brick.Brick;
 
 import java.util.List;
 
@@ -64,7 +64,7 @@ public interface Level {
      *
      * @param level the level to be added
      */
-    Level addPlayingLevel(Level level);
+    void addPlayingLevel(Level level);
 
     /**
      * Sets the reference for the next level of a level object.

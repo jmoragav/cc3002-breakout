@@ -1,6 +1,6 @@
 package main.java.logic.brick;
 
-import javax.xml.bind.ValidationEvent;
+
 
 public class MetalBrick extends AbstractBrick {
     private int Hitpoints;

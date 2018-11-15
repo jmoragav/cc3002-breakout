@@ -1,4 +1,4 @@
-package controller;
+package main.java.controller;
 
 /**
  * Game logic controller class.

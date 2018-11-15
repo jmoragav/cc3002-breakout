@@ -1,4 +1,4 @@
-package logic.brick;
+package main.java.logic.brick;
 
 /**
  * Interface that represents a brick object.
