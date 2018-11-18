@@ -1,26 +1,27 @@
-package main.java.logic.brick;
+package logic.brick;
 
 
+import logic.level.Level;
 
 public class MetalBrick extends AbstractBrick {
     private int Hitpoints;
     private int Value;
-    private boolean Alive;
+    private boolean Broken;
 
     public MetalBrick(){
         Hitpoints=10;
         Value=0;
-        Alive=true;
+        Broken=false;
     }
     @Override
     public void hit() {
-    hit(Hitpoints,Alive);
+    hit(Hitpoints);
 
     }
 
     @Override
     public boolean isDestroyed() {
-        return Alive;
+        return Broken;
     }
 
     @Override
@@ -31,5 +32,16 @@ public class MetalBrick extends AbstractBrick {
     @Override
     public int remainingHits() {
         return Hitpoints;
+    }
+
+    @Override
+    public void Break() {
+        Broken= true;
+        notifyObservers(this);
+    }
+
+    @Override
+    public void accept(Level level) {
+        level.MetalBrickBroke(this);
     }
 }

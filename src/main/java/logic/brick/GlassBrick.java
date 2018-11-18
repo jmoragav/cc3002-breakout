@@ -1,24 +1,28 @@
-package main.java.logic.brick;
+package logic.brick;
 
-public class GlassBrick extends AbstractBrick {
+import logic.level.Level;
+
+import java.util.Observable;
+
+public class GlassBrick extends AbstractBrick implements Brick {
     private int Hitpoints;
     private int Value;
-    private boolean Alive;
+    private boolean Broken;
 
     public GlassBrick(){
         Hitpoints=1;
         Value=50;
-        Alive=true;
+        Broken=false;
     }
 
     @Override
     public void hit() {
-       hit(Hitpoints,Alive);
+       hit(Hitpoints);
     }
 
     @Override
     public boolean isDestroyed() {
-        return Alive;
+        return Broken;
     }
 
     @Override
@@ -31,4 +35,17 @@ public class GlassBrick extends AbstractBrick {
         assert (isDestroyed());
         return Hitpoints;
     }
+
+    @Override
+    public void Break() {
+        Broken= true;
+        notifyObservers(this);
+    }
+
+    @Override
+    public void accept(Level level) {
+        level.BrickWithPointsBroke(this);
+    }
+
+
 }

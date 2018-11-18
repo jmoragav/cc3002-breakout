@@ -1,4 +1,7 @@
-package main.java.logic.brick;
+package logic.brick;
+
+import logic.level.Level;
+import logic.level.PlayableLevel;
 
 /**
  * Interface that represents a brick object.
@@ -34,4 +37,9 @@ public interface Brick {
      * @return the remaining hits to destroy de brick
      */
     int remainingHits();
+
+    void Break();
+
+
+    void accept(Level level);
 }

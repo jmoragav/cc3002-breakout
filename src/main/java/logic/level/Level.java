@@ -1,6 +1,7 @@
-package main.java.logic.level;
+package logic.level;
 
-import main.java.logic.brick.Brick;
+import logic.brick.Brick;
+import logic.brick.MetalBrick;
 
 import java.util.List;
 
@@ -64,7 +65,7 @@ public interface Level {
      *
      * @param level the level to be added
      */
-    void addPlayingLevel(Level level);
+   Level addPlayingLevel(Level level);
 
     /**
      * Sets the reference for the next level of a level object.
@@ -72,4 +73,8 @@ public interface Level {
      * @param level the next level of a level object
      */
     void setNextLevel(Level level);
+
+    void BrickWithPointsBroke(Brick brick);
+
+    void MetalBrickBroke(Brick metalBrick);
 }

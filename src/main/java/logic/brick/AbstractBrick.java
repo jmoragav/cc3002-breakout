@@ -1,9 +1,17 @@
-package main.java.logic.brick;
+package logic.brick;
 
-public abstract class AbstractBrick implements Brick {
-    protected void hit(int hp,boolean status){
+import logic.level.Level;
+
+import java.util.Observable;
+import java.util.Observer;
+
+public abstract class AbstractBrick extends Observable implements Brick {
+    public void addedToLevel(Level level){
+        addObserver((Observer) level);
+    }
+    protected void hit(int hp){
         int new_hp= hp-1;
-        if(new_hp==0) status=false;
+        if(new_hp==0) Break();
 
     }
 }
