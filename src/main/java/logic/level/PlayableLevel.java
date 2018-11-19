@@ -1,5 +1,7 @@
 package logic.level;
 
+import controller.Game;
+import logic.Visitor;
 import logic.brick.Brick;
 import logic.brick.GlassBrick;
 import logic.brick.MetalBrick;
@@ -7,13 +9,14 @@ import logic.brick.WoodenBrick;
 
 import java.util.*;
 
-public class PlayableLevel extends Observable implements Level , Observer {
+public class PlayableLevel extends Observable implements Level , Observer , Visitor {
     private Level next;
     private ArrayList<Brick> Bricks;
     private String name;
     private int score;
     private boolean playable;
-    private int numberofbricks;
+    private int numberofbricks;//GlassBricks + WoodenBricks
+    private int Realnumberofbricks;//numberofbricks+MetalBricks
     private int seed;
     private double probG;
 
@@ -27,28 +30,39 @@ public class PlayableLevel extends Observable implements Level , Observer {
         this.probG=probOfGlass;
         this.probM= probOfMetal;
         this.seed=seed;
+        this.score=0;
         next=new PlaceHolder();
         Bricks= new ArrayList<>();
         Random rand= new Random(seed);
+        int metalb=0;
         for(int i=0;i<numberOfBricks;i++){
             double proba=rand.nextDouble();
             if(proba<probG){
                 Brick g_brick= new GlassBrick();
+                score=score+g_brick.getScore();
+                ((GlassBrick) g_brick).addedToLevel(this);
                 Bricks.add(g_brick);
+
             }
             else{
                 Brick w_brick= new WoodenBrick();
                 Bricks.add(w_brick);
+                score=score+w_brick.getScore();
+                ((WoodenBrick) w_brick).addedToLevel(this);
+
+
             }
         }
         for(int j= 0; j<numberOfBricks;j++){
             double proba_2=rand.nextDouble();
             if(proba_2<probM){
                 Brick m_brick= new MetalBrick();
+                ((MetalBrick) m_brick).addedToLevel(this);
                 Bricks.add(m_brick);
+                metalb+=1;
             }
         }
-
+        this.Realnumberofbricks=metalb+numberOfBricks;
     }
     public PlayableLevel(String name, int numberOfBricks, double probOfGlass, int seed) {
         this(name,numberOfBricks,probOfGlass,0,seed);
@@ -61,7 +75,7 @@ public class PlayableLevel extends Observable implements Level , Observer {
 
     @Override
     public int getNumberOfBricks() {
-        return numberofbricks;
+        return Realnumberofbricks;
     }
 
     @Override
@@ -113,8 +127,9 @@ public class PlayableLevel extends Observable implements Level , Observer {
     }
 
     @Override
-    public void BrickWithPointsBroke(Brick brick) {
-        score=score+brick.getScore();
+    public void VisitBrickWithPoints(Brick brick) {
+        setChanged();
+        notifyObservers(brick);
         numberofbricks-=1;
         if(numberofbricks==0){
             endLevel();
@@ -124,13 +139,19 @@ public class PlayableLevel extends Observable implements Level , Observer {
 
 
     @Override
-    public void MetalBrickBroke(Brick metalBrick) {
+    public void VisitMetalBrick(Brick metalBrick) {
+        setChanged();
         notifyObservers(metalBrick);
 
     }
 
-    private void endLevel() {
+    public void endLevel() {
+        setChanged();
         notifyObservers(this);
+    }
+
+    public void addedToAGame(Game game){
+        addObserver(game);
     }
 
 

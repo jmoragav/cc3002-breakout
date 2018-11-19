@@ -1,5 +1,6 @@
 package controller;
 
+import logic.Visitor;
 import logic.brick.Brick;
 import logic.level.Level;
 import logic.level.PlaceHolder;
@@ -14,7 +15,7 @@ import java.util.Observer;
  *
  * @author Juan-Pablo Silva
  */
-public class Game implements Observer {
+public class Game implements Observer , Visitor {
     private int Points;
     private int balls;
     private Level current;// CHEKEAR DESPUES
@@ -56,7 +57,9 @@ public class Game implements Observer {
        Level nextLevel= current.getNextLevel();
        setCurrentLevel(nextLevel);}
        else{
+
            finished=true;
+           setCurrentLevel(new PlaceHolder());
         }
     }
 
@@ -74,6 +77,7 @@ public class Game implements Observer {
 
     public void setCurrentLevel(Level level) {
         current=level;
+        current.addedToAGame(this);
     }
 
     public void addPlayingLevel(Level level) {
@@ -94,6 +98,7 @@ public class Game implements Observer {
 
     public int dropBall() {
         balls=balls-1;
+        if(balls<0) balls=0;
         return getBalls();
     }
 
@@ -115,11 +120,12 @@ public class Game implements Observer {
     @Override
     public void update(Observable o, Object arg) {
         if(arg instanceof Brick){
-            balls+=1;
+           ((Brick) arg).accept(this);
         }
         if(arg instanceof Level){
             goNextLevel();
         }
+
     }
 
     public Level newLevelWithBricksFull(String name, int numberOfBricks, double probOfGlass, double probOfMetal, int seed) {
@@ -129,5 +135,16 @@ public class Game implements Observer {
     public Level newLevelWithBricksNoMetal(String name, int numberOfBricks, double probOfGlass, int seed) {
         return new PlayableLevel(name,numberOfBricks,probOfGlass,seed);
 
+    }
+
+    @Override
+    public void VisitMetalBrick(Brick brick) {
+        balls=balls+1;
+    }
+
+    @Override
+    public void VisitBrickWithPoints(Brick brick) {
+        int score=brick.getScore();
+        Points=Points+score;
     }
 }

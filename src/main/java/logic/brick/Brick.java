@@ -1,5 +1,6 @@
 package logic.brick;
 
+import logic.Visitor;
 import logic.level.Level;
 import logic.level.PlayableLevel;
 
@@ -41,5 +42,5 @@ public interface Brick {
     void Break();
 
 
-    void accept(Level level);
+    void accept(Visitor o);
 }

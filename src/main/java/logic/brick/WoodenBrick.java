@@ -1,8 +1,7 @@
 package logic.brick;
 
+import logic.Visitor;
 import logic.level.Level;
-
-import java.util.Observable;
 
 public class WoodenBrick extends AbstractBrick {
     private int Hitpoints;
@@ -15,7 +14,13 @@ public class WoodenBrick extends AbstractBrick {
     }
     @Override
     public void hit() {
-        hit(Hitpoints);
+        if (Hitpoints != 0) {
+            int new_hp = hit(Hitpoints);
+            Hitpoints = new_hp;
+            if(Hitpoints==0){
+                Break();
+            }
+        }
     }
 
     @Override
@@ -33,14 +38,16 @@ public class WoodenBrick extends AbstractBrick {
         return Hitpoints;
     }
 
-    public void Break() {
-        Broken= true;
-        notifyObservers(this);
+
+    @Override
+    public void accept(Visitor o) {
+        o.VisitBrickWithPoints(this);
     }
 
     @Override
-    public void accept(Level level) {
-        level.BrickWithPointsBroke(this);
+    public void Break_aux() {
+        Broken=true;
     }
+
 
 }

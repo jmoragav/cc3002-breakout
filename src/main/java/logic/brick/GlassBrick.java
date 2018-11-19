@@ -1,8 +1,7 @@
 package logic.brick;
 
+import logic.Visitor;
 import logic.level.Level;
-
-import java.util.Observable;
 
 public class GlassBrick extends AbstractBrick implements Brick {
     private int Hitpoints;
@@ -17,9 +16,14 @@ public class GlassBrick extends AbstractBrick implements Brick {
 
     @Override
     public void hit() {
-       hit(Hitpoints);
+        if (Hitpoints != 0) {
+            int new_hp = hit(Hitpoints);
+            Hitpoints = new_hp;
+            if(Hitpoints==0){
+                Break();
+            }
+        }
     }
-
     @Override
     public boolean isDestroyed() {
         return Broken;
@@ -32,20 +36,20 @@ public class GlassBrick extends AbstractBrick implements Brick {
 
     @Override
     public int remainingHits() {
-        assert (isDestroyed());
         return Hitpoints;
     }
 
     @Override
-    public void Break() {
-        Broken= true;
-        notifyObservers(this);
+    public void accept(Visitor o) {
+        o.VisitBrickWithPoints(this);
     }
+
+
+
 
     @Override
-    public void accept(Level level) {
-        level.BrickWithPointsBroke(this);
+    public void Break_aux() {
+        Broken=true;
     }
-
 
 }

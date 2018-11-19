@@ -1,16 +1,25 @@
 package logic.level;
 
+import controller.Game;
 import logic.brick.Brick;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class PlaceHolder implements Level {
-    private Level next;
     private ArrayList<Brick>Bricks;
+    private String name;
+    private Level next;
+
+    public PlaceHolder(){
+        name="";
+        next=null;
+        Bricks= new ArrayList<>();
+    }
+
     @Override
     public String getName() {
-        return "" ;}
+        return name ;}
 
     @Override
     public int getNumberOfBricks() {
@@ -24,7 +33,7 @@ public class PlaceHolder implements Level {
 
     @Override
     public Level getNextLevel() {
-        return new PlaceHolder();
+        return this;
     }
 
     @Override
@@ -44,11 +53,9 @@ public class PlaceHolder implements Level {
 
     @Override
     public Level addPlayingLevel(Level level) {
-        if (!next.isPlayableLevel()) {
+
             setNextLevel(level);
-        } else {
-            next.addPlayingLevel(level);
-        }
+
         return this;
 
     }
@@ -59,13 +66,8 @@ public class PlaceHolder implements Level {
 
     }
 
-    @Override
-    public void BrickWithPointsBroke(Brick brick) {
 
-    }
-
-    @Override
-    public void MetalBrickBroke(Brick metalBrick) {
+    public void addedToAGame(Game game){
 
     }
 }

@@ -458,6 +458,7 @@ public class BigTestT2 {
 
         repeat(9, () -> metalBricks.get(0).hit());
         assertEquals(0, hw2.getCurrentPoints());
+
         assertEquals(initialBalls + 1, hw2.getBallsLeft());
         assertFalse(metalBricks
                 .stream()

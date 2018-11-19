@@ -1,5 +1,6 @@
 package logic.level;
 
+import controller.Game;
 import logic.brick.Brick;
 import logic.brick.MetalBrick;
 
@@ -74,7 +75,5 @@ public interface Level {
      */
     void setNextLevel(Level level);
 
-    void BrickWithPointsBroke(Brick brick);
-
-    void MetalBrickBroke(Brick metalBrick);
+    void addedToAGame(Game game);
 }

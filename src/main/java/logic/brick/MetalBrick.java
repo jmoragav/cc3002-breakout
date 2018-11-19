@@ -1,6 +1,7 @@
 package logic.brick;
 
 
+import logic.Visitor;
 import logic.level.Level;
 
 public class MetalBrick extends AbstractBrick {
@@ -15,7 +16,13 @@ public class MetalBrick extends AbstractBrick {
     }
     @Override
     public void hit() {
-    hit(Hitpoints);
+        if (Hitpoints != 0) {
+            int new_hp = hit(Hitpoints);
+            Hitpoints = new_hp;
+            if(Hitpoints==0){
+                Break();
+            }
+        }
 
     }
 
@@ -34,14 +41,14 @@ public class MetalBrick extends AbstractBrick {
         return Hitpoints;
     }
 
-    @Override
-    public void Break() {
-        Broken= true;
-        notifyObservers(this);
+    public void Break_aux() {
+        Broken=true;
     }
 
     @Override
-    public void accept(Level level) {
-        level.MetalBrickBroke(this);
+    public void accept(Visitor o) {
+        o.VisitMetalBrick(this);
     }
+
+
 }
