@@ -8,16 +8,16 @@ Tarea 2 la cual consistia en implementar la logica del juego Breakout y de los e
 
 Usando las clases e interfase entregadas en el codigo base se implementaron los metodos presentes en ellos y se agregaron los siguientes metodos e interfase:
 
-⋅⋅* **Brick**. 
++ **Brick**. 
 1. void ChangeStatus()
 2. void Break()
 3. void accept(Visitor o)
 4. void addedToLevel(Level level)
 
-⋅⋅* **Level**. 
++ **Level**. 
 1. void addedToAGame(Game game)
 
-⋅⋅* **Visitor**. 
++ **Visitor**. 
  1. void VisitMetalBrick(MetalBrick brick)
  2. void VisitBrickWithPoints(Brick brick)
  
