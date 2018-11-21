@@ -30,7 +30,7 @@ La interfase *Visitor* fue implementada para facilitar las acciones de los objet
 
 ### Como correr el juego
 
-Para poder correr el juego se debe de hacer desde una IDE de Java , en esta se debe crear una clase Main la cual deberá importar los archivos del juego y se deberá de hacer de forma *manual*
+Para poder correr el juego se debe de hacer desde una IDE de Java , en esta se debe crear una clase Main la cual deberá importar los archivos del juego y se deberá de hacer de forma *manual* creando un nuevo objeto HomeworkTwoFacade y llamando a los [metodos](https://github.com/jmoragav/cc3002-breakout/blob/master/src/main/java/facade/HomeworkTwoFacade.java) de este.
 **
 A futuro( **_Tarea 3_**) se creara una interfaz gráfica para facilitar la acción de jugar **Breakout**
 
