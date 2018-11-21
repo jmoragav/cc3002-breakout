@@ -2,8 +2,10 @@ package logic.brick;
 
 
 import logic.Visitor;
-import logic.level.Level;
-
+/**
+ * Implementation of a MetalBrick from the game Breakout
+ * @author Joaquin Moraga
+ */
 public class MetalBrick extends AbstractBrick {
     private int Hitpoints;
     private int Value;
@@ -41,7 +43,7 @@ public class MetalBrick extends AbstractBrick {
         return Hitpoints;
     }
 
-    public void Break_aux() {
+    public void ChangeStatus() {
         Broken=true;
     }
 

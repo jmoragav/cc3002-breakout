@@ -75,5 +75,9 @@ public interface Level {
      */
     void setNextLevel(Level level);
 
+    /**
+     * Adds an observer level to the set of observers for this object
+     * @param game the game that will be observing this level
+     */
     void addedToAGame(Game game);
 }

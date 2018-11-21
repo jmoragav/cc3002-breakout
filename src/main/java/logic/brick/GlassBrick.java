@@ -3,6 +3,10 @@ package logic.brick;
 import logic.Visitor;
 import logic.level.Level;
 
+/**
+ * Implementation of a GlassBrick from the game Breakout
+ * @author Joaquin Moraga
+ */
 public class GlassBrick extends AbstractBrick implements Brick {
     private int Hitpoints;
     private int Value;
@@ -48,7 +52,7 @@ public class GlassBrick extends AbstractBrick implements Brick {
 
 
     @Override
-    public void Break_aux() {
+    public void ChangeStatus() {
         Broken=true;
     }
 

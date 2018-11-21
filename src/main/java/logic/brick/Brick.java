@@ -2,7 +2,6 @@ package logic.brick;
 
 import logic.Visitor;
 import logic.level.Level;
-import logic.level.PlayableLevel;
 
 /**
  * Interface that represents a brick object.
@@ -39,8 +38,28 @@ public interface Brick {
      */
     int remainingHits();
 
+    /**
+     * Adds an observer level to the set of observers for this object
+     * @param level the level that will be observing this brick
+     */
+    void addedToLevel(Level level);
+
+    /**
+     * Change the status of a {@link Brick} to Broken;
+     */
+
+    void ChangeStatus();
+
+    /**
+     * Defines that a brick has been broken
+     * this will trigger events
+     */
+
     void Break();
 
-
+    /**
+     * Accepts a visitor type object that will do an action depending on the type of brick
+     * @param o visitor who will perform an action
+     */
     void accept(Visitor o);
 }

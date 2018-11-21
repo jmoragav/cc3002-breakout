@@ -8,7 +8,10 @@ import logic.brick.MetalBrick;
 import logic.brick.WoodenBrick;
 
 import java.util.*;
-
+/**
+ * Implementation of a Playable Level from the game Breakout
+ * @author Joaquin Moraga
+ */
 public class PlayableLevel extends Observable implements Level , Observer , Visitor {
     private Level next;
     private ArrayList<Brick> Bricks;
@@ -46,10 +49,9 @@ public class PlayableLevel extends Observable implements Level , Observer , Visi
             }
             else{
                 Brick w_brick= new WoodenBrick();
-                Bricks.add(w_brick);
                 score=score+w_brick.getScore();
                 ((WoodenBrick) w_brick).addedToLevel(this);
-
+                Bricks.add(w_brick);
 
             }
         }
@@ -64,9 +66,7 @@ public class PlayableLevel extends Observable implements Level , Observer , Visi
         }
         this.Realnumberofbricks=metalb+numberOfBricks;
     }
-    public PlayableLevel(String name, int numberOfBricks, double probOfGlass, int seed) {
-        this(name,numberOfBricks,probOfGlass,0,seed);
-    }
+
 
         @Override
     public String getName() {
@@ -127,6 +127,11 @@ public class PlayableLevel extends Observable implements Level , Observer , Visi
     }
 
     @Override
+    /**
+     * Notifies the observer that a {@link logic.brick.WoodenBrick} or a {@link GlassBrick} broke
+     * this will decrease the number of bricks with points
+     * @param brick a {@link logic.brick.WoodenBrick} or a {@link GlassBrick} that has been broken
+     */
     public void VisitBrickWithPoints(Brick brick) {
         setChanged();
         notifyObservers(brick);
@@ -137,13 +142,22 @@ public class PlayableLevel extends Observable implements Level , Observer , Visi
 
     }
 
-
+    /**
+     * Notifies the observer that a {@link logic.brick.MetalBrick} broke
+     * this will increase the number of balls in the game
+     * @param metalBrick a {@link logic.brick.MetalBrick} that has been broken
+     */
     @Override
-    public void VisitMetalBrick(Brick metalBrick) {
+    public void VisitMetalBrick(MetalBrick metalBrick) {
+
         setChanged();
         notifyObservers(metalBrick);
 
     }
+
+    /**
+     * End the level and notifies the observer of this
+     */
 
     public void endLevel() {
         setChanged();

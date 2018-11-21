@@ -5,7 +5,11 @@ import logic.brick.Brick;
 
 import java.util.ArrayList;
 import java.util.List;
-
+/**
+ * Implementation of a Unplayable Level from the game Breakout
+ *
+ * @author Joaquin Moraga
+ */
 public class PlaceHolder implements Level {
     private ArrayList<Brick>Bricks;
     private String name;
@@ -53,21 +57,12 @@ public class PlaceHolder implements Level {
 
     @Override
     public Level addPlayingLevel(Level level) {
-
-            setNextLevel(level);
-
-        return this;
-
-    }
+        return this; }
 
     @Override
-    public void setNextLevel(Level level) {
-        next=level;
-
-    }
+    public void setNextLevel(Level level) {    }
 
 
     public void addedToAGame(Game game){
-
     }
 }

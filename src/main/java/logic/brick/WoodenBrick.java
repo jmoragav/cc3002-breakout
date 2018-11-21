@@ -3,6 +3,10 @@ package logic.brick;
 import logic.Visitor;
 import logic.level.Level;
 
+/**
+ * Implementation of a WoodenBrick from the game Breakout
+ * @author Joaquin Moraga
+ */
 public class WoodenBrick extends AbstractBrick {
     private int Hitpoints;
     private int Value;
@@ -45,7 +49,7 @@ public class WoodenBrick extends AbstractBrick {
     }
 
     @Override
-    public void Break_aux() {
+    public void ChangeStatus() {
         Broken=true;
     }
 

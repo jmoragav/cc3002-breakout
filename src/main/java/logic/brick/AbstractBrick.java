@@ -5,10 +5,25 @@ import logic.level.Level;
 import java.util.Observable;
 import java.util.Observer;
 
+/**
+ * Abstract class that contains some methods which facilitate the implementation of
+ * the different types of bricks
+ *
+ * @author Joaquin Moraga
+ */
+
 public abstract class AbstractBrick extends Observable implements Brick {
+
+    @Override
     public void addedToLevel(Level level){
         addObserver((Observer) level);
     }
+
+    /**
+     * Calculates the damage caused to a {@link Brick}
+     * @param hp initial Hitpoints of the {@link Brick}
+     * @return new Hitpoints of the {@link Brick}
+     */
     protected int hit(int hp){
 
 
@@ -18,11 +33,9 @@ public abstract class AbstractBrick extends Observable implements Brick {
 
     }
 
-    public abstract void Break_aux();
-
     @Override
     public void Break() {
-        Break_aux();
+        ChangeStatus();
         setChanged();
         notifyObservers(this);
     }
