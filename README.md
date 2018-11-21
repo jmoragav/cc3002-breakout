@@ -25,7 +25,7 @@ Usando las clases e interfase entregadas en el codigo base se implementaron los 
  
 Los objetos de tipo *Brick* se implementaron como *Observables*, estos pues al romperse notifican a sus *Observers* (Level y Game) lo cual genera una serie de eventos en el juego, los objetos de tipo Level tambien son *Observables* pues deben notificar al *Game* cuando este sufre ciertos cambios .
 
-La interfase *Visitor* fue implementada para facilitar las acciones de los objetos de tipo *Level* y *Game* ya que estan tambien son *Observers* y al ser notificadas visitaran a los *Bricks* y realizaran una serie de eventos dependiendo del *Brick* visitado.
+La interfase *Visitor* fue implementada para facilitar las acciones de los objetos de tipo *Level* y *Game* ya que estos tambien son *Observers* y al ser notificadas visitaran a los *Bricks* y realizaran una serie de eventos dependiendo del *Brick* visitado.
 
 
 ### Como correr el juego
