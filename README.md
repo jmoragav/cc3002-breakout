@@ -23,7 +23,7 @@ Usando las clases e interfase entregadas en el código base se implementaron los
  
  *__Para más detalles sobre la funcionalidad de los metodos se recomienda leer el JavaDoc dentro de cada clase__*
  
-Los objetos de tipo *Brick* se implementaron como *Observables*, estos pues al romperse notifican a sus *Observers* (Level y Game) lo cual genera una serie de eventos en el juego, los objetos PlayalbleLevel también son *Observables* pues deben notificar al *Game* cuando este sufre ciertos cambios.
+Los objetos de tipo *Brick* se implementaron como *Observables*, estos pues al romperse notifican a sus *Observers* (PlayableLevel y Game) lo cual genera una serie de eventos en el juego, los objetos PlayableLevel también son *Observables* pues deben notificar al *Game* cuando este sufre ciertos cambios.
 
 La interfase *Visitor* fue implementada para facilitar las acciones de los objetos de tipo *Level* y *Game* ya que estos también son *Observers* y al ser notificados visitaran a los *Bricks* y realizaran una serie de eventos dependiendo del *Brick* visitado.
 
