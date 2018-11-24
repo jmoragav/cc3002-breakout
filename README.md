@@ -27,6 +27,8 @@ Los objetos de tipo *Brick* se implementaron como *Observables*, estos pues al r
 
 La interfase *Visitor* fue implementada para facilitar las acciones de los objetos de tipo *Level* y *Game* ya que estos también son *Observers* y al ser notificados visitaran a los *Bricks* y realizaran una serie de eventos dependiendo del *Brick* visitado.
 
+Se creo la clase [Placeholder](https://github.com/jmoragav/cc3002-breakout/blob/master/src/main/java/logic/level/PlaceHolder.java) siguiendo el Null Pattern para poder representar un nivel injugable.
+
 
 ### Como correr el juego
 
