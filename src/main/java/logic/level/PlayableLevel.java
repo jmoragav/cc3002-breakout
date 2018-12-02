@@ -22,7 +22,7 @@ public class PlayableLevel extends Observable implements Level , Observer , Visi
     private int Realnumberofbricks;//numberofbricks+MetalBricks
     private int seed;
     private double probG;
-
+    private int currentscore;
     private double probM;
 
 
@@ -34,6 +34,7 @@ public class PlayableLevel extends Observable implements Level , Observer , Visi
         this.probM= probOfMetal;
         this.seed=seed;
         this.score=0;
+        this.currentscore=0;
         next=new PlaceHolder();
         Bricks= new ArrayList<>();
         Random rand= new Random(seed);
@@ -135,8 +136,9 @@ public class PlayableLevel extends Observable implements Level , Observer , Visi
     public void VisitBrickWithPoints(Brick brick) {
         setChanged();
         notifyObservers(brick);
-        numberofbricks-=1;
-        if(numberofbricks==0){
+        Realnumberofbricks-=1;
+        currentscore= currentscore+ brick.getScore();
+        if(currentscore==score){
             endLevel();
         }
 
@@ -149,7 +151,7 @@ public class PlayableLevel extends Observable implements Level , Observer , Visi
      */
     @Override
     public void VisitMetalBrick(MetalBrick metalBrick) {
-
+        Realnumberofbricks-=1;
         setChanged();
         notifyObservers(metalBrick);
 

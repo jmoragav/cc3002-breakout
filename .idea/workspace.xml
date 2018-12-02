@@ -2,22 +2,52 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3dbdd57d-3b61-493b-8301-b20135278b9f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/SmallTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_9_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_9_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_9_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_kotlin_2_9_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_almasb_fxgl_0_5_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_almasb_fxgl_base_0_5_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_almasb_fxgl_plugin_audio_0_0_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_almasb_fxgl_plugin_audio_desktop_0_0_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_gluonhq_charm_down_core_3_7_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_gluonhq_charm_down_plugin_lifecycle_3_7_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_gluonhq_charm_down_plugin_storage_3_7_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_gluonhq_charm_down_plugin_storage_desktop_3_7_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_5_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_4_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jetbrains_annotations_13_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jetbrains_kotlin_kotlin_reflect_1_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jetbrains_kotlin_kotlin_stdlib_1_2_51.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jetbrains_kotlin_kotlin_stdlib_common_1_2_51.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jetbrains_kotlinx_atomicfu_common_0_10_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jetbrains_kotlinx_kotlinx_coroutines_core_0_23_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jetbrains_kotlinx_kotlinx_coroutines_core_common_0_23_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/gui/BreakoutApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/gui/components/BallComponent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/gui/components/BrickComponent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/gui/components/PlayerComponent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/gui/factory/InteractiveElementsFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/gui/factory/NonInteractiveElementsFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/gui/types/GameTypes.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/logic/Visitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/logic/Visitor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/logic/brick/AbstractBrick.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/logic/brick/AbstractBrick.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cc3002-breakout.iml" beforeDir="false" afterPath="$PROJECT_DIR$/cc3002-breakout.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/logic/brick/Brick.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/logic/brick/Brick.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/logic/brick/GlassBrick.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/logic/brick/GlassBrick.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/logic/brick/MetalBrick.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/logic/brick/MetalBrick.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/logic/brick/WoodenBrick.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/logic/brick/WoodenBrick.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/logic/level/Level.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/logic/level/Level.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/logic/level/PlaceHolder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/logic/level/PlaceHolder.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/logic/level/PlayableLevel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/logic/level/PlayableLevel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/BigTestT2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BigTestT2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/controller/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/Game.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/logic/level/PlaceHolder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/logic/level/PlaceHolder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/SmallTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SmallTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/logic/brick/Brick.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/logic/brick/Brick.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/logic/brick/GlassBrick.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/logic/brick/GlassBrick.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/logic/brick/MetalBrick.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/logic/brick/MetalBrick.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/logic/brick/WoodenBrick.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/logic/brick/WoodenBrick.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/logic/level/PlayableLevel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/logic/level/PlayableLevel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/SmallTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/SmallTest.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -29,7 +59,7 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/cc3002_breakout$SmallTest.ic" NAME="SmallTest Coverage Results" MODIFIED="1542812901014" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-    <SUITE FILE_PATH="coverage/cc3002_breakout$BigTestT2.ic" NAME="BigTestT2 Coverage Results" MODIFIED="1542813032173" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/cc3002_breakout$BigTestT2.ic" NAME="BigTestT2 Coverage Results" MODIFIED="1543781687792" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
   <component name="CoverageViewManager">
     <option name="myElementSize" value="181" />
@@ -52,36 +82,44 @@
     <session id="2012413188">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="10" />
+          <entry key="project.closed" value="14" />
           <entry key="project.open.time.100" value="1" />
           <entry key="project.open.time.105" value="1" />
           <entry key="project.open.time.13" value="1" />
           <entry key="project.open.time.188" value="1" />
-          <entry key="project.open.time.54" value="1" />
+          <entry key="project.open.time.4" value="1" />
+          <entry key="project.open.time.54" value="2" />
           <entry key="project.open.time.56" value="1" />
           <entry key="project.open.time.62" value="1" />
           <entry key="project.open.time.64" value="1" />
           <entry key="project.open.time.68" value="1" />
           <entry key="project.open.time.70" value="1" />
-          <entry key="project.opened" value="10" />
+          <entry key="project.open.time.73" value="1" />
+          <entry key="project.open.time.84" value="1" />
+          <entry key="project.open.time.87" value="1" />
+          <entry key="project.opened" value="15" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="class" value="4" />
+          <entry key="JAVA/" value="2" />
+          <entry key="JavaScript-modules-diagram/C:/Users/joaqu/OneDrive/Escritorio/Breakout/cc3002-breakout/src" value="1" />
+          <entry key="JavaScript-modules-diagram/C:/Users/joaqu/OneDrive/Escritorio/Breakout/cc3002-breakout/src/main" value="1" />
+          <entry key="class" value="5" />
           <entry key="iml" value="1" />
-          <entry key="java" value="99" />
-          <entry key="md" value="1" />
-          <entry key="xml" value="3" />
+          <entry key="java" value="130" />
+          <entry key="md" value="2" />
+          <entry key="xml" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="4" />
+          <entry key="CLASS" value="5" />
           <entry key="IDEA_MODULE" value="1" />
-          <entry key="JAVA" value="99" />
-          <entry key="Markdown" value="1" />
-          <entry key="XML" value="3" />
+          <entry key="JAVA" value="130" />
+          <entry key="Markdown" value="2" />
+          <entry key="UML" value="4" />
+          <entry key="XML" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts" />
@@ -89,15 +127,17 @@
       <usages-collector id="statistics.spring.boot.run.usages" />
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="8935" />
+          <entry key="JAVA" value="10104" />
           <entry key="PLAIN_TEXT" value="27" />
+          <entry key="XML" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages" />
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="8935" />
+          <entry key="java" value="10104" />
           <entry key="txt" value="27" />
+          <entry key="xml" value="1" />
         </counts>
       </usages-collector>
     </session>
@@ -105,22 +145,36 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/controller/Game.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/logic/brick/GlassBrick.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="109">
-              <caret line="253" lean-forward="true" selection-start-line="253" selection-end-line="253" />
+            <state relative-caret-position="429">
+              <caret line="62" column="20" selection-start-line="62" selection-start-column="20" selection-end-line="62" selection-end-column="20" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#998#999#0" expanded="true" />
+                <element signature="e#1026#1027#0" expanded="true" />
+                <element signature="e#1078#1079#0" expanded="true" />
+                <element signature="e#1106#1107#0" expanded="true" />
+                <element signature="e#1157#1158#0" expanded="true" />
+                <element signature="e#1184#1185#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/SmallTest.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/gui/types/GameTypes.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="103">
-              <caret line="50" column="26" lean-forward="true" selection-start-line="50" selection-start-column="26" selection-end-line="50" selection-end-column="26" />
+            <state relative-caret-position="68">
+              <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/logic/level/Level.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1055">
+              <caret line="83" selection-start-line="83" selection-end-line="83" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -131,8 +185,44 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/BigTestT2.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="307">
+            <state relative-caret-position="120">
               <caret line="535" column="37" selection-start-line="535" selection-start-column="37" selection-end-line="535" selection-end-column="37" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/logic/brick/Brick.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="350">
+              <caret line="62" column="7" selection-start-line="62" selection-start-column="7" selection-end-line="62" selection-end-column="7" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/logic/brick/AbstractBrick.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="39" column="24" lean-forward="true" selection-start-line="39" selection-start-column="24" selection-end-line="39" selection-end-column="24" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/logic/level/PlayableLevel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="293">
+              <caret line="153" column="30" selection-start-line="153" selection-start-column="30" selection-end-line="153" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -143,8 +233,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/facade/HomeworkTwoFacade.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="78" selection-start-line="78" selection-end-line="78" />
+            <state relative-caret-position="160">
+              <caret line="54" column="28" selection-start-line="54" selection-start-column="28" selection-end-line="54" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1954#1955#0" expanded="true" />
@@ -179,43 +269,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/logic/brick/MetalBrick.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/controller/Game.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="341">
-              <caret line="47" selection-start-line="47" selection-end-line="47" />
-              <folding>
-                <element signature="e#844#845#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/logic/brick/GlassBrick.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-16">
-              <caret line="6" column="28" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/logic/brick/Brick.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="205">
-              <caret line="50" column="9" selection-start-line="50" selection-start-column="9" selection-end-line="50" selection-end-column="9" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/logic/level/PlaceHolder.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="68" lean-forward="true" selection-start-line="68" selection-end-line="68" />
+            <state relative-caret-position="-670">
+              <caret line="113" column="27" selection-start-line="113" selection-start-column="27" selection-end-line="113" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -224,12 +281,14 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/logic/level/PlayableLevel.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/gui/BreakoutApp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1173">
-              <caret line="178" column="1" lean-forward="true" selection-start-line="178" selection-start-column="1" selection-end-line="178" selection-end-column="1" />
+            <state relative-caret-position="289">
+              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#436#437#0" expanded="true" />
+                <element signature="e#460#461#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -247,11 +306,12 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>end</find>
       <find>go</find>
       <find>getPoi</find>
       <find>visit</find>
       <find>fini</find>
+      <find>addedTOA</find>
+      <find>end</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -266,17 +326,28 @@
         <option value="$PROJECT_DIR$/src/main/java/logic/level/AbstractLevel.java" />
         <option value="$PROJECT_DIR$/src/test/java/BigTestT2.java" />
         <option value="$PROJECT_DIR$/src/main/java/facade/HomeworkTwoFacade.java" />
-        <option value="$PROJECT_DIR$/src/main/java/logic/level/Level.java" />
-        <option value="$PROJECT_DIR$/src/main/java/logic/brick/MetalBrick.java" />
-        <option value="$PROJECT_DIR$/src/main/java/logic/brick/GlassBrick.java" />
         <option value="$PROJECT_DIR$/src/main/java/logic/brick/AbstractBrick.java" />
         <option value="$PROJECT_DIR$/src/main/java/logic/Visitor.java" />
-        <option value="$PROJECT_DIR$/src/main/java/logic/level/PlayableLevel.java" />
-        <option value="$PROJECT_DIR$/src/main/java/logic/brick/WoodenBrick.java" />
-        <option value="$PROJECT_DIR$/src/main/java/logic/brick/Brick.java" />
         <option value="$PROJECT_DIR$/src/main/java/logic/level/PlaceHolder.java" />
-        <option value="$PROJECT_DIR$/src/test/java/SmallTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/controller/Game.java" />
+        <option value="$PROJECT_DIR$/src/main/java/logic/level/Level.java" />
+        <option value="$PROJECT_DIR$/src/test/java/SmallTest.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/gui/VarConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/gui/components/BallCont.java" />
+        <option value="$PROJECT_DIR$/src/main/java/gui/components/WBrickComponent.java" />
+        <option value="$PROJECT_DIR$/src/main/java/logic/brick/Brick.java" />
+        <option value="$PROJECT_DIR$/src/main/java/logic/brick/GlassBrick.java" />
+        <option value="$PROJECT_DIR$/src/main/java/logic/brick/MetalBrick.java" />
+        <option value="$PROJECT_DIR$/src/main/java/logic/brick/WoodenBrick.java" />
+        <option value="$PROJECT_DIR$/src/main/java/gui/components/BrickComponent.java" />
+        <option value="$PROJECT_DIR$/src/main/java/gui/components/PlayerComponent.java" />
+        <option value="$PROJECT_DIR$/src/main/java/gui/components/BallComponent.java" />
+        <option value="$PROJECT_DIR$/src/main/java/gui/GameTypes.java" />
+        <option value="$PROJECT_DIR$/src/main/java/gui/factory/NonInteractiveElementsFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/gui/factory/InteractiveElementsFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/logic/level/PlayableLevel.java" />
+        <option value="$PROJECT_DIR$/src/main/java/gui/BreakoutApp.java" />
       </list>
     </option>
   </component>
@@ -315,23 +386,13 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="cc3002-breakout" type="b2602c69:ProjectViewProjectNode" />
               <item name="cc3002-breakout" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cc3002-breakout" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cc3002-breakout" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cc3002-breakout" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cc3002-breakout" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-              <item name="production" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="cc3002-breakout" type="b2602c69:ProjectViewProjectNode" />
@@ -365,7 +426,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="facade" type="462c0819:PsiDirectoryNode" />
+              <item name="gui" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="cc3002-breakout" type="b2602c69:ProjectViewProjectNode" />
@@ -374,24 +435,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="logic" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cc3002-breakout" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cc3002-breakout" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="logic" type="462c0819:PsiDirectoryNode" />
-              <item name="brick" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cc3002-breakout" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cc3002-breakout" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="logic" type="462c0819:PsiDirectoryNode" />
-              <item name="level" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="cc3002-breakout" type="b2602c69:ProjectViewProjectNode" />
@@ -410,14 +453,14 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542813268248" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543782149866" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../cc3002-pinball-master" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -441,7 +484,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.BigTestT2">
+  <component name="RunManager" selected="Application.BreakoutApp">
+    <configuration name="BreakoutApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="gui.BreakoutApp" />
+      <module name="cc3002-breakout" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="gui.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="BigTestT2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="cc3002-breakout" />
       <option name="PACKAGE_NAME" value="" />
@@ -461,9 +517,11 @@
     <list>
       <item itemvalue="JUnit.BigTestT2" />
       <item itemvalue="JUnit.SmallTest" />
+      <item itemvalue="Application.BreakoutApp" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.BreakoutApp" />
         <item itemvalue="JUnit.BigTestT2" />
         <item itemvalue="JUnit.SmallTest" />
       </list>
@@ -489,6 +547,11 @@
       <workItem from="1542656359970" duration="1475000" />
       <workItem from="1542755598235" duration="7135000" />
       <workItem from="1542809450711" duration="3376000" />
+      <workItem from="1542814060693" duration="2785000" />
+      <workItem from="1542896744650" duration="133000" />
+      <workItem from="1543072488087" duration="416000" />
+      <workItem from="1543682792062" duration="12225000" />
+      <workItem from="1543776063586" duration="4572000" />
     </task>
     <task id="LOCAL-00001" summary="&quot;Se crean los levels&quot;">
       <created>1542308832702</created>
@@ -501,12 +564,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="SmallTest - 2018.11.21 at 11h 40m 14s.xml">
-      <configuration name="SmallTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BigTestT2 - 2018.11.21 at 11h 48m 23s.xml">
-      <configuration name="BigTestT2" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="SmallTest - 2018.11.21 at 11h 52m 39s.xml">
       <configuration name="SmallTest" configurationId="JUnit" />
     </history-entry>
@@ -531,9 +588,15 @@
     <history-entry file="BigTestT2 - 2018.11.21 at 12h 11m 04s.xml">
       <configuration name="BigTestT2" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="BigTestT2 - 2018.12.02 at 17h 07m 28s.xml">
+      <configuration name="BigTestT2" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BigTestT2 - 2018.12.02 at 17h 16m 27s.xml">
+      <configuration name="BigTestT2" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="65062000" />
+    <option name="totallyTimeSpent" value="85193000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -546,8 +609,41 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.28441754" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2934947" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info active="true" anchor="bottom" id="Find" order="1" visible="true" weight="0.3295082" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49848714" visible="true" weight="0.3295082" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3295082" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.3295082" />
+      <window_info anchor="bottom" id="Inspection Results" order="8" weight="0.3295082" />
+      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.3295082" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5015129" side_tool="true" weight="0.3295082" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.32459018" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.24962178" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Palette&#9;" order="6" />
+      <window_info anchor="right" id="Database" order="7" sideWeight="0.4987775" weight="0.32980332" />
+      <window_info anchor="right" id="Maven Projects" order="8" sideWeight="0.4987775" weight="0.32980332" />
+      <window_info anchor="right" id="Coverage" order="9" sideWeight="0.5012225" side_tool="true" weight="0.32980332" />
+    </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28441754" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -577,38 +673,6 @@
       <window_info anchor="right" id="Database" order="7" sideWeight="0.4987775" weight="0.32980332" />
       <window_info anchor="right" id="Maven Projects" order="8" sideWeight="0.4987775" weight="0.32980332" />
       <window_info active="true" anchor="right" id="Coverage" order="9" sideWeight="0.5012225" side_tool="true" visible="true" weight="0.32980332" />
-    </layout>
-    <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28441754" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Image Layers" order="2" />
-      <window_info id="Designer" order="3" />
-      <window_info id="UI Designer" order="4" />
-      <window_info id="Capture Tool" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3295082" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49848714" visible="true" weight="0.3295082" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.3295082" />
-      <window_info anchor="bottom" id="Version Control" order="7" weight="0.3295082" />
-      <window_info anchor="bottom" id="Inspection Results" order="8" weight="0.3295082" />
-      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.3295082" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5015129" side_tool="true" weight="0.3295082" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.32459018" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info anchor="right" id="Palette&#9;" order="6" />
-      <window_info anchor="right" id="Database" order="7" />
-      <window_info anchor="right" id="Maven Projects" order="8" sideWeight="0.4987775" weight="0.32980332" />
-      <window_info anchor="right" id="Coverage" order="9" side_tool="true" visible="true" weight="0.32980332" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -647,6 +711,10 @@
     <MESSAGE value="&quot;Se crean los levels&quot;" />
     <option name="LAST_COMMIT_MESSAGE" value="&quot;Se crean los levels&quot;" />
   </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/cc3002-breakout.iml">
       <provider selected="true" editor-type-id="text-editor" />
@@ -669,101 +737,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor>
-            <caret column="17" selection-start-column="17" selection-end-column="17" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/util/Observer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="45" column="9" selection-start-line="45" selection-start-column="9" selection-end-line="45" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/logic/level/Level.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="426">
-          <caret line="81" column="9" selection-start-line="81" selection-start-column="9" selection-end-line="81" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/logic/Visitor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="25" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/logic/brick/AbstractBrick.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="25" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/logic/brick/WoodenBrick.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="20" column="25" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/logic/brick/GlassBrick.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-16">
-          <caret line="6" column="28" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/logic/brick/MetalBrick.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="341">
-          <caret line="47" selection-start-line="47" selection-end-line="47" />
-          <folding>
-            <element signature="e#844#845#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/logic/brick/Brick.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="50" column="9" selection-start-line="50" selection-start-column="9" selection-end-line="50" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/logic/level/PlaceHolder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="68" lean-forward="true" selection-start-line="68" selection-end-line="68" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -774,10 +751,697 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/facade/HomeworkTwoFacade.java">
+    <entry file="uml://JavaScript-modules-diagram/C:/Users/joaqu/OneDrive/Escritorio/Breakout/cc3002-breakout/src">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JavaScript-modules-diagram</ID>
+          <OriginalElement>$PROJECT_DIR$/src</OriginalElement>
+          <nodes />
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="473.0" y="280.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>All</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>Details</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JavaScript-modules-diagram/C:/Users/joaqu/OneDrive/Escritorio/Breakout/cc3002-breakout/src/main">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JavaScript-modules-diagram</ID>
+          <OriginalElement>$PROJECT_DIR$/src/main</OriginalElement>
+          <nodes />
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="473.0" y="280.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>All</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>Details</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement />
+          <nodes>
+            <node x="" y="">java.util.Collections.UnmodifiableMap.UnmodifiableEntrySet</node>
+            <node x="" y="">java.util.Enumeration</node>
+            <node x="" y="">java.util.HashMap.HashMapSpliterator</node>
+            <node x="" y="">java.util.IdentityHashMap.EntrySpliterator</node>
+            <node x="" y="">java.util.Base64.DecInputStream</node>
+            <node x="" y="">java.util.zip</node>
+            <node x="" y="">java.util.ArraysParallelSortHelpers.FJDouble.Merger</node>
+            <node x="" y="">java.util.AbstractList.Itr</node>
+            <node x="" y="">java.util.JumboEnumSet.EnumSetIterator</node>
+            <node x="" y="">java.time</node>
+            <node x="" y="">java.util.Vector</node>
+            <node x="" y="">java.util.Currency.CurrencyNameGetter</node>
+            <node x="" y="">javafx</node>
+            <node x="" y="">java.util.Collections.UnmodifiableSortedMap</node>
+            <node x="" y="">java.util.HashMap.TreeNode</node>
+            <node x="" y="">java.util.MissingResourceException</node>
+            <node x="" y="">java.util.Collections.CheckedMap.CheckedEntrySet</node>
+            <node x="" y="">java.util.IdentityHashMap.KeySet</node>
+            <node x="" y="">java.util.Collections.SynchronizedCollection</node>
+            <node x="" y="">java.util.Arrays.NaturalOrder</node>
+            <node x="" y="">java.util.Spliterators.AbstractLongSpliterator.HoldingLongConsumer</node>
+            <node x="" y="">java.util.LinkedList.LLSpliterator</node>
+            <node x="" y="">java.util.TreeMap.PrivateEntryIterator</node>
+            <node x="" y="">java.util.TreeMap.TreeMapSpliterator</node>
+            <node x="" y="">java.util.EventListenerProxy</node>
+            <node x="" y="">java.util.TaskQueue</node>
+            <node x="" y="">java.util.SplittableRandom.RandomLongsSpliterator</node>
+            <node x="" y="">java.util.stream</node>
+            <node x="" y="">java.util.Currency</node>
+            <node x="" y="">java.util.Spliterators.EmptySpliterator.OfLong</node>
+            <node x="" y="">java.util.LinkedHashMap</node>
+            <node x="" y="">java.util.OptionalLong</node>
+            <node x="" y="">java.util.Calendar</node>
+            <node x="" y="">java.util.PriorityQueue.PriorityQueueSpliterator</node>
+            <node x="" y="">java.util.ResourceBundle.CacheKeyReference</node>
+            <node x="" y="">java.util.IllegalFormatWidthException</node>
+            <node x="" y="">java.util.WeakHashMap.KeyIterator</node>
+            <node x="" y="">java.math</node>
+            <node x="" y="">java.util.Collections.CheckedNavigableSet</node>
+            <node x="" y="">java.awt</node>
+            <node x="" y="">java.util.TreeMap</node>
+            <node x="" y="">java.util.Properties.XmlSupport</node>
+            <node x="" y="">java.util.Comparators</node>
+            <node x="" y="">java.util.Comparators.NullComparator</node>
+            <node x="" y="">java.util.Observer</node>
+            <node x="" y="">java.util.SortedSet</node>
+            <node x="" y="">java.util.PriorityQueue</node>
+            <node x="" y="">java.util.Scanner</node>
+            <node x="" y="">java.util.EventObject</node>
+            <node x="" y="">java.util.AbstractCollection</node>
+            <node x="" y="">java.util.ArrayPrefixHelpers</node>
+            <node x="" y="">java.util.ArrayList.ListItr</node>
+            <node x="" y="">java.util.Formatter.Conversion</node>
+            <node x="" y="">java.util.EnumMap.KeyIterator</node>
+            <node x="" y="">java.util.ArraysParallelSortHelpers.FJShort.Merger</node>
+            <node x="" y="">java.util.ArraysParallelSortHelpers.FJInt</node>
+            <node x="" y="">java.util.concurrent</node>
+            <node x="" y="">SmallTest</node>
+            <node x="" y="">java.util.IdentityHashMap.KeySpliterator</node>
+            <node x="" y="">java.util.NavigableMap</node>
+            <node x="" y="">java.util.Collections.UnmodifiableNavigableMap</node>
+            <node x="" y="">java.util.Objects</node>
+            <node x="" y="">java.util.Spliterators.EmptySpliterator</node>
+            <node x="" y="">java.util.Map.Entry</node>
+            <node x="" y="">java.util.function</node>
+            <node x="" y="">java.util.EnumSet.SerializationProxy</node>
+            <node x="" y="">java.util.SimpleTimeZone</node>
+            <node x="" y="">java.util.Spliterators.AbstractSpliterator</node>
+            <node x="" y="">java.util.Formatter.FormatString</node>
+            <node x="" y="">java.util.HashMap.KeySet</node>
+            <node x="" y="">java.util.Collections.SynchronizedMap</node>
+            <node x="" y="">java.util.OptionalDouble</node>
+            <node x="" y="">java.util.TreeMap.NavigableSubMap.DescendingSubMapEntryIterator</node>
+            <node x="" y="">java.util.SplittableRandom.RandomIntsSpliterator</node>
+            <node x="" y="">java.util.IdentityHashMap.ValueIterator</node>
+            <node x="" y="">java.util.Vector.Itr</node>
+            <node x="" y="">java.util.EnumMap.EntryIterator</node>
+            <node x="" y="">java.util.NoSuchElementException</node>
+            <node x="" y="">java.util.RandomAccessSubList</node>
+            <node x="" y="">java.util.UnknownFormatConversionException</node>
+            <node x="" y="">java.util.Collections.EmptyMap</node>
+            <node x="" y="">java.util.TimSort</node>
+            <node x="" y="">java.util.IllegalFormatCodePointException</node>
+            <node x="" y="">java.util.Arrays.LegacyMergeSort</node>
+            <node x="" y="">java.util.StringJoiner</node>
+            <node x="" y="">java.util.IntSummaryStatistics</node>
+            <node x="" y="">java.util.BitSet</node>
+            <node x="" y="">java.util.Collections.CheckedSet</node>
+            <node x="" y="">java.util.TreeMap.DescendingSubMap.DescendingEntrySetView</node>
+            <node x="" y="">java.util.ArraysParallelSortHelpers.FJDouble</node>
+            <node x="" y="">java.util.Spliterators.ArraySpliterator</node>
+            <node x="" y="">java.util.Arrays</node>
+            <node x="" y="">java.util.LinkedHashMap.LinkedValues</node>
+            <node x="" y="">java.util.ArrayDeque.DeqSpliterator</node>
+            <node x="" y="">java.util.Collections.CheckedList</node>
+            <node x="" y="">java.nio</node>
+            <node x="" y="">java.util.Arrays.ArrayList</node>
+            <node x="" y="">java.util.Locale.Category</node>
+            <node x="" y="">java.util.TreeMap.ValueSpliterator</node>
+            <node x="" y="">java.util.Spliterators.DoubleIteratorSpliterator</node>
+            <node x="" y="">java.util.regex</node>
+            <node x="" y="">java.util.LinkedHashMap.LinkedValueIterator</node>
+            <node x="" y="">java.util.IdentityHashMap.Values</node>
+            <node x="" y="">java.util.Collections.EmptyEnumeration</node>
+            <node x="" y="">java.util.TimerTask</node>
+            <node x="" y="">java.util.Spliterators.AbstractDoubleSpliterator</node>
+            <node x="" y="">java.util.HashMap.KeySpliterator</node>
+            <node x="" y="">java.util.Spliterators.AbstractIntSpliterator.HoldingIntConsumer</node>
+            <node x="" y="">java.util.EnumMap</node>
+            <node x="" y="">java.util.WeakHashMap.ValueSpliterator</node>
+            <node x="" y="">java.util.Collections.SingletonSet</node>
+            <node x="" y="">java.util.ResourceBundle.Control.CandidateListCache</node>
+            <node x="" y="">java.lang</node>
+            <node x="" y="">java.util.EnumMap.EntrySet</node>
+            <node x="" y="">java.util.Formatter.FixedString</node>
+            <node x="" y="">groovyjarjarantlr</node>
+            <node x="" y="">java.util.Spliterators.LongArraySpliterator</node>
+            <node x="" y="">java.sql</node>
+            <node x="" y="">java.util.Formatter.FormatSpecifier</node>
+            <node x="" y="">java.util.Collections.UnmodifiableNavigableMap.EmptyNavigableMap</node>
+            <node x="" y="">java.util.FormatFlagsConversionMismatchException</node>
+            <node x="" y="">java.util.TreeMap.KeyIterator</node>
+            <node x="" y="">java.util.TreeSet</node>
+            <node x="" y="">java.util.ArrayList</node>
+            <node x="" y="">java.util.InvalidPropertiesFormatException</node>
+            <node x="" y="">java.util.Locale.LocaleKey</node>
+            <node x="" y="">java.util.ResourceBundle</node>
+            <node x="" y="">java.util.Collections.SynchronizedList</node>
+            <node x="" y="">java.util.LinkedList.Node</node>
+            <node x="" y="">java.util.LinkedHashSet</node>
+            <node x="" y="">java.util.LocaleISOData</node>
+            <node x="" y="">java.util.EmptyStackException</node>
+            <node x="" y="">java.util.Properties</node>
+            <node x="" y="">java.util.TooManyListenersException</node>
+            <node x="" y="">java.util.TreeMap.NavigableSubMap.EntrySetView</node>
+            <node x="" y="">java.util.ResourceBundle.CacheKey</node>
+            <node x="" y="">java.util.Spliterator.OfDouble</node>
+            <node x="" y="">java.util.HashMap.EntrySet</node>
+            <node x="" y="">java.util.IllformedLocaleException</node>
+            <node x="" y="">java.util.IdentityHashMap.EntrySet</node>
+            <node x="" y="">java.util.TreeMap.KeySpliterator</node>
+            <node x="" y="">logic</node>
+            <node x="" y="">java.util.ArrayDeque</node>
+            <node x="" y="">java.util.Collections.UnmodifiableRandomAccessList</node>
+            <node x="" y="">java.util.spi</node>
+            <node x="" y="">com</node>
+            <node x="" y="">java.util.Spliterators.AbstractIntSpliterator</node>
+            <node x="" y="">java.util.Collections.CheckedSortedMap</node>
+            <node x="" y="">java.util.Locale.Builder</node>
+            <node x="" y="">java.util.PropertyPermission</node>
+            <node x="" y="">java.util.Formatter</node>
+            <node x="" y="">java.util.ArraysParallelSortHelpers.FJFloat.Sorter</node>
+            <node x="" y="">java.util.IllegalFormatPrecisionException</node>
+            <node x="" y="">java.util.ArraysParallelSortHelpers.FJLong</node>
+            <node x="" y="">java.util.WeakHashMap.KeySet</node>
+            <node x="" y="">java.util.Hashtable.Entry</node>
+            <node x="" y="">java.util.LinkedHashMap.LinkedHashIterator</node>
+            <node x="" y="">java.util.IdentityHashMap.EntryIterator.Entry</node>
+            <node x="" y="">java.util.Calendar.AvailableCalendarTypes</node>
+            <node x="" y="">java.util.ArraysParallelSortHelpers.FJShort</node>
+            <node x="" y="">java.util.Spliterators.IntIteratorSpliterator</node>
+            <node x="" y="">java.util.AbstractSequentialList</node>
+            <node x="" y="">java.util.List</node>
+            <node x="" y="">java.util.AbstractList.ListItr</node>
+            <node x="" y="">java.util.TreeMap.AscendingSubMap.AscendingEntrySetView</node>
+            <node x="" y="">java.util.TreeMap.DescendingKeyIterator</node>
+            <node x="" y="">java.util.Collections.CheckedMap.CheckedEntrySet.CheckedEntry</node>
+            <node x="" y="">java.util.IdentityHashMap.IdentityHashMapIterator</node>
+            <node x="" y="">java.util.EnumMap.EnumMapIterator</node>
+            <node x="" y="">java.util.Collections.CopiesList</node>
+            <node x="" y="">java.util.SortedMap</node>
+            <node x="" y="">java.util.ArraysParallelSortHelpers.Relay</node>
+            <node x="" y="">java.util.Formattable</node>
+            <node x="" y="">java.util.TreeMap.NavigableSubMap.SubMapIterator</node>
+            <node x="" y="">java.util.Hashtable.Enumerator</node>
+            <node x="" y="">java.util.AbstractSet</node>
+            <node x="" y="">java.util.Spliterators.IntArraySpliterator</node>
+            <node x="" y="">java.util.Deque</node>
+            <node x="" y="">java.util.WeakHashMap.KeySpliterator</node>
+            <node x="" y="">BigTestT2</node>
+            <node x="" y="">java.util.PrimitiveIterator.OfDouble</node>
+            <node x="" y="">java.util.UUID.Holder</node>
+            <node x="" y="">java.util.Formatter.BigDecimalLayoutForm</node>
+            <node x="" y="">java.util.ArraysParallelSortHelpers.EmptyCompleter</node>
+            <node x="" y="">java.util.ArraysParallelSortHelpers.FJChar.Sorter</node>
+            <node x="" y="">java.util.TreeMap.DescendingSubMap</node>
+            <node x="" y="">java.util.TreeMap.EntrySet</node>
+            <node x="" y="">java.util.LongSummaryStatistics</node>
+            <node x="" y="">java.util.Collections.SynchronizedSet</node>
+            <node x="" y="">java.util.Formatter.FormatSpecifier.BigDecimalLayout</node>
+            <node x="" y="">java.util.Spliterator.OfLong</node>
+            <node x="" y="">java.util.ListResourceBundle</node>
+            <node x="" y="">java.util.TreeMap.DescendingKeySpliterator</node>
+            <node x="" y="">java.util.Spliterator.OfInt</node>
+            <node x="" y="">java.util.jar</node>
+            <node x="" y="">java.util.Collections.SynchronizedNavigableMap</node>
+            <node x="" y="">java.util.JumboEnumSet</node>
+            <node x="" y="">java.util.Comparators.NaturalOrderComparator</node>
+            <node x="" y="">java.util.Observable</node>
+            <node x="" y="">java.util.Formatter.Flags</node>
+            <node x="" y="">java.applet</node>
+            <node x="" y="">java.util.ArraysParallelSortHelpers.FJChar.Merger</node>
+            <node x="" y="">java.util.LinkedHashMap.LinkedEntryIterator</node>
+            <node x="" y="">java.util.LinkedList.DescendingIterator</node>
+            <node x="" y="">java.util.InputMismatchException</node>
+            <node x="" y="">java.util.Locale.LanguageRange</node>
+            <node x="" y="">java.util.TreeMap.EntryIterator</node>
+            <node x="" y="">java.util.Random.RandomIntsSpliterator</node>
+            <node x="" y="">java.util.Collections.EmptyList</node>
+            <node x="" y="">java.util.Map</node>
+            <node x="" y="">java.util.ArraysParallelSortHelpers.FJLong.Sorter</node>
+            <node x="" y="">java.util.ResourceBundle.NoFallbackControl</node>
+            <node x="" y="">java.util.EnumMap.KeySet</node>
+            <node x="" y="">java.util.EnumSet</node>
+            <node x="" y="">java.util.PriorityQueue.Itr</node>
+            <node x="" y="">java.util.HashMap.HashIterator</node>
+            <node x="" y="">java.util.WeakHashMap.EntryIterator</node>
+            <node x="" y="">java.util.ArrayPrefixHelpers.IntCumulateTask</node>
+            <node x="" y="">java.util.GregorianCalendar</node>
+            <node x="" y="">java.util.HashMap.Values</node>
+            <node x="" y="">java.util.LinkedHashMap.LinkedKeySet</node>
+            <node x="" y="">java.util.TreeMap.NavigableSubMap.SubMapEntryIterator</node>
+            <node x="" y="">java.util.PropertyResourceBundle</node>
+            <node x="" y="">java.util.Spliterator.OfPrimitive</node>
+            <node x="" y="">java.util.Collections.AsLIFOQueue</node>
+            <node x="" y="">java.util.Collections.SingletonMap</node>
+            <node x="" y="">java.util.EventListener</node>
+            <node x="" y="">java.util.Spliterators.IteratorSpliterator</node>
+            <node x="" y="">java.util.Collections.SetFromMap</node>
+            <node x="" y="">java.util.ArraysParallelSortHelpers</node>
+            <node x="" y="">java.util.Collections.ReverseComparator2</node>
+            <node x="" y="">java.util.ConcurrentModificationException</node>
+            <node x="" y="">java.util.logging</node>
+            <node x="" y="">java.util.WeakHashMap.HashIterator</node>
+            <node x="" y="">java.util.TreeMap.Values</node>
+            <node x="" y="">sun</node>
+            <node x="" y="">java.util.Collections.SingletonList</node>
+            <node x="" y="">java.util.SubList</node>
+            <node x="" y="">java.util.ArraysParallelSortHelpers.FJByte.Sorter</node>
+            <node x="" y="">java.util.StringTokenizer</node>
+            <node x="" y="">controller</node>
+            <node x="" y="">java.util.UnknownFormatFlagsException</node>
+            <node x="" y="">java.util.WeakHashMap.Values</node>
+            <node x="" y="">jdk</node>
+            <node x="" y="">java.text</node>
+            <node x="" y="">java.util.PropertyPermissionCollection</node>
+            <node x="" y="">java.util.ServiceLoader.LazyIterator</node>
+            <node x="" y="">java.util.Collections.SynchronizedRandomAccessList</node>
+            <node x="" y="">java.util.Spliterators.EmptySpliterator.OfRef</node>
+            <node x="" y="">java.util.ArrayDeque.DeqIterator</node>
+            <node x="" y="">java.util.ResourceBundle.SingleFormatControl</node>
+            <node x="" y="">java.util.Collections.UnmodifiableSet</node>
+            <node x="" y="">java.rmi</node>
+            <node x="" y="">java.util.Collections.UnmodifiableMap.UnmodifiableEntrySet.UnmodifiableEntry</node>
+            <node x="" y="">java.util.Collections.CheckedSortedSet</node>
+            <node x="" y="">java.util.ListIterator</node>
+            <node x="" y="">java.util.Date</node>
+            <node x="" y="">java.util.Tripwire</node>
+            <node x="" y="">java.util.Spliterators</node>
+            <node x="" y="">java.beans</node>
+            <node x="" y="">java.util.Calendar.Builder</node>
+            <node x="" y="">java.util.Random</node>
+            <node x="" y="">java.util.ArrayPrefixHelpers.DoubleCumulateTask</node>
+            <node x="" y="">java.util.prefs</node>
+            <node x="" y="">java.util.Collections.SynchronizedSortedSet</node>
+            <node x="" y="">java.util.Spliterators.AbstractLongSpliterator</node>
+            <node x="" y="">java.net</node>
+            <node x="" y="">java.util.Locale</node>
+            <node x="" y="">java.util.HashMap.EntryIterator</node>
+            <node x="" y="">java.util.Calendar.CalendarAccessControlContext</node>
+            <node x="" y="">oracle</node>
+            <node x="" y="">java.util.ResourceBundle.BundleReference</node>
+            <node x="" y="">java.util.TimeZone</node>
+            <node x="" y="">java.util.Collection</node>
+            <node x="" y="">java.util.Base64.EncOutputStream</node>
+            <node x="" y="">java.util.ArraysParallelSortHelpers.FJInt.Merger</node>
+            <node x="" y="">java.util.ServiceLoader</node>
+            <node x="" y="">java.util.EnumMap.EntryIterator.Entry</node>
+            <node x="" y="">java.util.UUID</node>
+            <node x="" y="">java.util.ArraysParallelSortHelpers.FJShort.Sorter</node>
+            <node x="" y="">java.util.Spliterators.AbstractSpliterator.HoldingConsumer</node>
+            <node x="" y="">java.util.ArraysParallelSortHelpers.FJChar</node>
+            <node x="" y="">java.util.ArrayDeque.DescendingIterator</node>
+            <node x="" y="">java.util.LinkedHashMap.Entry</node>
+            <node x="" y="">java.util.Queue</node>
+            <node x="" y="">java.util.Spliterator</node>
+            <node x="" y="">java.util.MissingFormatArgumentException</node>
+            <node x="" y="">java.util.OptionalInt</node>
+            <node x="" y="">java.util.Stack</node>
+            <node x="" y="">java.util.ArrayPrefixHelpers.LongCumulateTask</node>
+            <node x="" y="">java.util.HashSet</node>
+            <node x="" y="">java.util.Base64.Decoder</node>
+            <node x="" y="">java.util.HashMap.Node</node>
+            <node x="" y="">java.util.PrimitiveIterator.OfLong</node>
+            <node x="" y="">java.util.LinkedList</node>
+            <node x="" y="">java.util.AbstractMap.SimpleEntry</node>
+            <node x="" y="">java.util.Collections.UnmodifiableList</node>
+            <node x="" y="">junit</node>
+            <node x="" y="">java.util.Collections.SynchronizedNavigableSet</node>
+            <node x="" y="">org</node>
+            <node x="" y="">java.util.RegularEnumSet.EnumSetIterator</node>
+            <node x="" y="">java.util.JapaneseImperialCalendar</node>
+            <node x="" y="">java.util.ArraysParallelSortHelpers.FJObject.Merger</node>
+            <node x="" y="">java.util.IllegalFormatConversionException</node>
+            <node x="" y="">java.util.ArrayList.SubList</node>
+            <node x="" y="">java.util.HashMap.EntrySpliterator</node>
+            <node x="" y="">java.util.Hashtable.ValueCollection</node>
+            <node x="" y="">java.util.Spliterators.AbstractDoubleSpliterator.HoldingDoubleConsumer</node>
+            <node x="" y="">java.util.PrimitiveIterator</node>
+            <node x="" y="">java.util.Hashtable.EntrySet</node>
+            <node x="" y="">java.util.AbstractMap</node>
+            <node x="" y="">java.util.Spliterators.LongIteratorSpliterator</node>
+            <node x="" y="">java.util.ResourceBundle.LoaderReference</node>
+            <node x="" y="">java.util.Collections.UnmodifiableCollection</node>
+            <node x="" y="">java.util.Comparator</node>
+            <node x="" y="">java.util.ArraysParallelSortHelpers.FJByte</node>
+            <node x="" y="">java.util.TreeMap.NavigableSubMap.SubMapKeyIterator</node>
+            <node x="" y="">java.util.Locale.FilteringMode</node>
+            <node x="" y="">java.util.Vector.ListItr</node>
+            <node x="" y="">java.util.Properties.LineReader</node>
+            <node x="" y="">java.util.AbstractQueue</node>
+            <node x="" y="">facade</node>
+            <node x="" y="">java.util.DoubleSummaryStatistics</node>
+            <node x="" y="">java.util.Collections.UnmodifiableSortedSet</node>
+            <node x="" y="">java.util.Collections.UnmodifiableMap.UnmodifiableEntrySet.UnmodifiableEntrySetSpliterator</node>
+            <node x="" y="">java.util.ArrayList.Itr</node>
+            <node x="" y="">java.util.Spliterators.EmptySpliterator.OfInt</node>
+            <node x="" y="">java.util.DuplicateFormatFlagsException</node>
+            <node x="" y="">java.security</node>
+            <node x="" y="">java.util.TreeMap.ValueIterator</node>
+            <node x="" y="">java.util.EnumMap.Values</node>
+            <node x="" y="">java.util.LinkedHashMap.LinkedKeyIterator</node>
+            <node x="" y="">java.util.MissingFormatWidthException</node>
+            <node x="" y="">java.util.Collections.CheckedQueue</node>
+            <node x="" y="">java.util.Collections.CheckedCollection</node>
+            <node x="" y="">java.util.ResourceBundle.RBClassLoader</node>
+            <node x="" y="">java.util.FormattableFlags</node>
+            <node x="" y="">java.util.Set</node>
+            <node x="" y="">java.util.Spliterators.DoubleArraySpliterator</node>
+            <node x="" y="">java.util.RegularEnumSet</node>
+            <node x="" y="">java.util.WeakHashMap.ValueIterator</node>
+            <node x="" y="">java.util.Locale.LocaleNameGetter</node>
+            <node x="" y="">java.util.LinkedList.ListItr</node>
+            <node x="" y="">java.util.Dictionary</node>
+            <node x="" y="">java.util.SplittableRandom.RandomDoublesSpliterator</node>
+            <node x="" y="">java.util.TreeMap.NavigableSubMap</node>
+            <node x="" y="">java.util.ArraysParallelSortHelpers.FJObject.Sorter</node>
+            <node x="" y="">java.util.RandomAccess</node>
+            <node x="" y="">java.util.Random.RandomLongsSpliterator</node>
+            <node x="" y="">java.util.Collections.EmptyListIterator</node>
+            <node x="" y="">java.util.ArrayList.ArrayListSpliterator</node>
+            <node x="" y="">java.util.ArraysParallelSortHelpers.FJObject</node>
+            <node x="" y="">java.util.WeakHashMap.WeakHashMapSpliterator</node>
+            <node x="" y="">java.util.TreeMap.NavigableSubMap.DescendingSubMapKeyIterator</node>
+            <node x="" y="">java.util.FormatterClosedException</node>
+            <node x="" y="">java.util.ArraysParallelSortHelpers.FJInt.Sorter</node>
+            <node x="" y="">java.util.Collections.UnmodifiableMap</node>
+            <node x="" y="">java.util.ArraysParallelSortHelpers.FJFloat</node>
+            <node x="" y="">java.util.TreeMap.Entry</node>
+            <node x="" y="">java.util.Locale.Cache</node>
+            <node x="" y="">java.util.Collections.CheckedNavigableMap</node>
+            <node x="" y="">java.util.ArraysParallelSortHelpers.FJLong.Merger</node>
+            <node x="" y="">java.util.ComparableTimSort</node>
+            <node x="" y="">java.util.Collections.SynchronizedSortedMap</node>
+            <node x="" y="">java.util.PrimitiveIterator.OfInt</node>
+            <node x="" y="">java.util.WeakHashMap.EntrySet</node>
+            <node x="" y="">java.util.HashMap.KeyIterator</node>
+            <node x="" y="">java.util.AbstractList</node>
+            <node x="" y="">java.util.Timer</node>
+            <node x="" y="">java.util.Collections.CheckedRandomAccessList</node>
+            <node x="" y="">java.util.TreeMap.AscendingSubMap</node>
+            <node x="" y="">java.util.ResourceBundle.Control</node>
+            <node x="" y="">java.util.Vector.VectorSpliterator</node>
+            <node x="" y="">java.util.SplittableRandom</node>
+            <node x="" y="">java.util.IllegalFormatException</node>
+            <node x="" y="">java.util.IdentityHashMap.IdentityHashMapSpliterator</node>
+            <node x="" y="">java.util.TreeMap.KeySet</node>
+            <node x="" y="">java.util.IdentityHashMap</node>
+            <node x="" y="">java.util.LinkedHashMap.LinkedEntrySet</node>
+            <node x="" y="">java.util.Collections.UnmodifiableNavigableSet</node>
+            <node x="" y="">java.util.ArrayPrefixHelpers.CumulateTask</node>
+            <node x="" y="">java.util.Collections.EmptyIterator</node>
+            <node x="" y="">java.util.NavigableSet</node>
+            <node x="" y="">java.util.ArraysParallelSortHelpers.FJByte.Merger</node>
+            <node x="" y="">java.util.Formatter.DateTime</node>
+            <node x="" y="">java.util.TreeMap.EntrySpliterator</node>
+            <node x="" y="">java.util.Base64</node>
+            <node x="" y="">java.util.Hashtable.KeySet</node>
+            <node x="" y="">java.util.Optional</node>
+            <node x="" y="">java.util.IdentityHashMap.KeyIterator</node>
+            <node x="" y="">java.util.TreeMap.SubMap</node>
+            <node x="" y="">java.util.TimerThread</node>
+            <node x="" y="">java.util.Spliterators.EmptySpliterator.OfDouble</node>
+            <node x="" y="">java.util.Base64.Encoder</node>
+            <node x="" y="">java.util.ArraysParallelSortHelpers.FJFloat.Merger</node>
+            <node x="" y="">java.util.IdentityHashMap.EntryIterator</node>
+            <node x="" y="">java.util.HashMap.ValueSpliterator</node>
+            <node x="" y="">java.util.HashMap</node>
+            <node x="" y="">java.util.WeakHashMap.EntrySpliterator</node>
+            <node x="" y="">java.util.ArraysParallelSortHelpers.FJDouble.Sorter</node>
+            <node x="" y="">java.util.AbstractMap.SimpleImmutableEntry</node>
+            <node x="" y="">java.util.DualPivotQuicksort</node>
+            <node x="" y="">java.util.HashMap.ValueIterator</node>
+            <node x="" y="">java.util.ServiceConfigurationError</node>
+            <node x="" y="">java.util.WeakHashMap</node>
+            <node x="" y="">java.util.Hashtable</node>
+            <node x="" y="">java.util.Iterator</node>
+            <node x="" y="">java.util.Collections.ReverseComparator</node>
+            <node x="" y="">java.util.IllegalFormatFlagsException</node>
+            <node x="" y="">java.util.Collections.CheckedMap</node>
+            <node x="" y="">java.util.Collections.EmptySet</node>
+            <node x="" y="">java.util.EnumMap.ValueIterator</node>
+            <node x="" y="">java.util.IdentityHashMap.ValueSpliterator</node>
+            <node x="" y="">java.util.Collections.UnmodifiableNavigableSet.EmptyNavigableSet</node>
+            <node x="" y="">java.io</node>
+            <node x="" y="">java.util.WeakHashMap.Entry</node>
+            <node x="" y="">java.util.Random.RandomDoublesSpliterator</node>
+            <node x="" y="">java.util.Collections</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="1055.0" y="260.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Inner Classes</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/SmallTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="663">
+          <caret line="52" selection-start-line="52" selection-end-line="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/logic/Visitor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="12" selection-start-line="12" selection-end-line="13" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor>
+            <caret column="17" selection-start-column="9" selection-end-column="17" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/javafx-src.zip!/javafx/scene/paint/Color.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1105">
+          <caret line="33" column="29" lean-forward="true" selection-start-line="33" selection-start-column="29" selection-end-line="33" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/gui/components/BallCont.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/gui/VarConfig.java" />
+    <entry file="jar://$MAVEN_REPOSITORY$/com/github/almasb/fxgl-base/0.5.4/fxgl-base-0.5.4.jar!/com/almasb/fxgl/entity/Entity.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6018">
+          <caret line="514" column="28" lean-forward="true" selection-start-line="514" selection-start-column="28" selection-end-line="514" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="21" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/gui/components/BrickComponent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="7" column="45" selection-start-line="7" selection-start-column="45" selection-end-line="7" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/logic/brick/WoodenBrick.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="765">
+          <caret line="57" column="20" selection-start-line="57" selection-start-column="20" selection-end-line="57" selection-end-column="20" />
+          <folding>
+            <element signature="e#985#986#0" expanded="true" />
+            <element signature="e#1013#1014#0" expanded="true" />
+            <element signature="e#1065#1066#0" expanded="true" />
+            <element signature="e#1092#1093#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/logic/level/PlaceHolder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/gui/components/BallComponent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="27" column="72" selection-start-line="27" selection-start-column="72" selection-end-line="27" selection-end-column="72" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#215#216#0" expanded="true" />
+            <element signature="e#246#247#0" expanded="true" />
+            <element signature="e#1118#1119#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/gui/factory/NonInteractiveElementsFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="5" lean-forward="true" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/gui/factory/InteractiveElementsFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="409">
+          <caret line="28" column="25" lean-forward="true" selection-start-line="28" selection-start-column="25" selection-end-line="28" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/gui/components/PlayerComponent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="22" column="32" lean-forward="true" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/logic/brick/MetalBrick.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="732">
+          <caret line="56" column="20" selection-start-line="56" selection-start-column="20" selection-end-line="56" selection-end-column="20" />
+          <folding>
+            <element signature="e#844#845#0" expanded="true" />
+            <element signature="e#871#872#0" expanded="true" />
+            <element signature="e#1012#1013#0" expanded="true" />
+            <element signature="e#1039#1040#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/logic/level/Level.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1055">
+          <caret line="83" selection-start-line="83" selection-end-line="83" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/BigTestT2.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
-          <caret line="78" selection-start-line="78" selection-end-line="78" />
+          <caret line="535" column="37" selection-start-line="535" selection-start-column="37" selection-end-line="535" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/gui/types/GameTypes.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/logic/brick/Brick.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="62" column="7" selection-start-line="62" selection-start-column="7" selection-end-line="62" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/logic/brick/AbstractBrick.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="39" column="24" lean-forward="true" selection-start-line="39" selection-start-column="24" selection-end-line="39" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/logic/brick/GlassBrick.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="429">
+          <caret line="62" column="20" selection-start-line="62" selection-start-column="20" selection-end-line="62" selection-end-column="20" />
+          <folding>
+            <element signature="e#998#999#0" expanded="true" />
+            <element signature="e#1026#1027#0" expanded="true" />
+            <element signature="e#1078#1079#0" expanded="true" />
+            <element signature="e#1106#1107#0" expanded="true" />
+            <element signature="e#1157#1158#0" expanded="true" />
+            <element signature="e#1184#1185#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/logic/level/PlayableLevel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="293">
+          <caret line="153" column="30" selection-start-line="153" selection-start-column="30" selection-end-line="153" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/facade/HomeworkTwoFacade.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="54" column="28" selection-start-line="54" selection-start-column="28" selection-end-line="54" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1954#1955#0" expanded="true" />
@@ -810,42 +1474,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/SmallTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="103">
-          <caret line="50" column="26" lean-forward="true" selection-start-line="50" selection-start-column="26" selection-end-line="50" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/controller/Game.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="109">
-          <caret line="253" lean-forward="true" selection-start-line="253" selection-end-line="253" />
+        <state relative-caret-position="-670">
+          <caret line="113" column="27" selection-start-line="113" selection-start-column="27" selection-end-line="113" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/BigTestT2.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/gui/BreakoutApp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="535" column="37" selection-start-line="535" selection-start-column="37" selection-end-line="535" selection-end-column="37" />
+        <state relative-caret-position="289">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/logic/level/PlayableLevel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1173">
-          <caret line="178" column="1" lean-forward="true" selection-start-line="178" selection-start-column="1" selection-end-line="178" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#436#437#0" expanded="true" />
+            <element signature="e#460#461#0" expanded="true" />
           </folding>
         </state>
       </provider>

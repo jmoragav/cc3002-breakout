@@ -62,4 +62,10 @@ public interface Brick {
      * @param o visitor who will perform an action
      */
     void accept(Visitor o);
+
+    boolean isMetalBrick();
+
+    boolean isWoodenBrick();
+
+    boolean isGlassBrick();
 }

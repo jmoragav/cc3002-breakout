@@ -52,5 +52,20 @@ public class MetalBrick extends AbstractBrick {
         o.VisitMetalBrick(this);
     }
 
+    @Override
+    public boolean isMetalBrick() {
+        return true;
+    }
+
+    @Override
+    public boolean isWoodenBrick() {
+        return false;
+    }
+
+    @Override
+    public boolean isGlassBrick() {
+        return false;
+    }
+
 
 }

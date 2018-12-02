@@ -48,7 +48,20 @@ public class GlassBrick extends AbstractBrick implements Brick {
         o.VisitBrickWithPoints(this);
     }
 
+    @Override
+    public boolean isMetalBrick() {
+        return false;
+    }
 
+    @Override
+    public boolean isWoodenBrick() {
+        return false;
+    }
+
+    @Override
+    public boolean isGlassBrick() {
+        return true;
+    }
 
 
     @Override

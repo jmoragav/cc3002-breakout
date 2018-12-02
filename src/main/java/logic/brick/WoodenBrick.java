@@ -49,6 +49,21 @@ public class WoodenBrick extends AbstractBrick {
     }
 
     @Override
+    public boolean isMetalBrick() {
+        return false;
+    }
+
+    @Override
+    public boolean isWoodenBrick() {
+        return true;
+    }
+
+    @Override
+    public boolean isGlassBrick() {
+        return false;
+    }
+
+    @Override
     public void ChangeStatus() {
         Broken=true;
     }

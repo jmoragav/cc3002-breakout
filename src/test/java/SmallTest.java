@@ -28,7 +28,6 @@ public class SmallTest {
     public void UnplayableLevelTest(){
         Level placeholder= new PlaceHolder();
         placeholder.setNextLevel(new PlaceHolder());
-        placeholder.addedToAGame(new Game(1));
         assertFalse(placeholder.hasNextLevel());
         assertFalse(placeholder.isPlayableLevel());
         assertEquals(placeholder,placeholder.addPlayingLevel(hw2.newLevelWithBricksFull("",20,0.5,0.5,seed)));
@@ -52,12 +51,4 @@ public class SmallTest {
         assertTrue(hw2.isGameOver());
     }
 
-    @Test
-    public void FacadeTest(){
-        hw2.setCurrentLevel(new PlaceHolder());
-        assertFalse(hw2.winner());
-        assertFalse(hw2.hasCurrentLevel());
-        assertFalse(hw2.hasNextLevel());
-
-    }
 }
