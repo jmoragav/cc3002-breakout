@@ -35,7 +35,7 @@ import static gui.factory.NonInteractiveElementsFactory.newBorderWalls;
 public class BreakoutApp extends GameApplication implements Observer {
     private HomeworkTwoFacade game;
     private boolean released= false;
-    private boolean testing_mode=false;
+    private boolean emptylevel=true;
     private int n_bricks;
     private double prob_g;
     private double prob_m;
@@ -48,6 +48,7 @@ public class BreakoutApp extends GameApplication implements Observer {
         gameSettings.setHeight(700);
         gameSettings.setTitle("Breakout");
         gameSettings.setVersion("0.1");
+
 
 
     }
@@ -137,15 +138,6 @@ public class BreakoutApp extends GameApplication implements Observer {
 
             }
         });
-        getPhysicsWorld().addCollisionHandler(new CollisionHandler(GameTypes.BALL, MouseButton.PRIMARY) {
-            @Override
-            protected void onHitBoxTrigger(Entity ball, Entity brick, HitBox boxBall, HitBox boxBrick) {
-                if(testing_mode)
-                brick.getComponent(BrickComponent.class).onHit();
-                updateVariables();
-
-            }
-        });
         getPhysicsWorld().addCollisionHandler(new CollisionHandler(GameTypes.BALL, GameTypes.M_BRICK) {
             @Override
             protected void onHitBoxTrigger(Entity ball, Entity brick, HitBox boxBall, HitBox boxBrick) {
@@ -175,7 +167,7 @@ public class BreakoutApp extends GameApplication implements Observer {
             @Override
             protected void onActionBegin() {
                 if (getGameWorld().getEntitiesByType(GameTypes.BALL).size() == 1
-                        && !game.isGameOver())
+                        && !game.isGameOver() && !emptylevel)
                 {
                     released=true;
                     getBallControl().release();
@@ -203,12 +195,18 @@ public class BreakoutApp extends GameApplication implements Observer {
 
         input.addAction(new UserAction("Add Level") {
             @Override
-            protected void onActionBegin(){addLevel();}
+            protected void onActionBegin(){
+                emptylevel=false;
+                addLevel();}
         },KeyCode.N);
 
         input.addAction(new UserAction("Enable Level values editor") {
             @Override
             protected void onActionBegin(){showLevelMenu();}
+        },KeyCode.M);
+        input.addAction(new UserAction("Show tutorial") {
+            @Override
+            protected void onActionBegin(){showTutorialMessage();}
         },KeyCode.T);
 
     }
@@ -330,7 +328,8 @@ public class BreakoutApp extends GameApplication implements Observer {
     }
     private void showTutorialMessage(){
         getDisplay().showMessageBox("TUTORIAL" +'\n'+"Use A key to move towards left"+'\n'+"Use D key to move towards right"+
-                '\n'+"Use Space key to release the ball"+'\n'+"Use N key to add a new level"+'\n'+"Use T key to edit the level values");
+                '\n'+"Use Space key to release the ball"+'\n'+"Use N key to add a new level"+'\n'+"Use M key to edit the level values"+
+                '\n'+"Use T key to show the tutorial once again");
     }
 
 

@@ -1,64 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="ArtifactsWorkspaceSettings">
-    <artifacts-to-build>
-      <artifact name="cc3002-breakout:jar" />
-    </artifacts-to-build>
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="3dbdd57d-3b61-493b-8301-b20135278b9f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/cc3002_breakout_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/META-INF/MANIFEST.MF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/gui/events/GameEvent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/logic/visitor/BehaviourSelector.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/logic/visitor/GuiBrickVisitor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/logic/visitor/SoundSelector.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/music/BGM01.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/sounds/GlassHit.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/sounds/MetalHit.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/sounds/Oof.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/sounds/WoodenHit.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cc3002-breakout.iml" beforeDir="false" afterPath="$PROJECT_DIR$/cc3002-breakout.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/FXGL-02-dic-2018-17.15.23.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/FXGL-02-dic-2018-17.18.08.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/Readme.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/facade/HomeworkTwoFacade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/facade/HomeworkTwoFacade.java" afterDir="false" />
+    <list default="true" id="0e380906-5492-42dc-a28f-c0ece4601116" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/breakout.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/cc3002_breakout_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/FXGL-07-dic-2018-01.37.48.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/FXGL-07-dic-2018-01.38.37.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/cc3002_breakout_jar/cc3002-breakout.jar" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/gui/BreakoutApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gui/BreakoutApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gui/components/BallComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gui/components/BallComponent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gui/components/BrickComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gui/components/BrickComponent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gui/components/PlayerComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gui/components/PlayerComponent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gui/factory/InteractiveElementsFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gui/factory/InteractiveElementsFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gui/factory/NonInteractiveElementsFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gui/factory/NonInteractiveElementsFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/logic/Visitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/logic/visitor/BrickVisitor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/logic/brick/AbstractBrick.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/logic/brick/AbstractBrick.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/logic/brick/Brick.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/logic/brick/Brick.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/logic/brick/GlassBrick.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/logic/brick/GlassBrick.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/logic/brick/MetalBrick.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/logic/brick/MetalBrick.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/logic/brick/WoodenBrick.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/logic/brick/WoodenBrick.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/logic/level/PlaceHolder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/logic/level/PlaceHolder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/logic/level/PlayableLevel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/logic/level/PlayableLevel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/controller/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/Game.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/facade/HomeworkTwoFacade.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/facade/HomeworkTwoFacade.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/assets/textures/custom_bg.png.crdownload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gui/BreakoutApp$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gui/BreakoutApp$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gui/BreakoutApp$10.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gui/BreakoutApp$10.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gui/BreakoutApp$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gui/BreakoutApp$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gui/BreakoutApp$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gui/BreakoutApp$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gui/BreakoutApp$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gui/BreakoutApp$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gui/BreakoutApp$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gui/BreakoutApp$5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gui/BreakoutApp$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gui/BreakoutApp$6.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gui/BreakoutApp$7.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gui/BreakoutApp$7.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gui/BreakoutApp$8.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gui/BreakoutApp$8.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gui/BreakoutApp$9.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gui/BreakoutApp$9.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/gui/BreakoutApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gui/BreakoutApp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/gui/components/BallComponent.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gui/components/BallComponent.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/gui/components/BrickComponent.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gui/components/BrickComponent.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/gui/components/PlayerComponent.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gui/components/PlayerComponent.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/gui/factory/InteractiveElementsFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gui/factory/InteractiveElementsFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/gui/factory/NonInteractiveElementsFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gui/factory/NonInteractiveElementsFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/logic/Visitor.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/logic/brick/AbstractBrick.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/logic/brick/AbstractBrick.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/logic/brick/Brick.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/logic/brick/Brick.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/logic/brick/GlassBrick.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/logic/brick/GlassBrick.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/logic/brick/MetalBrick.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/logic/brick/MetalBrick.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/logic/brick/WoodenBrick.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/logic/brick/WoodenBrick.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/logic/level/PlaceHolder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/logic/level/PlaceHolder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/logic/level/PlayableLevel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/logic/level/PlayableLevel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/BigTestT2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/BigTestT2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/SmallTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/SmallTest.class" afterDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -66,240 +34,58 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/cc3002_breakout$SmallTest.ic" NAME="SmallTest Coverage Results" MODIFIED="1542812901014" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-    <SUITE FILE_PATH="coverage/cc3002_breakout$BigTestT2.ic" NAME="BigTestT2 Coverage Results" MODIFIED="1543781687792" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-  </component>
-  <component name="CoverageViewManager">
-    <option name="myElementSize" value="181" />
-  </component>
-  <component name="DatabaseView">
-    <option name="SHOW_INTERMEDIATE" value="true" />
-    <option name="GROUP_DATA_SOURCES" value="true" />
-    <option name="GROUP_SCHEMA" value="true" />
-    <option name="GROUP_CONTENTS" value="false" />
-    <option name="SORT_POSITIONED" value="false" />
-    <option name="SHOW_EMPTY_GROUPS" value="false" />
-    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
-    <option name="HIDDEN_KINDS">
-      <set />
-    </option>
-    <expand />
-    <select />
-  </component>
   <component name="FUSProjectUsageTrigger">
     <session id="2012413188">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="20" />
-          <entry key="project.open.time.100" value="1" />
-          <entry key="project.open.time.101" value="1" />
-          <entry key="project.open.time.105" value="1" />
-          <entry key="project.open.time.13" value="1" />
-          <entry key="project.open.time.188" value="1" />
-          <entry key="project.open.time.4" value="3" />
-          <entry key="project.open.time.54" value="2" />
+          <entry key="project.closed" value="1" />
           <entry key="project.open.time.56" value="1" />
-          <entry key="project.open.time.6" value="1" />
-          <entry key="project.open.time.62" value="1" />
-          <entry key="project.open.time.64" value="1" />
-          <entry key="project.open.time.68" value="1" />
-          <entry key="project.open.time.70" value="2" />
-          <entry key="project.open.time.73" value="1" />
-          <entry key="project.open.time.84" value="1" />
-          <entry key="project.open.time.87" value="1" />
-          <entry key="project.open.time.90" value="1" />
-          <entry key="project.opened" value="21" />
+          <entry key="project.opened" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="JAVA/" value="2" />
-          <entry key="JavaScript-modules-diagram/C:/Users/joaqu/OneDrive/Escritorio/Breakout/cc3002-breakout/src" value="1" />
-          <entry key="JavaScript-modules-diagram/C:/Users/joaqu/OneDrive/Escritorio/Breakout/cc3002-breakout/src/main" value="1" />
-          <entry key="class" value="20" />
-          <entry key="iml" value="1" />
-          <entry key="java" value="191" />
-          <entry key="md" value="2" />
-          <entry key="xml" value="4" />
+          <entry key="java" value="1" />
+          <entry key="png" value="1" />
+          <entry key="xml" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="20" />
-          <entry key="IDEA_MODULE" value="1" />
-          <entry key="JAVA" value="191" />
-          <entry key="Markdown" value="2" />
-          <entry key="UML" value="4" />
-          <entry key="XML" value="4" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.js.language.service.starts" />
-      <usages-collector id="statistics.spring.boot.mvc.usages" />
-      <usages-collector id="statistics.spring.boot.run.usages" />
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="JAVA" value="16918" />
-          <entry key="PLAIN_TEXT" value="42" />
+          <entry key="Image" value="1" />
+          <entry key="JAVA" value="1" />
           <entry key="XML" value="1" />
         </counts>
       </usages-collector>
-      <usages-collector id="statistics.vcs.git.usages" />
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="dummy" value="15" />
-          <entry key="java" value="16918" />
-          <entry key="txt" value="27" />
-          <entry key="xml" value="1" />
+          <entry key="java" value="106" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="106" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/gui/BreakoutApp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="436">
-              <caret line="292" column="63" lean-forward="true" selection-start-line="292" selection-start-column="63" selection-end-line="292" selection-end-column="63" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#7108#7109#0" expanded="true" />
-                <element signature="e#7136#7137#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/com/github/almasb/fxgl-base/0.5.4/fxgl-base-0.5.4.jar!/com/almasb/fxgl/app/GameApplication.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="199">
-              <caret line="213" column="22" selection-start-line="213" selection-start-column="22" selection-end-line="213" selection-end-column="22" />
-              <folding>
-                <element signature="e#5743#5744#0" expanded="true" />
-                <element signature="e#5783#5784#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/com/github/almasb/fxgl-base/0.5.4/fxgl-base-0.5.4.jar!/com/almasb/fxgl/input/UserAction.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="33" column="19" selection-start-line="33" selection-start-column="19" selection-end-line="33" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/facade/HomeworkTwoFacade.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2030">
-              <caret line="182" column="5" selection-start-line="182" selection-start-column="5" selection-end-line="182" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/controller/Game.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="75" column="31" selection-start-line="75" selection-start-column="31" selection-end-line="75" selection-end-column="31" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#6885#6886#0" expanded="true" />
-                <element signature="e#6917#6918#0" expanded="true" />
-                <element signature="e#7236#7237#0" expanded="true" />
-                <element signature="e#7253#7254#0" expanded="true" />
-                <element signature="e#7301#7302#0" expanded="true" />
-                <element signature="e#7319#7320#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/gui/components/BallComponent.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="17" column="2" selection-start-line="17" selection-start-column="2" selection-end-line="17" selection-end-column="2" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/gui/factory/NonInteractiveElementsFactory.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="18" column="51" selection-start-line="18" selection-start-column="51" selection-end-line="18" selection-end-column="51" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/gui/factory/InteractiveElementsFactory.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="26" column="63" selection-start-line="26" selection-start-column="59" selection-end-line="26" selection-end-column="63" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/gui/components/BrickComponent.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="256">
-              <caret line="43" column="26" selection-start-line="43" selection-start-column="26" selection-end-line="43" selection-end-column="26" />
+            <state relative-caret-position="259">
+              <caret line="196" column="21" lean-forward="true" selection-start-line="196" selection-start-column="21" selection-end-line="196" selection-end-column="21" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Interface" />
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>getPoi</find>
-      <find>visit</find>
-      <find>fini</find>
-      <find>addedTOA</find>
-      <find>end</find>
-      <find>gone</find>
-      <find>Game</find>
-      <find>ball</find>
-      <find>dr</find>
-      <find>showleve</find>
-      <find>winner</find>
-      <find>finished</find>
-      <find>go</find>
-      <find>update</find>
-      <find>add</find>
-      <find>winn</find>
-    </findStrings>
-    <dirStrings>
-      <dir>C:\Users\joaqu\OneDrive\Escritorio\Breakout\cc3002-breakout\src\main\resources\assets\sounds</dir>
-    </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -307,48 +93,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/logic/level/LevelCl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/logic/brick/BricksWithPoints.java" />
-        <option value="$PROJECT_DIR$/src/main/java/logic/level/UnplayableLevel.java" />
-        <option value="$PROJECT_DIR$/src/main/java/logic/level/AbstractLevel.java" />
-        <option value="$PROJECT_DIR$/src/main/java/logic/level/Level.java" />
-        <option value="$PROJECT_DIR$/src/test/java/SmallTest.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/gui/VarConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/java/gui/components/BallCont.java" />
-        <option value="$PROJECT_DIR$/src/main/java/gui/components/WBrickComponent.java" />
-        <option value="$PROJECT_DIR$/src/main/java/gui/GameTypes.java" />
-        <option value="$PROJECT_DIR$/src/main/java/logic/Visitor.java" />
-        <option value="$PROJECT_DIR$/src/main/java/logic/brick/Brick.java" />
-        <option value="$PROJECT_DIR$/src/main/java/logic/brick/AbstractBrick.java" />
-        <option value="$PROJECT_DIR$/src/main/java/logic/visitor/GuiBrickVisitor.java" />
-        <option value="$PROJECT_DIR$/src/main/java/logic/brick/GlassBrick.java" />
-        <option value="$PROJECT_DIR$/src/main/java/logic/brick/MetalBrick.java" />
-        <option value="$PROJECT_DIR$/src/main/java/logic/brick/WoodenBrick.java" />
-        <option value="$PROJECT_DIR$/src/main/java/logic/visitor/ColorSelector.java" />
-        <option value="$PROJECT_DIR$/src/test/java/BigTestT2.java" />
-        <option value="$PROJECT_DIR$/src/main/java/logic/level/PlaceHolder.java" />
-        <option value="$PROJECT_DIR$/src/main/java/logic/level/PlayableLevel.java" />
-        <option value="$PROJECT_DIR$/src/main/java/gui/events/LevelEvent.java" />
-        <option value="$PROJECT_DIR$/src/main/java/gui/events/GameEvent.java" />
-        <option value="$PROJECT_DIR$/src/main/java/logic/visitor/SoundSelector.java" />
-        <option value="$PROJECT_DIR$/src/main/java/logic/visitor/BehaviourSelector.java" />
-        <option value="$PROJECT_DIR$/src/main/java/gui/components/BrickComponent.java" />
-        <option value="$PROJECT_DIR$/src/main/java/gui/factory/NonInteractiveElementsFactory.java" />
-        <option value="$PROJECT_DIR$/src/main/java/gui/components/PlayerComponent.java" />
-        <option value="$PROJECT_DIR$/src/main/java/facade/HomeworkTwoFacade.java" />
-        <option value="$PROJECT_DIR$/src/main/java/controller/Game.java" />
-        <option value="$PROJECT_DIR$/src/main/java/gui/factory/InteractiveElementsFactory.java" />
-        <option value="$PROJECT_DIR$/src/main/java/gui/components/BallComponent.java" />
-        <option value="$PROJECT_DIR$/src/main/java/CustomMenuBackgroundSample.java" />
         <option value="$PROJECT_DIR$/src/main/java/gui/BreakoutApp.java" />
       </list>
     </option>
-  </component>
-  <component name="JavaAutoRunManager">
-    <enabled-run-configurations>
-      <run-configuration type="JUnit" name="BigTestT2" />
-    </enabled-run-configurations>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
@@ -356,136 +103,92 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="MavenProjectNavigator">
-    <treeState>
-      <expand>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="breakout" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-        </path>
-      </expand>
-      <select />
-    </treeState>
-  </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="373" />
     <option name="y" value="22" />
     <option name="width" value="932" />
     <option name="height" value="735" />
   </component>
-  <component name="ProjectLevelVcsManager">
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="cc3002-breakout" type="b2602c69:ProjectViewProjectNode" />
+              <item name="breakout" type="b2602c69:ProjectViewProjectNode" />
               <item name="cc3002-breakout" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="cc3002-breakout" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cc3002-breakout" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cc3002-breakout" type="b2602c69:ProjectViewProjectNode" />
+              <item name="breakout" type="b2602c69:ProjectViewProjectNode" />
               <item name="cc3002-breakout" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="cc3002-breakout" type="b2602c69:ProjectViewProjectNode" />
+              <item name="breakout" type="b2602c69:ProjectViewProjectNode" />
               <item name="cc3002-breakout" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="cc3002-breakout" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cc3002-breakout" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cc3002-breakout" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cc3002-breakout" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="facade" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cc3002-breakout" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cc3002-breakout" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="gui" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cc3002-breakout" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cc3002-breakout" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="gui" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cc3002-breakout" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cc3002-breakout" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="gui" type="462c0819:PsiDirectoryNode" />
-              <item name="factory" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cc3002-breakout" type="b2602c69:ProjectViewProjectNode" />
+              <item name="breakout" type="b2602c69:ProjectViewProjectNode" />
               <item name="cc3002-breakout" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="breakout" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cc3002-breakout" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="breakout" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cc3002-breakout" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="music" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="breakout" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cc3002-breakout" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="sounds" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="breakout" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cc3002-breakout" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="textures" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544160508000" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../aa/FXGLGames/Breakout" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544162258735" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Artifacts" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
-  </component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\joaqu\OneDrive\Escritorio\Breakout\cc3002-breakout\src\main\resources\assets\music" />
-      <recent name="C:\Users\joaqu\OneDrive\Escritorio\Breakout\cc3002-breakout" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\joaqu\OneDrive\Escritorio\Breakout\cc3002-breakout\src\main\resources\assets\sounds" />
-    </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="gui.events" />
-      <recent name="logic.level" />
-    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -499,10 +202,10 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.BreakoutApp">
+  <component name="RunManager">
     <configuration name="BreakoutApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="gui.BreakoutApp" />
-      <module name="cc3002-breakout" />
+      <module name="breakout" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="gui.*" />
@@ -513,41 +216,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CustomMenuBackgroundSample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="CustomMenuBackgroundSample" />
-      <module name="cc3002-breakout" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BigTestT2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="cc3002-breakout" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="BigTestT2" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SmallTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="cc3002-breakout" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="SmallTest" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <list>
-      <item itemvalue="JUnit.BigTestT2" />
-      <item itemvalue="JUnit.SmallTest" />
-      <item itemvalue="Application.BreakoutApp" />
-      <item itemvalue="Application.CustomMenuBackgroundSample" />
-    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.BreakoutApp" />
-        <item itemvalue="Application.CustomMenuBackgroundSample" />
-        <item itemvalue="JUnit.BigTestT2" />
-        <item itemvalue="JUnit.SmallTest" />
       </list>
     </recent_temporary>
   </component>
@@ -556,1123 +227,77 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="3dbdd57d-3b61-493b-8301-b20135278b9f" name="Default Changelist" comment="" />
-      <created>1541861834287</created>
+      <changelist id="0e380906-5492-42dc-a28f-c0ece4601116" name="Default Changelist" comment="" />
+      <created>1544161438695</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1541861834287</updated>
-      <workItem from="1541861843623" duration="6201000" />
-      <workItem from="1541876213153" duration="650000" />
-      <workItem from="1541881392718" duration="2250000" />
-      <workItem from="1542298331350" duration="8998000" />
-      <workItem from="1542497884654" duration="883000" />
-      <workItem from="1542553347123" duration="31503000" />
-      <workItem from="1542598578738" duration="2591000" />
-      <workItem from="1542656359970" duration="1475000" />
-      <workItem from="1542755598235" duration="7135000" />
-      <workItem from="1542809450711" duration="3376000" />
-      <workItem from="1542814060693" duration="2785000" />
-      <workItem from="1542896744650" duration="133000" />
-      <workItem from="1543072488087" duration="416000" />
-      <workItem from="1543682792062" duration="12225000" />
-      <workItem from="1543776063586" duration="4852000" />
-      <workItem from="1543783344978" duration="3376000" />
-      <workItem from="1543796284641" duration="14637000" />
-      <workItem from="1543812222247" duration="56000" />
-      <workItem from="1543872077129" duration="20746000" />
-      <workItem from="1543968438727" duration="1021000" />
-      <workItem from="1544143183353" duration="16679000" />
+      <updated>1544161438695</updated>
+      <workItem from="1544161448975" duration="768000" />
     </task>
-    <task id="LOCAL-00001" summary="&quot;Se crean los levels&quot;">
-      <created>1542308832702</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1542308832766</updated>
-    </task>
-    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
-  <component name="TestHistory">
-    <history-entry file="SmallTest - 2018.11.21 at 11h 52m 39s.xml">
-      <configuration name="SmallTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SmallTest - 2018.11.21 at 11h 55m 05s.xml">
-      <configuration name="SmallTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SmallTest - 2018.11.21 at 12h 02m 55s.xml">
-      <configuration name="SmallTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SmallTest - 2018.11.21 at 12h 05m 01s.xml">
-      <configuration name="SmallTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SmallTest - 2018.11.21 at 12h 06m 13s.xml">
-      <configuration name="SmallTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SmallTest - 2018.11.21 at 12h 07m 52s.xml">
-      <configuration name="SmallTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SmallTest - 2018.11.21 at 12h 08m 56s.xml">
-      <configuration name="SmallTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BigTestT2 - 2018.11.21 at 12h 11m 04s.xml">
-      <configuration name="BigTestT2" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BigTestT2 - 2018.12.02 at 17h 07m 28s.xml">
-      <configuration name="BigTestT2" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BigTestT2 - 2018.12.02 at 17h 16m 27s.xml">
-      <configuration name="BigTestT2" configurationId="JUnit" />
-    </history-entry>
-  </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="141988000" />
-  </component>
-  <component name="TodoView">
-    <todo-panel id="selected-file">
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="true" />
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
+    <option name="totallyTimeSpent" value="768000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49756098" visible="true" weight="0.22390318" />
-      <window_info id="Structure" order="1" sideWeight="0.502439" side_tool="true" weight="0.22390318" />
-      <window_info id="Image Layers" order="2" />
-      <window_info id="Designer" order="3" />
-      <window_info id="UI Designer" order="4" />
-      <window_info id="Capture Tool" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="Image Layers" />
+      <window_info id="Designer" />
+      <window_info id="UI Designer" />
+      <window_info id="Capture Tool" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2193646" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Messages" />
+      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3295082" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49293563" weight="0.32786885" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49924356" weight="0.4" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3295082" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.3295082" />
-      <window_info anchor="bottom" id="Version Control" order="7" weight="0.3295082" />
-      <window_info anchor="bottom" id="Inspection Results" order="8" weight="0.3295082" />
-      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.3295082" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50706434" side_tool="true" weight="0.3344426" />
-      <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.49924356" weight="0.3229508" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Palette" />
+      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="Maven Projects" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.24962178" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info anchor="right" id="Palette&#9;" order="6" />
-      <window_info anchor="right" id="Database" order="7" sideWeight="0.4987775" weight="0.32980332" />
-      <window_info anchor="right" id="Maven Projects" order="8" sideWeight="0.4987775" weight="0.32980332" />
-      <window_info anchor="right" id="Coverage" order="9" sideWeight="0.5012225" side_tool="true" weight="0.32980332" />
     </layout>
-    <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49916804" visible="true" weight="0.21785174" />
-      <window_info id="Structure" order="1" sideWeight="0.50083196" side_tool="true" weight="0.35164836" />
-      <window_info id="Image Layers" order="2" />
-      <window_info id="Designer" order="3" />
-      <window_info id="UI Designer" order="4" />
-      <window_info id="Capture Tool" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3295082" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49293563" visible="true" weight="0.32786885" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49924356" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.3295082" />
-      <window_info anchor="bottom" id="Version Control" order="7" weight="0.3295082" />
-      <window_info anchor="bottom" id="Inspection Results" order="8" weight="0.3295082" />
-      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.3295082" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50706434" side_tool="true" weight="0.3344426" />
-      <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.49924356" weight="0.32445922" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.24962178" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info anchor="right" id="Palette&#9;" order="6" />
-      <window_info anchor="right" id="Database" order="7" sideWeight="0.4987775" weight="0.32980332" />
-      <window_info anchor="right" id="Maven Projects" order="8" sideWeight="0.4987775" weight="0.32980332" />
-      <window_info anchor="right" id="Coverage" order="9" sideWeight="0.5012225" side_tool="true" weight="0.32980332" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State>
-              <option name="RECENTLY_FILTERED_USER_GROUPS">
-                <collection />
-              </option>
-              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
-                <collection />
-              </option>
-              <option name="COLUMN_ORDER">
-                <list>
-                  <option value="0" />
-                  <option value="1" />
-                  <option value="2" />
-                  <option value="3" />
-                </list>
-              </option>
-            </State>
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="&quot;Se crean los levels&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="&quot;Se crean los levels&quot;" />
-  </component>
-  <component name="antWorkspaceConfiguration">
-    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
-    <option name="FILTER_TARGETS" value="false" />
-  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/logic/brick/BricksWithPoints.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/logic/level/UnplayableLevel.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/logic/level/AbstractLevel.java" />
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/Assert.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="111">
-          <caret line="93" selection-start-line="93" selection-end-line="93" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/textures/custom_bg.png">
+      <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/util/Observer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="45" column="9" selection-start-line="45" selection-start-column="9" selection-end-line="45" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/lang/Runnable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="426">
-          <caret line="67" column="25" selection-start-line="67" selection-start-column="25" selection-end-line="67" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://JavaScript-modules-diagram/C:/Users/joaqu/OneDrive/Escritorio/Breakout/cc3002-breakout/src">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>JavaScript-modules-diagram</ID>
-          <OriginalElement>$PROJECT_DIR$/src</OriginalElement>
-          <nodes />
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="473.0" y="280.0" />
-          <SelectedNodes />
-          <Categories>
-            <Category>All</Category>
-          </Categories>
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>Details</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://JavaScript-modules-diagram/C:/Users/joaqu/OneDrive/Escritorio/Breakout/cc3002-breakout/src/main">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>JavaScript-modules-diagram</ID>
-          <OriginalElement>$PROJECT_DIR$/src/main</OriginalElement>
-          <nodes />
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="473.0" y="280.0" />
-          <SelectedNodes />
-          <Categories>
-            <Category>All</Category>
-          </Categories>
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>Details</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://JAVA/">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>JAVA</ID>
-          <OriginalElement />
-          <nodes>
-            <node x="" y="">java.util.Collections.UnmodifiableMap.UnmodifiableEntrySet</node>
-            <node x="" y="">java.util.Enumeration</node>
-            <node x="" y="">java.util.HashMap.HashMapSpliterator</node>
-            <node x="" y="">java.util.IdentityHashMap.EntrySpliterator</node>
-            <node x="" y="">java.util.Base64.DecInputStream</node>
-            <node x="" y="">java.util.zip</node>
-            <node x="" y="">java.util.ArraysParallelSortHelpers.FJDouble.Merger</node>
-            <node x="" y="">java.util.AbstractList.Itr</node>
-            <node x="" y="">java.util.JumboEnumSet.EnumSetIterator</node>
-            <node x="" y="">java.time</node>
-            <node x="" y="">java.util.Vector</node>
-            <node x="" y="">java.util.Currency.CurrencyNameGetter</node>
-            <node x="" y="">javafx</node>
-            <node x="" y="">java.util.Collections.UnmodifiableSortedMap</node>
-            <node x="" y="">java.util.HashMap.TreeNode</node>
-            <node x="" y="">java.util.MissingResourceException</node>
-            <node x="" y="">java.util.Collections.CheckedMap.CheckedEntrySet</node>
-            <node x="" y="">java.util.IdentityHashMap.KeySet</node>
-            <node x="" y="">java.util.Collections.SynchronizedCollection</node>
-            <node x="" y="">java.util.Arrays.NaturalOrder</node>
-            <node x="" y="">java.util.Spliterators.AbstractLongSpliterator.HoldingLongConsumer</node>
-            <node x="" y="">java.util.LinkedList.LLSpliterator</node>
-            <node x="" y="">java.util.TreeMap.PrivateEntryIterator</node>
-            <node x="" y="">java.util.TreeMap.TreeMapSpliterator</node>
-            <node x="" y="">java.util.EventListenerProxy</node>
-            <node x="" y="">java.util.TaskQueue</node>
-            <node x="" y="">java.util.SplittableRandom.RandomLongsSpliterator</node>
-            <node x="" y="">java.util.stream</node>
-            <node x="" y="">java.util.Currency</node>
-            <node x="" y="">java.util.Spliterators.EmptySpliterator.OfLong</node>
-            <node x="" y="">java.util.LinkedHashMap</node>
-            <node x="" y="">java.util.OptionalLong</node>
-            <node x="" y="">java.util.Calendar</node>
-            <node x="" y="">java.util.PriorityQueue.PriorityQueueSpliterator</node>
-            <node x="" y="">java.util.ResourceBundle.CacheKeyReference</node>
-            <node x="" y="">java.util.IllegalFormatWidthException</node>
-            <node x="" y="">java.util.WeakHashMap.KeyIterator</node>
-            <node x="" y="">java.math</node>
-            <node x="" y="">java.util.Collections.CheckedNavigableSet</node>
-            <node x="" y="">java.awt</node>
-            <node x="" y="">java.util.TreeMap</node>
-            <node x="" y="">java.util.Properties.XmlSupport</node>
-            <node x="" y="">java.util.Comparators</node>
-            <node x="" y="">java.util.Comparators.NullComparator</node>
-            <node x="" y="">java.util.Observer</node>
-            <node x="" y="">java.util.SortedSet</node>
-            <node x="" y="">java.util.PriorityQueue</node>
-            <node x="" y="">java.util.Scanner</node>
-            <node x="" y="">java.util.EventObject</node>
-            <node x="" y="">java.util.AbstractCollection</node>
-            <node x="" y="">java.util.ArrayPrefixHelpers</node>
-            <node x="" y="">java.util.ArrayList.ListItr</node>
-            <node x="" y="">java.util.Formatter.Conversion</node>
-            <node x="" y="">java.util.EnumMap.KeyIterator</node>
-            <node x="" y="">java.util.ArraysParallelSortHelpers.FJShort.Merger</node>
-            <node x="" y="">java.util.ArraysParallelSortHelpers.FJInt</node>
-            <node x="" y="">java.util.concurrent</node>
-            <node x="" y="">SmallTest</node>
-            <node x="" y="">java.util.IdentityHashMap.KeySpliterator</node>
-            <node x="" y="">java.util.NavigableMap</node>
-            <node x="" y="">java.util.Collections.UnmodifiableNavigableMap</node>
-            <node x="" y="">java.util.Objects</node>
-            <node x="" y="">java.util.Spliterators.EmptySpliterator</node>
-            <node x="" y="">java.util.Map.Entry</node>
-            <node x="" y="">java.util.function</node>
-            <node x="" y="">java.util.EnumSet.SerializationProxy</node>
-            <node x="" y="">java.util.SimpleTimeZone</node>
-            <node x="" y="">java.util.Spliterators.AbstractSpliterator</node>
-            <node x="" y="">java.util.Formatter.FormatString</node>
-            <node x="" y="">java.util.HashMap.KeySet</node>
-            <node x="" y="">java.util.Collections.SynchronizedMap</node>
-            <node x="" y="">java.util.OptionalDouble</node>
-            <node x="" y="">java.util.TreeMap.NavigableSubMap.DescendingSubMapEntryIterator</node>
-            <node x="" y="">java.util.SplittableRandom.RandomIntsSpliterator</node>
-            <node x="" y="">java.util.IdentityHashMap.ValueIterator</node>
-            <node x="" y="">java.util.Vector.Itr</node>
-            <node x="" y="">java.util.EnumMap.EntryIterator</node>
-            <node x="" y="">java.util.NoSuchElementException</node>
-            <node x="" y="">java.util.RandomAccessSubList</node>
-            <node x="" y="">java.util.UnknownFormatConversionException</node>
-            <node x="" y="">java.util.Collections.EmptyMap</node>
-            <node x="" y="">java.util.TimSort</node>
-            <node x="" y="">java.util.IllegalFormatCodePointException</node>
-            <node x="" y="">java.util.Arrays.LegacyMergeSort</node>
-            <node x="" y="">java.util.StringJoiner</node>
-            <node x="" y="">java.util.IntSummaryStatistics</node>
-            <node x="" y="">java.util.BitSet</node>
-            <node x="" y="">java.util.Collections.CheckedSet</node>
-            <node x="" y="">java.util.TreeMap.DescendingSubMap.DescendingEntrySetView</node>
-            <node x="" y="">java.util.ArraysParallelSortHelpers.FJDouble</node>
-            <node x="" y="">java.util.Spliterators.ArraySpliterator</node>
-            <node x="" y="">java.util.Arrays</node>
-            <node x="" y="">java.util.LinkedHashMap.LinkedValues</node>
-            <node x="" y="">java.util.ArrayDeque.DeqSpliterator</node>
-            <node x="" y="">java.util.Collections.CheckedList</node>
-            <node x="" y="">java.nio</node>
-            <node x="" y="">java.util.Arrays.ArrayList</node>
-            <node x="" y="">java.util.Locale.Category</node>
-            <node x="" y="">java.util.TreeMap.ValueSpliterator</node>
-            <node x="" y="">java.util.Spliterators.DoubleIteratorSpliterator</node>
-            <node x="" y="">java.util.regex</node>
-            <node x="" y="">java.util.LinkedHashMap.LinkedValueIterator</node>
-            <node x="" y="">java.util.IdentityHashMap.Values</node>
-            <node x="" y="">java.util.Collections.EmptyEnumeration</node>
-            <node x="" y="">java.util.TimerTask</node>
-            <node x="" y="">java.util.Spliterators.AbstractDoubleSpliterator</node>
-            <node x="" y="">java.util.HashMap.KeySpliterator</node>
-            <node x="" y="">java.util.Spliterators.AbstractIntSpliterator.HoldingIntConsumer</node>
-            <node x="" y="">java.util.EnumMap</node>
-            <node x="" y="">java.util.WeakHashMap.ValueSpliterator</node>
-            <node x="" y="">java.util.Collections.SingletonSet</node>
-            <node x="" y="">java.util.ResourceBundle.Control.CandidateListCache</node>
-            <node x="" y="">java.lang</node>
-            <node x="" y="">java.util.EnumMap.EntrySet</node>
-            <node x="" y="">java.util.Formatter.FixedString</node>
-            <node x="" y="">groovyjarjarantlr</node>
-            <node x="" y="">java.util.Spliterators.LongArraySpliterator</node>
-            <node x="" y="">java.sql</node>
-            <node x="" y="">java.util.Formatter.FormatSpecifier</node>
-            <node x="" y="">java.util.Collections.UnmodifiableNavigableMap.EmptyNavigableMap</node>
-            <node x="" y="">java.util.FormatFlagsConversionMismatchException</node>
-            <node x="" y="">java.util.TreeMap.KeyIterator</node>
-            <node x="" y="">java.util.TreeSet</node>
-            <node x="" y="">java.util.ArrayList</node>
-            <node x="" y="">java.util.InvalidPropertiesFormatException</node>
-            <node x="" y="">java.util.Locale.LocaleKey</node>
-            <node x="" y="">java.util.ResourceBundle</node>
-            <node x="" y="">java.util.Collections.SynchronizedList</node>
-            <node x="" y="">java.util.LinkedList.Node</node>
-            <node x="" y="">java.util.LinkedHashSet</node>
-            <node x="" y="">java.util.LocaleISOData</node>
-            <node x="" y="">java.util.EmptyStackException</node>
-            <node x="" y="">java.util.Properties</node>
-            <node x="" y="">java.util.TooManyListenersException</node>
-            <node x="" y="">java.util.TreeMap.NavigableSubMap.EntrySetView</node>
-            <node x="" y="">java.util.ResourceBundle.CacheKey</node>
-            <node x="" y="">java.util.Spliterator.OfDouble</node>
-            <node x="" y="">java.util.HashMap.EntrySet</node>
-            <node x="" y="">java.util.IllformedLocaleException</node>
-            <node x="" y="">java.util.IdentityHashMap.EntrySet</node>
-            <node x="" y="">java.util.TreeMap.KeySpliterator</node>
-            <node x="" y="">logic</node>
-            <node x="" y="">java.util.ArrayDeque</node>
-            <node x="" y="">java.util.Collections.UnmodifiableRandomAccessList</node>
-            <node x="" y="">java.util.spi</node>
-            <node x="" y="">com</node>
-            <node x="" y="">java.util.Spliterators.AbstractIntSpliterator</node>
-            <node x="" y="">java.util.Collections.CheckedSortedMap</node>
-            <node x="" y="">java.util.Locale.Builder</node>
-            <node x="" y="">java.util.PropertyPermission</node>
-            <node x="" y="">java.util.Formatter</node>
-            <node x="" y="">java.util.ArraysParallelSortHelpers.FJFloat.Sorter</node>
-            <node x="" y="">java.util.IllegalFormatPrecisionException</node>
-            <node x="" y="">java.util.ArraysParallelSortHelpers.FJLong</node>
-            <node x="" y="">java.util.WeakHashMap.KeySet</node>
-            <node x="" y="">java.util.Hashtable.Entry</node>
-            <node x="" y="">java.util.LinkedHashMap.LinkedHashIterator</node>
-            <node x="" y="">java.util.IdentityHashMap.EntryIterator.Entry</node>
-            <node x="" y="">java.util.Calendar.AvailableCalendarTypes</node>
-            <node x="" y="">java.util.ArraysParallelSortHelpers.FJShort</node>
-            <node x="" y="">java.util.Spliterators.IntIteratorSpliterator</node>
-            <node x="" y="">java.util.AbstractSequentialList</node>
-            <node x="" y="">java.util.List</node>
-            <node x="" y="">java.util.AbstractList.ListItr</node>
-            <node x="" y="">java.util.TreeMap.AscendingSubMap.AscendingEntrySetView</node>
-            <node x="" y="">java.util.TreeMap.DescendingKeyIterator</node>
-            <node x="" y="">java.util.Collections.CheckedMap.CheckedEntrySet.CheckedEntry</node>
-            <node x="" y="">java.util.IdentityHashMap.IdentityHashMapIterator</node>
-            <node x="" y="">java.util.EnumMap.EnumMapIterator</node>
-            <node x="" y="">java.util.Collections.CopiesList</node>
-            <node x="" y="">java.util.SortedMap</node>
-            <node x="" y="">java.util.ArraysParallelSortHelpers.Relay</node>
-            <node x="" y="">java.util.Formattable</node>
-            <node x="" y="">java.util.TreeMap.NavigableSubMap.SubMapIterator</node>
-            <node x="" y="">java.util.Hashtable.Enumerator</node>
-            <node x="" y="">java.util.AbstractSet</node>
-            <node x="" y="">java.util.Spliterators.IntArraySpliterator</node>
-            <node x="" y="">java.util.Deque</node>
-            <node x="" y="">java.util.WeakHashMap.KeySpliterator</node>
-            <node x="" y="">BigTestT2</node>
-            <node x="" y="">java.util.PrimitiveIterator.OfDouble</node>
-            <node x="" y="">java.util.UUID.Holder</node>
-            <node x="" y="">java.util.Formatter.BigDecimalLayoutForm</node>
-            <node x="" y="">java.util.ArraysParallelSortHelpers.EmptyCompleter</node>
-            <node x="" y="">java.util.ArraysParallelSortHelpers.FJChar.Sorter</node>
-            <node x="" y="">java.util.TreeMap.DescendingSubMap</node>
-            <node x="" y="">java.util.TreeMap.EntrySet</node>
-            <node x="" y="">java.util.LongSummaryStatistics</node>
-            <node x="" y="">java.util.Collections.SynchronizedSet</node>
-            <node x="" y="">java.util.Formatter.FormatSpecifier.BigDecimalLayout</node>
-            <node x="" y="">java.util.Spliterator.OfLong</node>
-            <node x="" y="">java.util.ListResourceBundle</node>
-            <node x="" y="">java.util.TreeMap.DescendingKeySpliterator</node>
-            <node x="" y="">java.util.Spliterator.OfInt</node>
-            <node x="" y="">java.util.jar</node>
-            <node x="" y="">java.util.Collections.SynchronizedNavigableMap</node>
-            <node x="" y="">java.util.JumboEnumSet</node>
-            <node x="" y="">java.util.Comparators.NaturalOrderComparator</node>
-            <node x="" y="">java.util.Observable</node>
-            <node x="" y="">java.util.Formatter.Flags</node>
-            <node x="" y="">java.applet</node>
-            <node x="" y="">java.util.ArraysParallelSortHelpers.FJChar.Merger</node>
-            <node x="" y="">java.util.LinkedHashMap.LinkedEntryIterator</node>
-            <node x="" y="">java.util.LinkedList.DescendingIterator</node>
-            <node x="" y="">java.util.InputMismatchException</node>
-            <node x="" y="">java.util.Locale.LanguageRange</node>
-            <node x="" y="">java.util.TreeMap.EntryIterator</node>
-            <node x="" y="">java.util.Random.RandomIntsSpliterator</node>
-            <node x="" y="">java.util.Collections.EmptyList</node>
-            <node x="" y="">java.util.Map</node>
-            <node x="" y="">java.util.ArraysParallelSortHelpers.FJLong.Sorter</node>
-            <node x="" y="">java.util.ResourceBundle.NoFallbackControl</node>
-            <node x="" y="">java.util.EnumMap.KeySet</node>
-            <node x="" y="">java.util.EnumSet</node>
-            <node x="" y="">java.util.PriorityQueue.Itr</node>
-            <node x="" y="">java.util.HashMap.HashIterator</node>
-            <node x="" y="">java.util.WeakHashMap.EntryIterator</node>
-            <node x="" y="">java.util.ArrayPrefixHelpers.IntCumulateTask</node>
-            <node x="" y="">java.util.GregorianCalendar</node>
-            <node x="" y="">java.util.HashMap.Values</node>
-            <node x="" y="">java.util.LinkedHashMap.LinkedKeySet</node>
-            <node x="" y="">java.util.TreeMap.NavigableSubMap.SubMapEntryIterator</node>
-            <node x="" y="">java.util.PropertyResourceBundle</node>
-            <node x="" y="">java.util.Spliterator.OfPrimitive</node>
-            <node x="" y="">java.util.Collections.AsLIFOQueue</node>
-            <node x="" y="">java.util.Collections.SingletonMap</node>
-            <node x="" y="">java.util.EventListener</node>
-            <node x="" y="">java.util.Spliterators.IteratorSpliterator</node>
-            <node x="" y="">java.util.Collections.SetFromMap</node>
-            <node x="" y="">java.util.ArraysParallelSortHelpers</node>
-            <node x="" y="">java.util.Collections.ReverseComparator2</node>
-            <node x="" y="">java.util.ConcurrentModificationException</node>
-            <node x="" y="">java.util.logging</node>
-            <node x="" y="">java.util.WeakHashMap.HashIterator</node>
-            <node x="" y="">java.util.TreeMap.Values</node>
-            <node x="" y="">sun</node>
-            <node x="" y="">java.util.Collections.SingletonList</node>
-            <node x="" y="">java.util.SubList</node>
-            <node x="" y="">java.util.ArraysParallelSortHelpers.FJByte.Sorter</node>
-            <node x="" y="">java.util.StringTokenizer</node>
-            <node x="" y="">controller</node>
-            <node x="" y="">java.util.UnknownFormatFlagsException</node>
-            <node x="" y="">java.util.WeakHashMap.Values</node>
-            <node x="" y="">jdk</node>
-            <node x="" y="">java.text</node>
-            <node x="" y="">java.util.PropertyPermissionCollection</node>
-            <node x="" y="">java.util.ServiceLoader.LazyIterator</node>
-            <node x="" y="">java.util.Collections.SynchronizedRandomAccessList</node>
-            <node x="" y="">java.util.Spliterators.EmptySpliterator.OfRef</node>
-            <node x="" y="">java.util.ArrayDeque.DeqIterator</node>
-            <node x="" y="">java.util.ResourceBundle.SingleFormatControl</node>
-            <node x="" y="">java.util.Collections.UnmodifiableSet</node>
-            <node x="" y="">java.rmi</node>
-            <node x="" y="">java.util.Collections.UnmodifiableMap.UnmodifiableEntrySet.UnmodifiableEntry</node>
-            <node x="" y="">java.util.Collections.CheckedSortedSet</node>
-            <node x="" y="">java.util.ListIterator</node>
-            <node x="" y="">java.util.Date</node>
-            <node x="" y="">java.util.Tripwire</node>
-            <node x="" y="">java.util.Spliterators</node>
-            <node x="" y="">java.beans</node>
-            <node x="" y="">java.util.Calendar.Builder</node>
-            <node x="" y="">java.util.Random</node>
-            <node x="" y="">java.util.ArrayPrefixHelpers.DoubleCumulateTask</node>
-            <node x="" y="">java.util.prefs</node>
-            <node x="" y="">java.util.Collections.SynchronizedSortedSet</node>
-            <node x="" y="">java.util.Spliterators.AbstractLongSpliterator</node>
-            <node x="" y="">java.net</node>
-            <node x="" y="">java.util.Locale</node>
-            <node x="" y="">java.util.HashMap.EntryIterator</node>
-            <node x="" y="">java.util.Calendar.CalendarAccessControlContext</node>
-            <node x="" y="">oracle</node>
-            <node x="" y="">java.util.ResourceBundle.BundleReference</node>
-            <node x="" y="">java.util.TimeZone</node>
-            <node x="" y="">java.util.Collection</node>
-            <node x="" y="">java.util.Base64.EncOutputStream</node>
-            <node x="" y="">java.util.ArraysParallelSortHelpers.FJInt.Merger</node>
-            <node x="" y="">java.util.ServiceLoader</node>
-            <node x="" y="">java.util.EnumMap.EntryIterator.Entry</node>
-            <node x="" y="">java.util.UUID</node>
-            <node x="" y="">java.util.ArraysParallelSortHelpers.FJShort.Sorter</node>
-            <node x="" y="">java.util.Spliterators.AbstractSpliterator.HoldingConsumer</node>
-            <node x="" y="">java.util.ArraysParallelSortHelpers.FJChar</node>
-            <node x="" y="">java.util.ArrayDeque.DescendingIterator</node>
-            <node x="" y="">java.util.LinkedHashMap.Entry</node>
-            <node x="" y="">java.util.Queue</node>
-            <node x="" y="">java.util.Spliterator</node>
-            <node x="" y="">java.util.MissingFormatArgumentException</node>
-            <node x="" y="">java.util.OptionalInt</node>
-            <node x="" y="">java.util.Stack</node>
-            <node x="" y="">java.util.ArrayPrefixHelpers.LongCumulateTask</node>
-            <node x="" y="">java.util.HashSet</node>
-            <node x="" y="">java.util.Base64.Decoder</node>
-            <node x="" y="">java.util.HashMap.Node</node>
-            <node x="" y="">java.util.PrimitiveIterator.OfLong</node>
-            <node x="" y="">java.util.LinkedList</node>
-            <node x="" y="">java.util.AbstractMap.SimpleEntry</node>
-            <node x="" y="">java.util.Collections.UnmodifiableList</node>
-            <node x="" y="">junit</node>
-            <node x="" y="">java.util.Collections.SynchronizedNavigableSet</node>
-            <node x="" y="">org</node>
-            <node x="" y="">java.util.RegularEnumSet.EnumSetIterator</node>
-            <node x="" y="">java.util.JapaneseImperialCalendar</node>
-            <node x="" y="">java.util.ArraysParallelSortHelpers.FJObject.Merger</node>
-            <node x="" y="">java.util.IllegalFormatConversionException</node>
-            <node x="" y="">java.util.ArrayList.SubList</node>
-            <node x="" y="">java.util.HashMap.EntrySpliterator</node>
-            <node x="" y="">java.util.Hashtable.ValueCollection</node>
-            <node x="" y="">java.util.Spliterators.AbstractDoubleSpliterator.HoldingDoubleConsumer</node>
-            <node x="" y="">java.util.PrimitiveIterator</node>
-            <node x="" y="">java.util.Hashtable.EntrySet</node>
-            <node x="" y="">java.util.AbstractMap</node>
-            <node x="" y="">java.util.Spliterators.LongIteratorSpliterator</node>
-            <node x="" y="">java.util.ResourceBundle.LoaderReference</node>
-            <node x="" y="">java.util.Collections.UnmodifiableCollection</node>
-            <node x="" y="">java.util.Comparator</node>
-            <node x="" y="">java.util.ArraysParallelSortHelpers.FJByte</node>
-            <node x="" y="">java.util.TreeMap.NavigableSubMap.SubMapKeyIterator</node>
-            <node x="" y="">java.util.Locale.FilteringMode</node>
-            <node x="" y="">java.util.Vector.ListItr</node>
-            <node x="" y="">java.util.Properties.LineReader</node>
-            <node x="" y="">java.util.AbstractQueue</node>
-            <node x="" y="">facade</node>
-            <node x="" y="">java.util.DoubleSummaryStatistics</node>
-            <node x="" y="">java.util.Collections.UnmodifiableSortedSet</node>
-            <node x="" y="">java.util.Collections.UnmodifiableMap.UnmodifiableEntrySet.UnmodifiableEntrySetSpliterator</node>
-            <node x="" y="">java.util.ArrayList.Itr</node>
-            <node x="" y="">java.util.Spliterators.EmptySpliterator.OfInt</node>
-            <node x="" y="">java.util.DuplicateFormatFlagsException</node>
-            <node x="" y="">java.security</node>
-            <node x="" y="">java.util.TreeMap.ValueIterator</node>
-            <node x="" y="">java.util.EnumMap.Values</node>
-            <node x="" y="">java.util.LinkedHashMap.LinkedKeyIterator</node>
-            <node x="" y="">java.util.MissingFormatWidthException</node>
-            <node x="" y="">java.util.Collections.CheckedQueue</node>
-            <node x="" y="">java.util.Collections.CheckedCollection</node>
-            <node x="" y="">java.util.ResourceBundle.RBClassLoader</node>
-            <node x="" y="">java.util.FormattableFlags</node>
-            <node x="" y="">java.util.Set</node>
-            <node x="" y="">java.util.Spliterators.DoubleArraySpliterator</node>
-            <node x="" y="">java.util.RegularEnumSet</node>
-            <node x="" y="">java.util.WeakHashMap.ValueIterator</node>
-            <node x="" y="">java.util.Locale.LocaleNameGetter</node>
-            <node x="" y="">java.util.LinkedList.ListItr</node>
-            <node x="" y="">java.util.Dictionary</node>
-            <node x="" y="">java.util.SplittableRandom.RandomDoublesSpliterator</node>
-            <node x="" y="">java.util.TreeMap.NavigableSubMap</node>
-            <node x="" y="">java.util.ArraysParallelSortHelpers.FJObject.Sorter</node>
-            <node x="" y="">java.util.RandomAccess</node>
-            <node x="" y="">java.util.Random.RandomLongsSpliterator</node>
-            <node x="" y="">java.util.Collections.EmptyListIterator</node>
-            <node x="" y="">java.util.ArrayList.ArrayListSpliterator</node>
-            <node x="" y="">java.util.ArraysParallelSortHelpers.FJObject</node>
-            <node x="" y="">java.util.WeakHashMap.WeakHashMapSpliterator</node>
-            <node x="" y="">java.util.TreeMap.NavigableSubMap.DescendingSubMapKeyIterator</node>
-            <node x="" y="">java.util.FormatterClosedException</node>
-            <node x="" y="">java.util.ArraysParallelSortHelpers.FJInt.Sorter</node>
-            <node x="" y="">java.util.Collections.UnmodifiableMap</node>
-            <node x="" y="">java.util.ArraysParallelSortHelpers.FJFloat</node>
-            <node x="" y="">java.util.TreeMap.Entry</node>
-            <node x="" y="">java.util.Locale.Cache</node>
-            <node x="" y="">java.util.Collections.CheckedNavigableMap</node>
-            <node x="" y="">java.util.ArraysParallelSortHelpers.FJLong.Merger</node>
-            <node x="" y="">java.util.ComparableTimSort</node>
-            <node x="" y="">java.util.Collections.SynchronizedSortedMap</node>
-            <node x="" y="">java.util.PrimitiveIterator.OfInt</node>
-            <node x="" y="">java.util.WeakHashMap.EntrySet</node>
-            <node x="" y="">java.util.HashMap.KeyIterator</node>
-            <node x="" y="">java.util.AbstractList</node>
-            <node x="" y="">java.util.Timer</node>
-            <node x="" y="">java.util.Collections.CheckedRandomAccessList</node>
-            <node x="" y="">java.util.TreeMap.AscendingSubMap</node>
-            <node x="" y="">java.util.ResourceBundle.Control</node>
-            <node x="" y="">java.util.Vector.VectorSpliterator</node>
-            <node x="" y="">java.util.SplittableRandom</node>
-            <node x="" y="">java.util.IllegalFormatException</node>
-            <node x="" y="">java.util.IdentityHashMap.IdentityHashMapSpliterator</node>
-            <node x="" y="">java.util.TreeMap.KeySet</node>
-            <node x="" y="">java.util.IdentityHashMap</node>
-            <node x="" y="">java.util.LinkedHashMap.LinkedEntrySet</node>
-            <node x="" y="">java.util.Collections.UnmodifiableNavigableSet</node>
-            <node x="" y="">java.util.ArrayPrefixHelpers.CumulateTask</node>
-            <node x="" y="">java.util.Collections.EmptyIterator</node>
-            <node x="" y="">java.util.NavigableSet</node>
-            <node x="" y="">java.util.ArraysParallelSortHelpers.FJByte.Merger</node>
-            <node x="" y="">java.util.Formatter.DateTime</node>
-            <node x="" y="">java.util.TreeMap.EntrySpliterator</node>
-            <node x="" y="">java.util.Base64</node>
-            <node x="" y="">java.util.Hashtable.KeySet</node>
-            <node x="" y="">java.util.Optional</node>
-            <node x="" y="">java.util.IdentityHashMap.KeyIterator</node>
-            <node x="" y="">java.util.TreeMap.SubMap</node>
-            <node x="" y="">java.util.TimerThread</node>
-            <node x="" y="">java.util.Spliterators.EmptySpliterator.OfDouble</node>
-            <node x="" y="">java.util.Base64.Encoder</node>
-            <node x="" y="">java.util.ArraysParallelSortHelpers.FJFloat.Merger</node>
-            <node x="" y="">java.util.IdentityHashMap.EntryIterator</node>
-            <node x="" y="">java.util.HashMap.ValueSpliterator</node>
-            <node x="" y="">java.util.HashMap</node>
-            <node x="" y="">java.util.WeakHashMap.EntrySpliterator</node>
-            <node x="" y="">java.util.ArraysParallelSortHelpers.FJDouble.Sorter</node>
-            <node x="" y="">java.util.AbstractMap.SimpleImmutableEntry</node>
-            <node x="" y="">java.util.DualPivotQuicksort</node>
-            <node x="" y="">java.util.HashMap.ValueIterator</node>
-            <node x="" y="">java.util.ServiceConfigurationError</node>
-            <node x="" y="">java.util.WeakHashMap</node>
-            <node x="" y="">java.util.Hashtable</node>
-            <node x="" y="">java.util.Iterator</node>
-            <node x="" y="">java.util.Collections.ReverseComparator</node>
-            <node x="" y="">java.util.IllegalFormatFlagsException</node>
-            <node x="" y="">java.util.Collections.CheckedMap</node>
-            <node x="" y="">java.util.Collections.EmptySet</node>
-            <node x="" y="">java.util.EnumMap.ValueIterator</node>
-            <node x="" y="">java.util.IdentityHashMap.ValueSpliterator</node>
-            <node x="" y="">java.util.Collections.UnmodifiableNavigableSet.EmptyNavigableSet</node>
-            <node x="" y="">java.io</node>
-            <node x="" y="">java.util.WeakHashMap.Entry</node>
-            <node x="" y="">java.util.Random.RandomDoublesSpliterator</node>
-            <node x="" y="">java.util.Collections</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="1055.0" y="260.0" />
-          <SelectedNodes />
-          <Categories>
-            <Category>Inner Classes</Category>
-          </Categories>
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>private</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/SmallTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="52" selection-start-line="52" selection-end-line="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor>
-            <caret column="17" selection-start-column="9" selection-end-column="17" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/javafx-src.zip!/javafx/scene/paint/Color.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1105">
-          <caret line="33" column="29" lean-forward="true" selection-start-line="33" selection-start-column="29" selection-end-line="33" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/gui/components/BallCont.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/gui/VarConfig.java" />
     <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="21" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/logic/brick/Brick.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="358">
-          <caret line="66" column="20" selection-start-line="66" selection-start-column="20" selection-end-line="66" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/github/almasb/fxgl-base/0.5.4/fxgl-base-0.5.4.jar!/com/almasb/fxgl/entity/Entities.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="41" column="31" selection-start-line="41" selection-start-column="31" selection-end-line="41" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/BigTestT2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1024">
-          <caret line="489" column="31" selection-start-line="489" selection-start-column="31" selection-end-line="489" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#635#636#0" expanded="true" />
-            <element signature="e#680#681#0" expanded="true" />
-            <element signature="method#testPlayableLevelNoMetal#0;class#BigTestT2#0" />
-            <element signature="method#testPlayableLevelWithMetal#0;class#BigTestT2#0" />
-            <element signature="method#testBallBehaviour#0;class#BigTestT2#0" />
-            <element signature="method#testNewLevelBehaviour#0;class#BigTestT2#0" />
-            <element signature="method#testNextLevelAddition#0;class#BigTestT2#0" />
-            <element signature="method#testNextLevelAdditionHW2#0;class#BigTestT2#0" />
-            <element signature="method#testBricks#0;class#BigTestT2#0" />
-            <element signature="method#testBasicLevelAction#0;class#BigTestT2#0" />
-            <element signature="method#testMetalBricks#0;class#BigTestT2#0" />
-            <element signature="method#testGamePlay#0;class#BigTestT2#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/logic/level/Level.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="605">
-          <caret line="83" selection-start-line="83" selection-end-line="83" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/gui/types/GameTypes.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="37" selection-start-line="3" selection-start-column="37" selection-end-line="3" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/logic/level/PlaceHolder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="731">
-          <caret line="59" column="23" selection-start-line="59" selection-start-column="23" selection-end-line="59" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/logic/brick/WoodenBrick.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="16" column="32" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#363#364#0" expanded="true" />
-            <element signature="e#403#404#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/logic/level/PlayableLevel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="33" column="31" selection-start-line="33" selection-start-column="31" selection-end-line="33" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/util/Observable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="162" column="56" lean-forward="true" selection-start-line="162" selection-start-column="56" selection-end-line="162" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/gui/events/LevelEvent.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/gui/events/GameEvent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="94" selection-start-line="7" selection-start-column="94" selection-end-line="7" selection-end-column="94" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/logic/brick/GlassBrick.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="16" column="16" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#260#261#0" expanded="true" />
-            <element signature="e#287#288#0" expanded="true" />
-            <element signature="e#361#362#0" expanded="true" />
-            <element signature="e#400#401#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/logic/visitor/BrickVisitor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/logic/brick/MetalBrick.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="30" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#360#361#0" expanded="true" />
-            <element signature="e#399#400#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/logic/brick/AbstractBrick.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="718">
-          <caret line="50" column="13" selection-start-line="50" selection-start-column="13" selection-end-line="50" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/github/almasb/fxgl-base/0.5.4/fxgl-base-0.5.4.jar!/com/almasb/fxgl/core/math/Vec2.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1683">
-          <caret line="128" column="16" selection-start-line="128" selection-start-column="16" selection-end-line="128" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/logic/visitor/BehaviourSelector.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="22" column="19" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/logic/visitor/GuiBrickVisitor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="49" selection-start-line="9" selection-start-column="49" selection-end-line="9" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/javafx-src.zip!/com/sun/glass/ui/win/WinApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2414">
-          <caret line="176" selection-start-line="176" selection-end-line="176" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/github/almasb/fxgl-base/0.5.4/fxgl-base-0.5.4.jar!/com/almasb/fxgl/audio/AudioPlayer.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="26" column="51" selection-start-line="26" selection-start-column="45" selection-end-line="26" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/github/almasb/fxgl-base/0.5.4/fxgl-base-0.5.4.jar!/com/almasb/fxgl/entity/GameWorld.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1768">
-          <caret line="104" column="21" selection-start-line="104" selection-start-column="21" selection-end-line="104" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/github/almasb/fxgl-base/0.5.4/fxgl-base-0.5.4.jar!/com/almasb/fxgl/entity/Entity.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="94" column="33" lean-forward="true" selection-start-line="94" selection-start-column="33" selection-end-line="94" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/logic/visitor/SoundSelector.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="15" column="20" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/github/almasb/fxgl-base/0.5.4/fxgl-base-0.5.4.jar!/com/almasb/fxgl/physics/PhysicsComponent.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1343">
-          <caret line="127" column="16" selection-start-line="127" selection-start-column="16" selection-end-line="127" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/gui/components/PlayerComponent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="34" selection-start-line="34" selection-end-line="34" />
-          <folding>
-            <element signature="e#1102#1103#0" expanded="true" />
-            <element signature="e#1140#1141#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/gui/factory/NonInteractiveElementsFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="18" column="51" selection-start-line="18" selection-start-column="51" selection-end-line="18" selection-end-column="51" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/gui/components/BrickComponent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="43" column="26" selection-start-line="43" selection-start-column="26" selection-end-line="43" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controller/Game.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="75" column="31" selection-start-line="75" selection-start-column="31" selection-end-line="75" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#6885#6886#0" expanded="true" />
-            <element signature="e#6917#6918#0" expanded="true" />
-            <element signature="e#7236#7237#0" expanded="true" />
-            <element signature="e#7253#7254#0" expanded="true" />
-            <element signature="e#7301#7302#0" expanded="true" />
-            <element signature="e#7319#7320#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/gui/factory/InteractiveElementsFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="26" column="63" selection-start-line="26" selection-start-column="59" selection-end-line="26" selection-end-column="63" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/gui/components/BallComponent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="17" column="2" selection-start-line="17" selection-start-column="2" selection-end-line="17" selection-end-column="2" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/github/almasb/fxgl-base/0.5.4/fxgl-base-0.5.4.jar!/com/almasb/fxgl/input/UserAction.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="33" column="19" selection-start-line="33" selection-start-column="19" selection-end-line="33" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/github/almasb/fxgl-base/0.5.4/fxgl-base-0.5.4.jar!/com/almasb/fxgl/app/FXGL.class">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/github/almasb/fxgl-base/0.5.4/fxgl-base-0.5.4.jar!/com/almasb/fxgl/app/GameApplication.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="213" column="22" selection-start-line="213" selection-start-column="22" selection-end-line="213" selection-end-column="22" />
-          <folding>
-            <element signature="e#5743#5744#0" expanded="true" />
-            <element signature="e#5783#5784#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/CustomMenuBackgroundSample.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="64" column="74" selection-start-line="64" selection-start-column="74" selection-end-line="64" selection-end-column="74" />
-          <folding>
-            <element signature="e#0#2268#0" expanded="true" />
-            <element signature="imports" expanded="true" />
-            <element signature="e#1521#1522#0" expanded="true" />
-            <element signature="e#1580#1581#0" expanded="true" />
-            <element signature="e#2101#2102#0" expanded="true" />
-            <element signature="e#2160#2161#0" expanded="true" />
-            <element signature="e#2237#2238#0" expanded="true" />
-            <element signature="e#2265#2266#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/facade/HomeworkTwoFacade.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2030">
-          <caret line="182" column="5" selection-start-line="182" selection-start-column="5" selection-end-line="182" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/gui/BreakoutApp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="436">
-          <caret line="292" column="63" lean-forward="true" selection-start-line="292" selection-start-column="63" selection-end-line="292" selection-end-column="63" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#7108#7109#0" expanded="true" />
-            <element signature="e#7136#7137#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="259">
+          <caret line="196" column="21" lean-forward="true" selection-start-line="196" selection-start-column="21" selection-end-line="196" selection-end-column="21" />
         </state>
       </provider>
     </entry>
   </component>
   <component name="masterDetails">
     <states>
-      <state key="ArtifactsStructureConfigurable.UI">
-        <settings>
-          <artifact-editor />
-          <last-edited>cc3002-breakout:jar</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-                <option value="0.5" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="FacetStructureConfigurable.UI">
-        <settings>
-          <last-edited>No facets are configured</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="GlobalLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="JdkListConfigurable.UI">
+      <state key="ProjectJDKs.UI">
         <settings>
           <last-edited>1.8</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ModuleStructureConfigurable.UI">
-        <settings>
-          <last-edited>cc3002-breakout</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-                <option value="0.6" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectLibrariesConfigurable.UI">
-        <settings>
-          <last-edited>Maven: junit:junit:4.12</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
