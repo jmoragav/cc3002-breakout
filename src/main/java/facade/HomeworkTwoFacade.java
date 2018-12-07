@@ -5,6 +5,8 @@ import logic.brick.Brick;
 import logic.level.Level;
 
 import java.util.List;
+import java.util.Observable;
+import java.util.Observer;
 
 /**
  * Facade class to expose the logic of the game to a GUI in the upcoming homework.
@@ -30,7 +32,7 @@ public class HomeworkTwoFacade {
      * @return a new level determined by the parameters
      * @see Level
      */
-    public Level newLevelWithBricksFull(String name, int numberOfBricks, double probOfGlass, double probOfMetal, int seed) {
+    public Level newLevelWithBricksFull(String name, int numberOfBricks, double probOfGlass, double probOfMetal, long seed) {
         return game.newLevelWithBricksFull(name,numberOfBricks,probOfGlass,probOfMetal,seed);}
     /**
      * Creates a new level with the given parameters with no metal bricks.
@@ -42,7 +44,7 @@ public class HomeworkTwoFacade {
      * @return a new level determined by the parameters
      * @see Level
      */
-    public Level newLevelWithBricksNoMetal(String name, int numberOfBricks, double probOfGlass, int seed) {
+    public Level newLevelWithBricksNoMetal(String name, int numberOfBricks, double probOfGlass, long seed) {
         return game.newLevelWithBricksNoMetal(name,numberOfBricks,probOfGlass,seed);
     }
 
@@ -178,5 +180,14 @@ public class HomeworkTwoFacade {
      */
     public boolean winner() {
         return game.winner();
+    }
+    public void addedToaGUI(Observer o){
+        game.addObserver(o);
+        System.out.println("obs añadido");
+    }
+
+    public void resetGame(){
+        game.setPoints(0);
+        game.setBalls(3);
     }
 }

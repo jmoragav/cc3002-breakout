@@ -24,6 +24,7 @@ public class PlayerComponent extends Component {
             velocity.set(BOUNCE_FACTOR * (float) -entity.getX(), 0);
         } else if (entity.getRightX() > FXGL.getApp().getWidth()) {
             velocity.set(BOUNCE_FACTOR * (float) -(entity.getRightX() - FXGL.getApp().getWidth()), 0);
+
         }
 
         physics.setBodyLinearVelocity(velocity);
@@ -31,6 +32,7 @@ public class PlayerComponent extends Component {
 
     public void left() {
         velocity.set(-speed, 0);
+
     }
 
     public void right() {

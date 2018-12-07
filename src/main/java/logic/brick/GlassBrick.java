@@ -1,51 +1,21 @@
 package logic.brick;
 
-import logic.Visitor;
-import logic.level.Level;
+import logic.visitor.BrickVisitor;
+import logic.visitor.GuiBrickVisitor;
 
 /**
  * Implementation of a GlassBrick from the game Breakout
  * @author Joaquin Moraga
  */
-public class GlassBrick extends AbstractBrick implements Brick {
-    private int Hitpoints;
-    private int Value;
-    private boolean Broken;
+public class GlassBrick extends AbstractBrick  {
 
     public GlassBrick(){
-        Hitpoints=1;
-        Value=50;
-        Broken=false;
+        super(1,50);
     }
 
     @Override
-    public void hit() {
-        if (Hitpoints != 0) {
-            int new_hp = hit(Hitpoints);
-            Hitpoints = new_hp;
-            if(Hitpoints==0){
-                Break();
-            }
-        }
-    }
-    @Override
-    public boolean isDestroyed() {
-        return Broken;
-    }
-
-    @Override
-    public int getScore() {
-        return Value;
-    }
-
-    @Override
-    public int remainingHits() {
-        return Hitpoints;
-    }
-
-    @Override
-    public void accept(Visitor o) {
-        o.VisitBrickWithPoints(this);
+    public void acceptGuiBrickVisitor(GuiBrickVisitor o) {
+        o.VisitGlassBrick(this);
     }
 
     @Override
@@ -65,8 +35,7 @@ public class GlassBrick extends AbstractBrick implements Brick {
 
 
     @Override
-    public void ChangeStatus() {
-        Broken=true;
+    public void acceptBrickVisitor(BrickVisitor o) {
+        o.VisitBrickWithPoints(this);
     }
-
 }

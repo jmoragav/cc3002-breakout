@@ -10,22 +10,26 @@ public class BallComponent extends Component {
 
     @Override
     public void onUpdate(double tpf) {
+
         limitVelocity();
+
     }
 
     private void limitVelocity() {
-        if (Math.abs(physics.getLinearVelocity().getX()) < 5 * 60) {//Si la velocidad en el eje x es mayor a la indicada,se limita por esta
+        if (Math.abs(physics.getLinearVelocity().getX()) < 5 * 60) {
             physics.setLinearVelocity(Math.signum(physics.getLinearVelocity().getX()) * 5 * 60,
                     physics.getLinearVelocity().getY());
         }
 
-        if (Math.abs(physics.getLinearVelocity().getY()) < 5 * 60) {//Si la velocidad en el eje y es mayor a la indicada se limita por esta
+        if (Math.abs(physics.getLinearVelocity().getY()) < 5 * 60) {
             physics.setLinearVelocity(physics.getLinearVelocity().getX(),
                     Math.signum(physics.getLinearVelocity().getY()) * 5 * 60);
         }
     }
 
-    public void release() {//Velocidad inicial cuando se suelta una bola
+    public void release() {
         physics.setBodyLinearVelocity(new Vec2(5, 5));
+
+
     }
 }

@@ -1,6 +1,6 @@
 package controller;
 
-import logic.Visitor;
+import logic.visitor.BrickVisitor;
 import logic.brick.Brick;
 import logic.brick.MetalBrick;
 import logic.level.Level;
@@ -16,7 +16,7 @@ import java.util.Observer;
  *
  * @author Juan-Pablo Silva
  */
-public class Game implements Observer , Visitor {
+public class Game extends Observable implements Observer , BrickVisitor {
     private int Points;
     private int balls;
     private Level current;
@@ -71,10 +71,21 @@ public class Game implements Observer , Visitor {
         assert (!isGameOver());
         if(current.hasNextLevel()){
        Level nextLevel= current.getNextLevel();
-       setCurrentLevel(nextLevel);}
+       setCurrentLevel(nextLevel);
+       setChanged();
+        notifyObservers(current);
+        clearChanged();
+       }
+
        else{
+
            finished=true;
+
            setCurrentLevel(new PlaceHolder());
+           setChanged();
+           notifyObservers(this);
+           clearChanged();
+
        }
     }
 
@@ -123,6 +134,7 @@ public class Game implements Observer , Visitor {
     public void addPlayingLevel(Level level) {
         assert(!zero_balls);
         current.addPlayingLevel(level);
+        finished=false;
     }
     /**
      * Gets the number of points required to pass to the next level. Gets the points obtainable in the current {@link Level}.
@@ -156,10 +168,10 @@ public class Game implements Observer , Visitor {
      * @return the new number of balls
      */
     public int dropBall() {
-        balls=balls-1;
+        setBalls(balls-1);
         if(balls<=0) {
             zero_balls=true ;
-            balls=0;
+            setBalls(0);
         }
         return getBalls();
     }
@@ -197,7 +209,7 @@ public class Game implements Observer , Visitor {
      */
     public void update(Observable o, Object arg) {
         if(arg instanceof Brick){
-           ((Brick) arg).accept(this);
+           ((Brick) arg).acceptBrickVisitor(this);
         }
         if(arg instanceof Level){
             goNextLevel();
@@ -216,7 +228,7 @@ public class Game implements Observer , Visitor {
      * @see Level
      */
 
-    public Level newLevelWithBricksFull(String name, int numberOfBricks, double probOfGlass, double probOfMetal, int seed) {
+    public Level newLevelWithBricksFull(String name, int numberOfBricks, double probOfGlass, double probOfMetal, long seed) {
         return new PlayableLevel(name,numberOfBricks,probOfGlass,probOfMetal,seed);
     }
     /**
@@ -230,7 +242,7 @@ public class Game implements Observer , Visitor {
      * @see Level
      */
 
-    public Level newLevelWithBricksNoMetal(String name, int numberOfBricks, double probOfGlass, int seed) {
+    public Level newLevelWithBricksNoMetal(String name, int numberOfBricks, double probOfGlass, long seed) {
         return newLevelWithBricksFull(name,numberOfBricks,probOfGlass,0,seed);
 
     }
@@ -243,7 +255,7 @@ public class Game implements Observer , Visitor {
 
     @Override
     public void VisitMetalBrick(MetalBrick brick) {
-        balls=balls+1;
+        setBalls(balls+1);
     }
     /**
      * The game visits a {@link logic.brick.WoodenBrick} or a {@link logic.brick.GlassBrick} when it breaks
@@ -255,6 +267,12 @@ public class Game implements Observer , Visitor {
     @Override
     public void VisitBrickWithPoints(Brick brick) {
         int score=brick.getScore();
-        Points=Points+score;
+        setPoints(Points+score);
+    }
+    public void setBalls(int b){
+        balls=b;
+    }
+    public void setPoints(int p){
+        Points=p;
     }
 }

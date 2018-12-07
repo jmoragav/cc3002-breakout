@@ -1,7 +1,8 @@
 package logic.brick;
 
-import logic.Visitor;
+import logic.visitor.BrickVisitor;
 import logic.level.Level;
+import logic.visitor.GuiBrickVisitor;
 
 /**
  * Interface that represents a brick object.
@@ -61,7 +62,9 @@ public interface Brick {
      * Accepts a visitor type object that will do an action depending on the type of brick
      * @param o visitor who will perform an action
      */
-    void accept(Visitor o);
+    void acceptBrickVisitor(BrickVisitor o);
+
+    void acceptGuiBrickVisitor(GuiBrickVisitor o);
 
     boolean isMetalBrick();
 

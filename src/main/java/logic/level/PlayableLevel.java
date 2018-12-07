@@ -1,7 +1,8 @@
 package logic.level;
 
 import controller.Game;
-import logic.Visitor;
+import logic.visitor.BrickVisitor;
+
 import logic.brick.Brick;
 import logic.brick.GlassBrick;
 import logic.brick.MetalBrick;
@@ -12,7 +13,7 @@ import java.util.*;
  * Implementation of a Playable Level from the game Breakout
  * @author Joaquin Moraga
  */
-public class PlayableLevel extends Observable implements Level , Observer , Visitor {
+public class PlayableLevel extends Observable implements Level , Observer , BrickVisitor {
     private Level next;
     private ArrayList<Brick> Bricks;
     private String name;
@@ -20,13 +21,13 @@ public class PlayableLevel extends Observable implements Level , Observer , Visi
     private boolean playable;
     private int numberofbricks;//GlassBricks + WoodenBricks
     private int Realnumberofbricks;//numberofbricks+MetalBricks
-    private int seed;
+    private long seed;
     private double probG;
     private int currentscore;
     private double probM;
 
 
-    public PlayableLevel(String name, int numberOfBricks, double probOfGlass, double probOfMetal, int seed) {
+    public PlayableLevel(String name, int numberOfBricks, double probOfGlass, double probOfMetal, long seed) {
         this.playable=true;
         this.name=name;
         this.numberofbricks=numberOfBricks;
@@ -175,7 +176,7 @@ public class PlayableLevel extends Observable implements Level , Observer , Visi
     @Override
     public void update(Observable o, Object arg) {
         if (arg instanceof Brick) {
-            ((Brick)arg).accept(this);
+            ((Brick)arg).acceptBrickVisitor(this);
         }
     }
 }

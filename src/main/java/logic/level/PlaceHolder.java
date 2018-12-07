@@ -57,7 +57,7 @@ public class PlaceHolder implements Level {
 
     @Override
     public Level addPlayingLevel(Level level) {
-        return this; }
+        return level; }
 
     @Override
     public void setNextLevel(Level level) {    }

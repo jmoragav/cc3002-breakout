@@ -1,54 +1,20 @@
 package logic.brick;
 
 
-import logic.Visitor;
+import logic.visitor.BrickVisitor;
+import logic.visitor.GuiBrickVisitor;
+
 /**
  * Implementation of a MetalBrick from the game Breakout
  * @author Joaquin Moraga
  */
 public class MetalBrick extends AbstractBrick {
-    private int Hitpoints;
-    private int Value;
-    private boolean Broken;
-
     public MetalBrick(){
-        Hitpoints=10;
-        Value=0;
-        Broken=false;
-    }
-    @Override
-    public void hit() {
-        if (Hitpoints != 0) {
-            int new_hp = hit(Hitpoints);
-            Hitpoints = new_hp;
-            if(Hitpoints==0){
-                Break();
-            }
-        }
-
+        super(10,0);
     }
 
     @Override
-    public boolean isDestroyed() {
-        return Broken;
-    }
-
-    @Override
-    public int getScore() {
-        return Value;
-    }
-
-    @Override
-    public int remainingHits() {
-        return Hitpoints;
-    }
-
-    public void ChangeStatus() {
-        Broken=true;
-    }
-
-    @Override
-    public void accept(Visitor o) {
+    public void acceptGuiBrickVisitor(GuiBrickVisitor o) {
         o.VisitMetalBrick(this);
     }
 
@@ -67,5 +33,10 @@ public class MetalBrick extends AbstractBrick {
         return false;
     }
 
+
+    @Override
+    public void acceptBrickVisitor(BrickVisitor o) {
+        o.VisitMetalBrick(this);
+    }
 
 }

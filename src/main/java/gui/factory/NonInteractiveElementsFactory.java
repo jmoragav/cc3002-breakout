@@ -11,12 +11,12 @@ import javafx.scene.shape.Rectangle;
 public class NonInteractiveElementsFactory {
 
     public static Entity newBackground(){
-        return Entities.builder().viewFromNode(new Rectangle(600,600, Color.BLACK))
+        return Entities.builder().viewFromNode(new Rectangle(700,700, Color.BLACK))
                 .renderLayer(RenderLayer.BACKGROUND).build();
     }
 
     public static Entity newBorderWalls() {
-        Entity walls = Entities.makeScreenBounds(100);
+        Entity walls = Entities.makeScreenBounds(40);
         walls.setType(GameTypes.WALL);
         walls.addComponent(new CollidableComponent(true));
         return walls;
