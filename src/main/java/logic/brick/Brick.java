@@ -1,5 +1,6 @@
 package logic.brick;
 
+import logic.state.State;
 import logic.visitor.BrickVisitor;
 import logic.level.Level;
 import logic.visitor.GuiBrickVisitor;
@@ -45,11 +46,6 @@ public interface Brick {
      */
     void addedToLevel(Level level);
 
-    /**
-     * Change the status of a {@link Brick} to Broken;
-     */
-
-    void ChangeStatus();
 
     /**
      * Defines that a brick has been broken
@@ -71,4 +67,10 @@ public interface Brick {
     boolean isWoodenBrick();
 
     boolean isGlassBrick();
+
+    void setState(State state);
+    boolean isNormal();
+    boolean isHitted();
+    boolean isAlmostBroke();
+    String getTexture();
 }

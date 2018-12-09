@@ -1,6 +1,7 @@
 package logic.brick;
 
 import logic.level.Level;
+import logic.state.*;
 import logic.visitor.BrickVisitor;
 
 import java.util.Observable;
@@ -17,12 +18,14 @@ public abstract class AbstractBrick extends Observable implements Brick {
 
     protected int Hitpoints;
     protected int Value;
-    protected boolean Broken;
+
+    protected State state;
 
     public AbstractBrick(int hp ,int value) {
         Hitpoints=hp;
         Value=value;
-        Broken=false;
+
+        setState(new Normal(this));
     }
 
     @Override
@@ -33,7 +36,7 @@ public abstract class AbstractBrick extends Observable implements Brick {
 
     @Override
     public void Break() {
-        ChangeStatus();
+        setState(new Destroyed(this));
         setChanged();
         notifyObservers(this);
     }
@@ -42,6 +45,12 @@ public abstract class AbstractBrick extends Observable implements Brick {
     public void hit() {
         if (Hitpoints != 0) {
             Hitpoints =Hitpoints-1;
+            if((Hitpoints==2 && isWoodenBrick()) || (Hitpoints==4 && isMetalBrick())){
+                setState(new AlmostBroke(this));
+            }
+            if(Hitpoints==8 && isMetalBrick()){
+                setState(new Hitted(this));
+            }
             if(Hitpoints==0){
                 Break();
             }
@@ -50,7 +59,7 @@ public abstract class AbstractBrick extends Observable implements Brick {
 
     @Override
     public boolean isDestroyed() {
-        return Broken;
+        return state.isDestroyed();
     }
 
     @Override
@@ -63,8 +72,29 @@ public abstract class AbstractBrick extends Observable implements Brick {
         return Hitpoints;
     }
 
+    public void setState(State state){
+        this.state=state;
+        this.state.setBrick(this);
+    }
+
+
     @Override
-    public void ChangeStatus() {
-        Broken=true;
+    public boolean isAlmostBroke(){
+       return state.isAlmostBroke();
+    }
+
+    @Override
+    public boolean isHitted() {
+        return state.isHitted();
+    }
+
+    @Override
+    public boolean isNormal() {
+        return state.isNormal();
+    }
+
+    @Override
+    public String getTexture() {
+        return state.getTexture();
     }
 }

@@ -16,11 +16,11 @@ import static gui.types.GameTypes.M_BRICK;
 import static gui.types.GameTypes.W_BRICK;
 
 public class BehaviourSelector implements GuiBrickVisitor {
-    private Shape shape;
+
     private Component component;
     private GameTypes type;
     String sound;
-    String texture;
+
 
     public BehaviourSelector(Brick brick){
         brick.acceptGuiBrickVisitor(this);
@@ -28,25 +28,31 @@ public class BehaviourSelector implements GuiBrickVisitor {
     }
     @Override
     public void VisitGlassBrick(GlassBrick glassBrick) {
-        shape = new Rectangle(50,20, Color.ALICEBLUE);
+        sound = "GlassHit.wav";
+
            type= G_BRICK;
     }
 
     @Override
     public void VisitMetalBrick(MetalBrick metalBrick) {
-        shape = new Rectangle(50,20, Color.DARKGRAY);
+        sound = "MetalHit.wav";
+
         type= M_BRICK;
     }
 
     @Override
     public void VisitWoodenBrick(WoodenBrick woodenBrick) {
-        shape = new Rectangle(50,20, Color.SADDLEBROWN);
+        sound = "WoodenHit.wav";
+
         type=W_BRICK;
     }
 
-    public Shape getShape(){
-        return shape;
-    }
+
     public GameTypes getType(){return type;}
     public Component getComponent(){return component;}
+    public String getSound(){
+        return sound;
+    }
+
+
 }

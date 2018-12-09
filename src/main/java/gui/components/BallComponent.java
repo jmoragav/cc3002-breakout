@@ -11,19 +11,25 @@ public class BallComponent extends Component {
     @Override
     public void onUpdate(double tpf) {
 
-        limitVelocity();
+       limitVelocity();
 
     }
 
-    private void limitVelocity() {
-        if (Math.abs(physics.getLinearVelocity().getX()) < 5 * 60) {
+   private void limitVelocity() {
+        if (Math.abs(physics.getLinearVelocity().getX()) <300) {
+
+
             physics.setLinearVelocity(Math.signum(physics.getLinearVelocity().getX()) * 5 * 60,
                     physics.getLinearVelocity().getY());
+
         }
 
-        if (Math.abs(physics.getLinearVelocity().getY()) < 5 * 60) {
+        if (Math.abs(physics.getLinearVelocity().getY()) < 300) {
+
+
             physics.setLinearVelocity(physics.getLinearVelocity().getX(),
                     Math.signum(physics.getLinearVelocity().getY()) * 5 * 60);
+
         }
     }
 

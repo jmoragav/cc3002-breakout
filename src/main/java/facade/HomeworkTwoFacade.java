@@ -183,11 +183,10 @@ public class HomeworkTwoFacade {
     }
     public void addedToaGUI(Observer o){
         game.addObserver(o);
-        System.out.println("obs añadido");
+
     }
 
     public void resetGame(){
-        game.setPoints(0);
-        game.setBalls(3);
+        game= new Game(3);
     }
 }

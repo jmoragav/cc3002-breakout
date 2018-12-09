@@ -1,5 +1,6 @@
 package gui.factory;
 
+import com.almasb.fxgl.app.FXGL;
 import com.almasb.fxgl.entity.Entities;
 import com.almasb.fxgl.entity.Entity;
 import com.almasb.fxgl.entity.components.CollidableComponent;
@@ -26,7 +27,6 @@ public class InteractiveElementsFactory {
         physics.setBodyType(BodyType.DYNAMIC);
         physics.setFixtureDef(new FixtureDef().restitution(0.9f).density(0.1f));
 
-        //physics.setOnPhysicsInitialized(() -> physics.setLinearVelocity(0, -5 * 200));
 
 
         return Entities.builder()
@@ -45,8 +45,8 @@ public class InteractiveElementsFactory {
 
         return Entities.builder().
                 type(GameTypes.PLAYER).
-                at(300,600).
-                viewFromNodeWithBBox(new Rectangle(100,30, Color.BLUEVIOLET)).
+                at(FXGL.getAppWidth()/2-50,600).
+                viewFromNodeWithBBox(FXGL.getAssetLoader().loadTexture("bat.png", 100, 102 / 3)).
                 with(physics,new CollidableComponent(true)).
                 with(new PlayerComponent())
                 .build();
@@ -61,10 +61,11 @@ public class InteractiveElementsFactory {
     public static Entity newBrick(int x, int y, Brick brick){
         PhysicsComponent physics = new PhysicsComponent();
         BehaviourSelector bh=  new BehaviourSelector(brick);
+
         return Entities.builder().
                 at(x,y).
                 type(bh.getType()).
-                viewFromNodeWithBBox(bh.getShape()).
+                viewFromNodeWithBBox(FXGL.getAssetLoader().loadTexture(brick.getTexture(),50,20)).
                 with(physics,new CollidableComponent(true), bh.getComponent()).
                 build();
 

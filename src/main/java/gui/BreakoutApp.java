@@ -1,13 +1,20 @@
 package gui;
 
+import com.almasb.fxgl.app.FXGL;
 import com.almasb.fxgl.app.GameApplication;
 import com.almasb.fxgl.entity.Entity;
 import com.almasb.fxgl.input.Input;
 import com.almasb.fxgl.input.UserAction;
+import com.almasb.fxgl.particle.ParticleComponent;
+import com.almasb.fxgl.particle.ParticleEmitter;
+import com.almasb.fxgl.particle.ParticleEmitters;
 import com.almasb.fxgl.physics.CollisionHandler;
 import com.almasb.fxgl.physics.HitBox;
 import com.almasb.fxgl.physics.PhysicsComponent;
 import com.almasb.fxgl.settings.GameSettings;
+import com.almasb.fxgl.texture.Texture;
+import com.almasb.fxgl.ui.UI;
+import com.almasb.fxgl.ui.UIController;
 import com.almasb.fxgl.util.Consumer;
 import controller.Game;
 import facade.HomeworkTwoFacade;
@@ -16,21 +23,28 @@ import gui.components.BrickComponent;
 import gui.components.PlayerComponent;
 import gui.types.GameTypes;
 import javafx.animation.PathTransition;
+import javafx.geometry.Point2D;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.MouseButton;
 import javafx.scene.paint.Color;
 import javafx.scene.text.Font;
 import javafx.scene.text.Text;
+import javafx.util.Duration;
 import logic.brick.Brick;
 import logic.level.Level;
+import logic.visitor.BehaviourSelector;
 
 import java.util.*;
+import java.util.stream.IntStream;
 
+import static com.almasb.fxgl.app.DSLKt.geti;
+import static com.almasb.fxgl.app.DSLKt.getip;
 import static gui.factory.InteractiveElementsFactory.newBall;
 import static gui.factory.InteractiveElementsFactory.newBrick;
 import static gui.factory.InteractiveElementsFactory.newPlayer;
 import static gui.factory.NonInteractiveElementsFactory.newBackground;
 import static gui.factory.NonInteractiveElementsFactory.newBorderWalls;
+
 
 public class BreakoutApp extends GameApplication implements Observer {
     private HomeworkTwoFacade game;
@@ -39,6 +53,7 @@ public class BreakoutApp extends GameApplication implements Observer {
     private int n_bricks;
     private double prob_g;
     private double prob_m;
+    private boolean lock;
 
 
 
@@ -48,6 +63,7 @@ public class BreakoutApp extends GameApplication implements Observer {
         gameSettings.setHeight(700);
         gameSettings.setTitle("Breakout");
         gameSettings.setVersion("0.1");
+        lock=false;
 
 
 
@@ -58,7 +74,7 @@ public class BreakoutApp extends GameApplication implements Observer {
         Entity bg= newBackground();
         Entity borders= newBorderWalls();
         Entity player = newPlayer();
-        Entity ball= newBall(player.getX(),player.getY() - player.getHeight());
+        Entity ball= newBall(player.getX()+(player.getWidth()/2),player.getY() - player.getHeight()/2);
         initBGM();
         game= new HomeworkTwoFacade();
 
@@ -77,25 +93,21 @@ public class BreakoutApp extends GameApplication implements Observer {
 
     @Override
     protected void initUI() {
-        Font font = new Font(30);
+        Font font = new Font(20);
         Text textBalls = new Text();
         Text textScore = new Text();
-        textBalls.setFont(font);
-        textScore.setFont(font);
-        textBalls.setFill(Color.GREEN);
-        textScore.setFill(Color.GREEN);
-        textBalls.setTranslateX(100);
-        textBalls.setTranslateY(550);
-        textScore.setTranslateX(450);
-        textScore.setTranslateY(550);
+        Text textLabelBalls = new Text(0,getHeight()-40,"Balls:");
+        Text textLabelScore = new Text(0,getHeight(),"Score:");
+        text(textBalls,textScore,textLabelBalls,textLabelScore,font);
+
 
         textBalls.textProperty().bind(getGameState().intProperty("balls").asString());
         textScore.textProperty().bind(getGameState().intProperty("score").asString());
 
         getGameScene().addUINode(textBalls);
         getGameScene().addUINode(textScore);
-
-        updateVariables();
+        getGameScene().addUINode(textLabelBalls);
+        getGameScene().addUINode(textLabelScore);
 
 
     }
@@ -115,8 +127,9 @@ public class BreakoutApp extends GameApplication implements Observer {
                             released=false;
                             if(game.getBallsLeft()!=0){
                                 Entity player= getGameWorld().getSingleton(GameTypes.PLAYER).get();
-                                Entity new_ball= newBall(player.getX(),player.getY() - player.getHeight());
+                                Entity new_ball= newBall(player.getX()+(player.getWidth()/2),player.getY() - player.getHeight()/2);
                                 getGameWorld().addEntity(new_ball);
+                                lock=false;
                                 updateVariables();
 
                             }
@@ -133,15 +146,26 @@ public class BreakoutApp extends GameApplication implements Observer {
         getPhysicsWorld().addCollisionHandler(new CollisionHandler(GameTypes.BALL, GameTypes.W_BRICK) {
             @Override
             protected void onHitBoxTrigger(Entity ball, Entity brick, HitBox boxBall, HitBox boxBrick) {
+
                 brick.getComponent(BrickComponent.class).onHit();
+
+                if(brick.getComponent(BrickComponent.class).isDestroyed()){
+                    explosion(brick.getPosition());
+                }
+
                 updateVariables();
 
             }
         });
+
         getPhysicsWorld().addCollisionHandler(new CollisionHandler(GameTypes.BALL, GameTypes.M_BRICK) {
             @Override
             protected void onHitBoxTrigger(Entity ball, Entity brick, HitBox boxBall, HitBox boxBrick) {
                 brick.getComponent(BrickComponent.class).onHit();
+
+                if(brick.getComponent(BrickComponent.class).isDestroyed()){
+                    explosion(brick.getPosition());
+                }
                 updateVariables();
             }
         });
@@ -149,6 +173,10 @@ public class BreakoutApp extends GameApplication implements Observer {
             @Override
             protected void onHitBoxTrigger(Entity ball, Entity brick, HitBox boxBall, HitBox boxBrick) {
                 brick.getComponent(BrickComponent.class).onHit();
+                if(brick.getComponent(BrickComponent.class).isDestroyed()){
+                    explosion(brick.getPosition());
+                }
+
                 updateVariables();
             }
         });
@@ -167,9 +195,10 @@ public class BreakoutApp extends GameApplication implements Observer {
             @Override
             protected void onActionBegin() {
                 if (getGameWorld().getEntitiesByType(GameTypes.BALL).size() == 1
-                        && !game.isGameOver() && !emptylevel)
+                        && !lock && !emptylevel)
                 {
                     released=true;
+                    lock=true;
                     getBallControl().release();
                              }
 
@@ -269,7 +298,9 @@ public class BreakoutApp extends GameApplication implements Observer {
     private PlayerComponent getPlayerControl() {
         return getGameWorld().getSingleton(GameTypes.PLAYER).get().getComponent(PlayerComponent.class);
     }
-    
+
+
+
 
 
 
@@ -280,9 +311,7 @@ public class BreakoutApp extends GameApplication implements Observer {
         if(!state){
         getDisplay().showConfirmationBox("You lost all your balls!!! , Play Again?", yes -> {
             if (yes) {
-                getGameWorld().getEntitiesCopy().forEach(Entity::removeFromWorld);
-                startNewGame();
-                game.resetGame();
+                resetGame();
             } else {
                 exit();
             }
@@ -290,9 +319,7 @@ public class BreakoutApp extends GameApplication implements Observer {
         else{
             getDisplay().showConfirmationBox("You Won!!! , Play Again?", yes -> {
                 if (yes) {
-                    getGameWorld().getEntitiesCopy().forEach(Entity::removeFromWorld);
-                    startNewGame();
-                    game.resetGame();
+                    resetGame();
                 } else {
                     exit();
                 }
@@ -305,12 +332,12 @@ public class BreakoutApp extends GameApplication implements Observer {
     private void showLevelMenu(){
 
 
-        getDisplay().showInputBox("Ingrese la probabilidad de MetalBricks",num ->{
+        getDisplay().showInputBox("Ingrese la probabilidad de MetalBricks"+'\n'+"(Recommended 0.1 or 0.2)",num ->{
                 double realnum= Double.parseDouble(num);
                 prob_m=realnum;
             }
         );
-        getDisplay().showInputBox("Ingrese la probabilidad de GlassBricks",num ->{
+        getDisplay().showInputBox("Ingrese la probabilidad de GlassBricks"+'\n'+"(Recommended 0.6 or 0.7)",num ->{
                     double realnum= Double.parseDouble(num);
                     prob_g=realnum;
                 }
@@ -341,8 +368,41 @@ public class BreakoutApp extends GameApplication implements Observer {
         getGameState().intProperty("balls").setValue(game.getBallsLeft());
         getGameState().intProperty("score").setValue(game.getCurrentPoints());
     }
+    private void resetGame(){
+        getGameWorld().getEntitiesCopy().forEach(Entity::removeFromWorld);
+        startNewGame();
+        game.resetGame();
+        emptylevel=true;
+        lock=false;
+    }
+    private  void explosion(Point2D pos){
+
+        Entity explosion = new Entity();
+        explosion.setPosition(pos);
+        ParticleEmitter emitter = ParticleEmitters.newExplosionEmitter(300);
+
+        ParticleComponent component = new ParticleComponent(emitter);
+        component.setOnFinished(explosion::removeFromWorld);
+        explosion.addComponent(component);
+        getGameWorld().addEntity(explosion);
+    }
+
+    private void text(Text t1, Text t2, Text Title1, Text Title2, Font font){
+        t1.setFont(font);
+        t2.setFont(font);
+        Title1.setFont(font);
+        Title2.setFont(font);
+        Title1.setFill(Color.GREEN);
+        Title2.setFill(Color.GREEN);
+        t1.setFill(Color.GREEN);
+        t2.setFill(Color.GREEN);
+        t1.setTranslateX(50);
+        t2.setTranslateX(60);
+        t1.setTranslateY(Title1.getY());
+        t2.setTranslateY(Title2.getY());
 
 
+    }
 }
 
 

@@ -3,7 +3,7 @@ package gui.components;
 import com.almasb.fxgl.app.FXGL;
 import com.almasb.fxgl.entity.component.Component;
 import logic.brick.Brick;
-import logic.visitor.SoundSelector;
+import logic.visitor.BehaviourSelector;
 
 
 public class BrickComponent extends Component {
@@ -32,16 +32,30 @@ public class BrickComponent extends Component {
         return brick;
     }
 
+
+
     public void onHit() {
-        SoundSelector ss= new SoundSelector(getBrick());
+        BehaviourSelector bh = new BehaviourSelector(getBrick());
         int rm= getBrick().remainingHits();
         brick.hit();
-        if (rm==1){
-            FXGL.getAudioPlayer().playSound(ss.getSound());
+        if (rm==1 || isGlassBrick()){
+
+            FXGL.getAudioPlayer().playSound(bh.getSound());
             FXGL.getAudioPlayer().playSound("Oof.wav");
+
         }
-        else{
-        FXGL.getAudioPlayer().playSound(ss.getSound());}
+        else if(brick.isAlmostBroke()){
+            entity.setView(FXGL.getAssetLoader().loadTexture(brick.getTexture(),50,20));
+            FXGL.getAudioPlayer().playSound(bh.getSound());
+        }
+        else if (brick.isHitted()){
+            entity.setView(FXGL.getAssetLoader().loadTexture(brick.getTexture(),50,20));
+            FXGL.getAudioPlayer().playSound(bh.getSound());
+        }
+        else {
+        FXGL.getAudioPlayer().playSound(bh.getSound());}
+
+
         if(isDestroyed()){
             entity.removeFromWorld();
         }
@@ -49,4 +63,5 @@ public class BrickComponent extends Component {
 
 
     }
+
 }
