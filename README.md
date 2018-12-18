@@ -54,6 +54,10 @@ De los features pedidos en el enunciado de la tarea se implementaron 5 de ellos,
 1. Sonido al golpear los bricks, cada brick tiene su propio sonido asociado y un sonido compartido cuando estos son destruidos.
 2. Partículas al destruir bricks, estas aparecerán por unos segundos en la pantalla al destruirse un brick, solo aparecen cuando se destruye un brick pues si se implementaba cada vez que se golpeaba un brick la cantidad de partículas afectaba el rendimiento (FPS) del juego breakout , es por eso la limitación.
 
+### Coverage
+
+Para tener un covarage optimo de las clases, se debe hacer un Run with covarage de BigTestT2 y SmallTest, cada vez que se ejecuta estos test se debe añadir el coverage de cada uno
+
 ### Como correr el juego
 
 Para poder correr el juego se debe de hacer desde una IDE de Java , en esta se debe correr el método main dentro de [BreakoutApp](https://github.com/jmoragav/cc3002-breakout/blob/master/src/main/java/gui/BreakoutApp.java),se intento añadir un jar file al repositorio para que fuera de manera más directa, pero no se pudo a futuro y con más conocimientos en el tema se añadirá al repositorio
