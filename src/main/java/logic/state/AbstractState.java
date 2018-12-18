@@ -1,6 +1,12 @@
 package logic.state;
 
 import logic.brick.Brick;
+/**
+ * Abstract class that contains some methods which facilitate the implementation of
+ * the different types of States
+ *
+ * @author Joaquin Moraga
+ */
 
 public abstract class AbstractState implements State {
     private Brick brick;

@@ -1,7 +1,6 @@
 package logic.brick;
 
 import logic.visitor.BrickVisitor;
-import logic.visitor.GuiBrickVisitor;
 
 /**
  * Implementation of a WoodenBrick from the game Breakout
@@ -12,10 +11,7 @@ public class WoodenBrick extends AbstractBrick {
         super(3,200);
     }
 
-    @Override
-    public void acceptGuiBrickVisitor(GuiBrickVisitor o) {
-        o.VisitWoodenBrick(this);
-    }
+
 
     @Override
     public boolean isMetalBrick() {

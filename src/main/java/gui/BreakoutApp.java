@@ -1,6 +1,5 @@
 package gui;
 
-import com.almasb.fxgl.app.FXGL;
 import com.almasb.fxgl.app.GameApplication;
 import com.almasb.fxgl.entity.Entity;
 import com.almasb.fxgl.input.Input;
@@ -10,42 +9,32 @@ import com.almasb.fxgl.particle.ParticleEmitter;
 import com.almasb.fxgl.particle.ParticleEmitters;
 import com.almasb.fxgl.physics.CollisionHandler;
 import com.almasb.fxgl.physics.HitBox;
-import com.almasb.fxgl.physics.PhysicsComponent;
 import com.almasb.fxgl.settings.GameSettings;
-import com.almasb.fxgl.texture.Texture;
-import com.almasb.fxgl.ui.UI;
-import com.almasb.fxgl.ui.UIController;
-import com.almasb.fxgl.util.Consumer;
 import controller.Game;
 import facade.HomeworkTwoFacade;
 import gui.components.BallComponent;
 import gui.components.BrickComponent;
 import gui.components.PlayerComponent;
 import gui.types.GameTypes;
-import javafx.animation.PathTransition;
 import javafx.geometry.Point2D;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.MouseButton;
 import javafx.scene.paint.Color;
 import javafx.scene.text.Font;
 import javafx.scene.text.Text;
-import javafx.util.Duration;
 import logic.brick.Brick;
 import logic.level.Level;
-import logic.visitor.BehaviourSelector;
 
 import java.util.*;
-import java.util.stream.IntStream;
 
-import static com.almasb.fxgl.app.DSLKt.geti;
-import static com.almasb.fxgl.app.DSLKt.getip;
-import static gui.factory.InteractiveElementsFactory.newBall;
-import static gui.factory.InteractiveElementsFactory.newBrick;
-import static gui.factory.InteractiveElementsFactory.newPlayer;
+import static gui.factory.InteractiveElementsFactory.*;
 import static gui.factory.NonInteractiveElementsFactory.newBackground;
 import static gui.factory.NonInteractiveElementsFactory.newBorderWalls;
 
-
+/**
+ * The GUI for the game Breakdown, it contains methods that show Pop up boxes , read the inputs and handles the physics
+ * @author Joaquin Moraga
+ */
 public class BreakoutApp extends GameApplication implements Observer {
     private HomeworkTwoFacade game;
     private boolean released= false;
@@ -54,7 +43,9 @@ public class BreakoutApp extends GameApplication implements Observer {
     private double prob_g;
     private double prob_m;
     private boolean lock;
-
+    private boolean cheatmode;
+    private boolean cheat_message;
+    private Text textCHEAT;
 
 
     @Override
@@ -64,6 +55,9 @@ public class BreakoutApp extends GameApplication implements Observer {
         gameSettings.setTitle("Breakout");
         gameSettings.setVersion("0.1");
         lock=false;
+        cheatmode=false;
+        cheat_message=false;
+        Text textCHEAT= new Text();
 
 
 
@@ -110,6 +104,7 @@ public class BreakoutApp extends GameApplication implements Observer {
         getGameScene().addUINode(textLabelScore);
 
 
+
     }
 
     @Override
@@ -120,7 +115,7 @@ public class BreakoutApp extends GameApplication implements Observer {
                     @Override
                     protected void onHitBoxTrigger(Entity ball, Entity wall, HitBox boxBall, HitBox boxWall) {
                         if (boxWall.getName().equals("BOT")) {
-                            ball.removeComponent(PhysicsComponent.class);
+
                             ball.removeFromWorld();
                             game.dropBall();
                             updateVariables();
@@ -143,7 +138,7 @@ public class BreakoutApp extends GameApplication implements Observer {
                 }
         );
 
-        getPhysicsWorld().addCollisionHandler(new CollisionHandler(GameTypes.BALL, GameTypes.W_BRICK) {
+        getPhysicsWorld().addCollisionHandler(new CollisionHandler(GameTypes.BALL, GameTypes.BRICK) {
             @Override
             protected void onHitBoxTrigger(Entity ball, Entity brick, HitBox boxBall, HitBox boxBrick) {
 
@@ -155,29 +150,6 @@ public class BreakoutApp extends GameApplication implements Observer {
 
                 updateVariables();
 
-            }
-        });
-
-        getPhysicsWorld().addCollisionHandler(new CollisionHandler(GameTypes.BALL, GameTypes.M_BRICK) {
-            @Override
-            protected void onHitBoxTrigger(Entity ball, Entity brick, HitBox boxBall, HitBox boxBrick) {
-                brick.getComponent(BrickComponent.class).onHit();
-
-                if(brick.getComponent(BrickComponent.class).isDestroyed()){
-                    explosion(brick.getPosition());
-                }
-                updateVariables();
-            }
-        });
-        getPhysicsWorld().addCollisionHandler(new CollisionHandler(GameTypes.BALL, GameTypes.G_BRICK) {
-            @Override
-            protected void onHitBoxTrigger(Entity ball, Entity brick, HitBox boxBall, HitBox boxBrick) {
-                brick.getComponent(BrickComponent.class).onHit();
-                if(brick.getComponent(BrickComponent.class).isDestroyed()){
-                    explosion(brick.getPosition());
-                }
-
-                updateVariables();
             }
         });
     }
@@ -226,7 +198,10 @@ public class BreakoutApp extends GameApplication implements Observer {
             @Override
             protected void onActionBegin(){
                 emptylevel=false;
-                addLevel();}
+                addLevel();
+                updateVariables();
+
+            }
         },KeyCode.N);
 
         input.addAction(new UserAction("Enable Level values editor") {
@@ -237,6 +212,59 @@ public class BreakoutApp extends GameApplication implements Observer {
             @Override
             protected void onActionBegin(){showTutorialMessage();}
         },KeyCode.T);
+
+        input.addAction(new UserAction("Toggle CHEAT MODE") {
+            @Override
+            protected void onActionBegin(){
+
+                if(cheatmode){
+                    getGameScene().removeUINode(textCHEAT);
+                }
+                else{
+                    showCHEATMODE();
+                }
+                if(!cheat_message){
+                    showCheatModeMessage();
+                    cheat_message=true;
+                }
+
+                cheatmode=!cheatmode;
+
+            }
+        },KeyCode.Y);
+
+        input.addAction(new UserAction("CHEAT MODE: CLICK ON BRICK") {
+            @Override
+            protected void onActionBegin(){
+                if(cheatmode){
+                Entity brick=getGameWorld().getSelectedEntity().get();
+                brick.getComponent(BrickComponent.class).onHit();
+
+                if(brick.getComponent(BrickComponent.class).isDestroyed()){
+                    explosion(brick.getPosition());
+                }
+
+                updateVariables();}
+
+
+            }
+        },MouseButton.PRIMARY);
+        input.addAction(new UserAction("CHEAT MODE: SPAWN BALL") {
+            @Override
+            protected void onActionBegin(){
+                if(cheatmode){
+                 getGameWorld().getSingleton(GameTypes.BALL).get().removeFromWorld();
+                 Entity player = getGameWorld().getSingleton(GameTypes.PLAYER).get();
+                 Entity new_ball= newBall(player.getX()+(player.getWidth()/2),player.getY() - player.getHeight()/2);
+                 getGameWorld().addEntity(new_ball);
+                 lock=false;
+                 released=false;
+                }
+
+
+            }
+        },MouseButton.SECONDARY);
+
 
     }
 
@@ -288,8 +316,9 @@ public class BreakoutApp extends GameApplication implements Observer {
             }
         }
         else if(arg instanceof Level) {
-        clearBricks();
-        showLevel();}
+            clearElements();
+            showLevel();
+        }
 
     }
     private BallComponent getBallControl() {
@@ -304,8 +333,17 @@ public class BreakoutApp extends GameApplication implements Observer {
 
 
 
-    private void clearBricks() {
-        getGameWorld().getEntitiesByType(GameTypes.M_BRICK).forEach(e ->{e.removeFromWorld();});
+    private void clearElements() {
+
+        getGameWorld().getEntitiesByType(GameTypes.BRICK).forEach(e ->{e.removeFromWorld();});
+        getGameWorld().getEntitiesByType(GameTypes.BALL).forEach(e ->{e.removeFromWorld();});
+        Entity player = getGameWorld().getSingleton(GameTypes.PLAYER).get();
+        Entity new_ball= newBall(player.getX()+(player.getWidth()/2),player.getY() - player.getHeight()/2);
+        getGameWorld().addEntity(new_ball);
+        lock=false;
+        released=false;
+
+
     }
     private void showGameOver(boolean state){
         if(!state){
@@ -344,9 +382,14 @@ public class BreakoutApp extends GameApplication implements Observer {
         );
         getDisplay().showInputBox("Ingrese la cantidad de ladrillos",num ->{
            int realnum= Integer.parseInt(num);
+           if(realnum>100){//Es injugable con un numero mayor a 100
+               realnum=100;
+           }
            n_bricks=realnum;
+
         }
         );
+
 
     }
 
@@ -356,7 +399,11 @@ public class BreakoutApp extends GameApplication implements Observer {
     private void showTutorialMessage(){
         getDisplay().showMessageBox("TUTORIAL" +'\n'+"Use A key to move towards left"+'\n'+"Use D key to move towards right"+
                 '\n'+"Use Space key to release the ball"+'\n'+"Use N key to add a new level"+'\n'+"Use M key to edit the level values"+
+                '\n'+"Use Y key to activate CHEAT MODE"+" "+"(ONLY FOR TESTING)"+
                 '\n'+"Use T key to show the tutorial once again");
+    }
+    private void showCheatModeMessage(){
+        getDisplay().showMessageBox("CHEAT MODE activated, click on the bricks to hit them."+'\n'+"But be careful! if you hit the background you will cause a fatal error");
     }
 
 
@@ -367,13 +414,17 @@ public class BreakoutApp extends GameApplication implements Observer {
     private void updateVariables() {
         getGameState().intProperty("balls").setValue(game.getBallsLeft());
         getGameState().intProperty("score").setValue(game.getCurrentPoints());
+
     }
     private void resetGame(){
         getGameWorld().getEntitiesCopy().forEach(Entity::removeFromWorld);
         startNewGame();
         game.resetGame();
-        emptylevel=true;
         lock=false;
+        emptylevel=true;
+        cheatmode=false;
+        cheat_message=false;
+
     }
     private  void explosion(Point2D pos){
 
@@ -400,6 +451,19 @@ public class BreakoutApp extends GameApplication implements Observer {
         t2.setTranslateX(60);
         t1.setTranslateY(Title1.getY());
         t2.setTranslateY(Title2.getY());
+
+
+    }
+    private void showCHEATMODE(){
+
+
+            Font font = new Font(20);
+            textCHEAT =new Text("CHEAT MODE ON");
+            textCHEAT.setTranslateX(getWidth()-2*textCHEAT.getLayoutBounds().getWidth());
+            textCHEAT.setTranslateY(getHeight());
+            textCHEAT.setFont(font);
+            textCHEAT.setFill(Color.RED);
+            getGameScene().addUINode(textCHEAT);
 
 
     }

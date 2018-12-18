@@ -1,7 +1,10 @@
 package logic.state;
 
 import logic.brick.Brick;
-
+/**
+ * Implementation of the state Hitted of a Brick from the game Breakout
+ * @author Joaquin Moraga
+ */
 public class Hitted extends AbstractState{
 
 

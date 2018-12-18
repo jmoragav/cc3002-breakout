@@ -2,9 +2,14 @@ package gui.components;
 
 import com.almasb.fxgl.app.FXGL;
 import com.almasb.fxgl.entity.component.Component;
+import com.almasb.fxgl.physics.PhysicsComponent;
 import logic.brick.Brick;
 import logic.visitor.BehaviourSelector;
 
+/**
+ * This class contains the actions of a ball for the GUI
+ * @author Joaquin Moraga
+ */
 
 public class BrickComponent extends Component {
     private Brick brick;
@@ -57,7 +62,9 @@ public class BrickComponent extends Component {
 
 
         if(isDestroyed()){
+
             entity.removeFromWorld();
+
         }
 
 

@@ -66,6 +66,7 @@ public class Game extends Observable implements Observer , BrickVisitor {
     /**
      * Pass to the next level of the current {@link Level}. Ignores all conditions and skip to the next level.
      * if the current level hasn't a next level the game is finished
+     * Notifies the GUI observer the change of level
      */
     public void goNextLevel() {
         assert (!isGameOver());
@@ -269,9 +270,19 @@ public class Game extends Observable implements Observer , BrickVisitor {
         int score=brick.getScore();
         setPoints(Points+score);
     }
+
+    /**
+     * Set the numbers of balls in the game
+     * @param b the number of balls to set
+     */
     public void setBalls(int b){
         balls=b;
     }
+
+    /**
+     * Set the points in this game
+     * @param p the points to be set
+     */
     public void setPoints(int p){
         Points=p;
     }

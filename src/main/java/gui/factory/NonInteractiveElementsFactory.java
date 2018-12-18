@@ -7,6 +7,7 @@ import com.almasb.fxgl.entity.Entity;
 import com.almasb.fxgl.entity.RenderLayer;
 import com.almasb.fxgl.entity.components.CollidableComponent;
 import com.almasb.fxgl.entity.components.IrremovableComponent;
+import com.almasb.fxgl.entity.components.SelectableComponent;
 import com.almasb.fxgl.particle.ParticleComponent;
 import com.almasb.fxgl.particle.ParticleEmitter;
 import com.almasb.fxgl.particle.ParticleEmitters;
@@ -18,10 +19,15 @@ import javafx.util.Duration;
 import logic.brick.Brick;
 import logic.visitor.BehaviourSelector;
 
+/**
+ * Factory of None Interactive Elements , here are created elements such as Background and BorderWalls
+ * @author Joaquin Moraga
+ */
+
 public class NonInteractiveElementsFactory {
 
     public static Entity newBackground(){
-        return Entities.builder().viewFromNode(new Rectangle(700,700, Color.BLACK)).with(new IrremovableComponent())
+        return Entities.builder().viewFromNode(new Rectangle(700,700, Color.BLACK)).with(new IrremovableComponent()).with(new SelectableComponent(false))
                 .renderLayer(RenderLayer.BACKGROUND).build();
     }
 

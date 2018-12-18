@@ -1,5 +1,9 @@
 package gui.types;
 
+/**
+ * Declaration of Types in the game Breakdown for the GUI
+ * @author Joaquin Moraga
+ */
 public enum GameTypes {
-    BALL,W_BRICK,G_BRICK,M_BRICK,BRICK,PLAYER,WALL
+    BALL,BRICK,PLAYER,WALL
 }

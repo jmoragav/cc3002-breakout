@@ -1,0 +1,332 @@
+02:20:29.844 [JavaFX Application Thread] DEBUG GameApplication      - Logger initialized
+02:20:29.876 [JavaFX Application Thread] DEBUG GameApplication      - Logging settings
+Title: Breakout
+Version: 0.1
+Width: 600
+Height: 700
+Fullscreen: false
+Intro: false
+Menus: false
+Profiling: false
+Single step:false
+App Mode: DEVELOPER
+Menu Key: ESCAPE
+Stage Style: DECORATED
+Scene Factory: class com.almasb.fxgl.scene.SceneFactory
+Dialog Factory: class com.almasb.fxgl.ui.FXGLDialogFactory
+UI Factory: class com.almasb.fxgl.ui.FXGLUIFactory
+Notification Service: class com.almasb.fxgl.gameplay.notification.XboxNotificationView
+Exception Handler: class com.almasb.fxgl.app.FXGLExceptionHandler
+02:20:29.877 [JavaFX Application Thread] DEBUG GameApplication      - Starting FXGL
+02:20:29.896 [JavaFX Application Thread] INFO  FXGL                 - FXGL-0.5.4 on DESKTOP
+02:20:29.897 [JavaFX Application Thread] INFO  FXGL                 - Source code and latest versions at: https://github.com/AlmasB/FXGL
+02:20:29.898 [JavaFX Application Thread] INFO  FXGL                 -              Join the FXGL chat at: https://gitter.im/AlmasB/FXGL
+02:20:29.898 [JavaFX Application Thread] DEBUG FXGL                 - FXGL started
+02:20:29.898 [JavaFX Application Thread] DEBUG FXGL                 - Initializing FXGL
+02:20:29.985 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from disk: /assets/ui/cursors/fxgl_default.png
+02:20:30.107 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from disk: /assets/ui/fonts/VarelaRound-Regular.ttf
+02:20:30.460 [JavaFX Application Thread] DEBUG MainWindow           - Creating a JavaFX scene
+02:20:30.581 [JavaFX Application Thread] DEBUG MainWindow           - Target settings size: 600.0 x 700.0
+02:20:30.581 [JavaFX Application Thread] DEBUG MainWindow           - Scaled scene size:    600.0 x 700.0
+02:20:30.581 [JavaFX Application Thread] DEBUG MainWindow           - Scaled ratio: (1.0, 1.0)
+02:20:30.585 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from disk: /assets/ui/css/fxgl_dark.css
+02:20:30.599 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from disk: /assets/textures/fxgl_icon.png
+02:20:30.633 [JavaFX Application Thread] DEBUG MainWindow           - Opening main window
+02:20:31.082 [JavaFX Application Thread] DEBUG MainWindow           - Window border size: (6.0, 29.0)
+02:20:31.082 [JavaFX Application Thread] DEBUG MainWindow           - Scaled size: 600.0 x 700.0
+02:20:31.083 [JavaFX Application Thread] DEBUG MainWindow           - Scaled ratio: (1.0, 1.0)
+02:20:31.083 [JavaFX Application Thread] DEBUG MainWindow           - Scene size: 600.0 x 700.0
+02:20:31.083 [JavaFX Application Thread] DEBUG MainWindow           - Stage size: 606.0 x 729.0
+02:20:31.294 [ForkJoinPool.commonPool-worker-1] DEBUG FS                   - Loaded DesktopFSService
+02:20:31.295 [ForkJoinPool.commonPool-worker-1] DEBUG FXGL                 - Loading FXGL system data
+02:20:31.305 [ForkJoinPool.commonPool-worker-1] DEBUG DesktopFSService     - Reading from: system\fxgl.bundle
+02:20:31.326 [ForkJoinPool.commonPool-worker-1] DEBUG Bundle               - Logging bundle: FXGL
+02:20:31.327 [ForkJoinPool.commonPool-worker-1] DEBUG Bundle               - FXGL.offline.timer.version.check=2018-12-11T22:01:22.697
+02:20:31.328 [ForkJoinPool.commonPool-worker-1] DEBUG FXGL                 - Initializing state machine and application states
+02:20:31.331 [ForkJoinPool.commonPool-worker-1] DEBUG AssetLoader          - Loading from disk: /assets/ui/cursors/fxgl_default.png
+02:20:31.343 [ForkJoinPool.commonPool-worker-1] DEBUG AssetLoader          - Loading from disk: /assets/ui/cursors/fxgl_default.png
+02:20:31.358 [ForkJoinPool.commonPool-worker-1] DEBUG AssetLoader          - Loading from cache: /assets/ui/fonts/VarelaRound-Regular.ttf
+02:20:31.363 [ForkJoinPool.commonPool-worker-1] DEBUG AssetLoader          - Loading from disk: /assets/ui/cursors/fxgl_default.png
+02:20:31.374 [ForkJoinPool.commonPool-worker-1] DEBUG GameScene            - Game scene initialized: 600x700
+02:20:31.395 [ForkJoinPool.commonPool-worker-1] DEBUG GameWorld            - Game world initialized
+02:20:31.611 [ForkJoinPool.commonPool-worker-1] DEBUG PhysicsWorld         - Physics world initialized: appHeight=700, physics.ppm=50,0
+02:20:31.650 [ForkJoinPool.commonPool-worker-1] DEBUG Input                - Registered new binding: Pause - Esc
+02:20:31.748 [JavaFX Application Thread] DEBUG FXGL                 - Running preInit()
+02:20:31.751 [JavaFX Application Thread] DEBUG Input                - Registered new binding: Screenshot - P
+02:20:31.752 [JavaFX Application Thread] DEBUG Input                - Registered new binding: Dev Options - CTRL+0
+02:20:31.754 [JavaFX Application Thread] DEBUG Input                - Registered new binding: System info dump - CTRL+9
+02:20:31.755 [JavaFX Application Thread] DEBUG Input                - Registered new binding: Restart - CTRL+R
+02:20:31.756 [JavaFX Application Thread] DEBUG Input                - Registered new binding: New ball - Space
+02:20:31.756 [JavaFX Application Thread] DEBUG Input                - Registered new binding: Move Left - A
+02:20:31.756 [JavaFX Application Thread] DEBUG Input                - Registered new binding: Move Right - D
+02:20:31.757 [JavaFX Application Thread] DEBUG Input                - Registered new binding: Add Level - N
+02:20:31.758 [JavaFX Application Thread] DEBUG Input                - Registered new binding: Enable Level values editor - M
+02:20:31.758 [JavaFX Application Thread] DEBUG Input                - Registered new binding: Show tutorial - T
+02:20:31.758 [JavaFX Application Thread] DEBUG Input                - Registered new binding: Toggle CHEAT MODE - Y
+02:20:31.760 [JavaFX Application Thread] DEBUG Input                - Registered new binding: CHEAT MODE: CLICK ON BRICK - LMB
+02:20:31.761 [JavaFX Application Thread] DEBUG Input                - Registered new binding: CHEAT MODE: SPAWN BALL - RMB
+02:20:31.763 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/ui/fonts/VarelaRound-Regular.ttf
+02:20:31.772 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/ui/fonts/VarelaRound-Regular.ttf
+02:20:31.777 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from disk: /assets/properties/languages/english.properties
+02:20:31.783 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/ui/fonts/VarelaRound-Regular.ttf
+02:20:31.785 [JavaFX Application Thread] DEBUG AppStateMachine      - Push state: DialogSubState
+02:20:31.785 [JavaFX Application Thread] DEBUG Input                - Clearing active input actions
+02:20:31.785 [JavaFX Application Thread] DEBUG AppStateMachine      - StartupState -> DialogSubState
+02:20:31.807 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/ui/fonts/VarelaRound-Regular.ttf
+02:20:31.821 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/ui/fonts/VarelaRound-Regular.ttf
+02:20:31.822 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/ui/fonts/VarelaRound-Regular.ttf
+02:20:31.822 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/properties/languages/english.properties
+02:20:31.825 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/ui/fonts/VarelaRound-Regular.ttf
+02:20:31.830 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/ui/fonts/VarelaRound-Regular.ttf
+02:20:31.832 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/ui/fonts/VarelaRound-Regular.ttf
+02:20:31.832 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/ui/fonts/VarelaRound-Regular.ttf
+02:20:31.832 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/properties/languages/english.properties
+02:20:31.833 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/ui/fonts/VarelaRound-Regular.ttf
+02:20:31.837 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/ui/fonts/VarelaRound-Regular.ttf
+02:20:31.838 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/ui/fonts/VarelaRound-Regular.ttf
+02:20:31.838 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/ui/fonts/VarelaRound-Regular.ttf
+02:20:31.839 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/properties/languages/english.properties
+02:20:31.839 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/ui/fonts/VarelaRound-Regular.ttf
+02:20:31.843 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/ui/fonts/VarelaRound-Regular.ttf
+02:20:31.844 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/ui/fonts/VarelaRound-Regular.ttf
+02:20:31.846 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/properties/languages/english.properties
+02:20:31.848 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/ui/fonts/VarelaRound-Regular.ttf
+02:20:31.852 [JavaFX Application Thread] INFO  FXGL                 - FXGL initialization took: 1,953 sec
+02:20:31.852 [JavaFX Application Thread] DEBUG LoopRunner           - Starting loop
+02:20:32.823 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/ui/fonts/VarelaRound-Regular.ttf
+02:20:34.932 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/sounds/menu/select.wav
+02:20:35.189 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/ui/fonts/VarelaRound-Regular.ttf
+02:20:35.871 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/sounds/menu/select.wav
+02:20:36.230 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/ui/fonts/VarelaRound-Regular.ttf
+02:20:36.389 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/sounds/menu/select.wav
+02:20:36.919 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/ui/fonts/VarelaRound-Regular.ttf
+02:20:36.929 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/sounds/menu/select.wav
+02:20:37.491 [JavaFX Application Thread] DEBUG AppStateMachine      - Pop state: DialogSubState
+02:20:37.492 [JavaFX Application Thread] DEBUG Input                - Clearing active input actions
+02:20:37.492 [JavaFX Application Thread] DEBUG AppStateMachine      - StartupState <- DialogSubState
+02:20:37.497 [JavaFX Application Thread] DEBUG StartupState         - STARTUP
+02:20:37.497 [JavaFX Application Thread] DEBUG GameApplication      - Starting new game
+02:20:37.497 [JavaFX Application Thread] DEBUG Input                - Clearing active input actions
+02:20:37.497 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from disk: /assets/ui/css/fxgl_dark.css
+02:20:37.509 [JavaFX Application Thread] DEBUG AppStateMachine      - StartupState -> LoadingState
+02:20:37.517 [FXGL Background Thread 1 ] DEBUG InitAppTask          - Clearing previous game
+02:20:37.517 [FXGL Background Thread 1 ] DEBUG GameWorld            - Clearing game world
+02:20:37.518 [FXGL Background Thread 1 ] DEBUG PhysicsWorld         - Clearing physics world
+02:20:37.518 [FXGL Background Thread 1 ] DEBUG GameScene            - Clearing game scene
+02:20:37.522 [FXGL Background Thread 1 ] DEBUG InitAppTask          - Initializing Game
+02:20:37.601 [FXGL Background Thread 1 ] DEBUG AssetLoader          - Loading from disk: /assets/textures/bat.png
+02:20:37.680 [FXGL Background Thread 1 ] DEBUG AudioPlayer          - Playing music com.almasb.fxgl.audio.Music@524f284
+02:20:37.692 [FXGL Background Thread 1 ] DEBUG GameScene            - Creating render group for layer: BACKGROUND(1000)
+02:20:37.766 [FXGL Background Thread 1 ] DEBUG GameScene            - Creating render group for layer: DEFAULT(100000)
+02:20:37.768 [FXGL Background Thread 1 ] DEBUG InitAppTask          - Initializing Physics
+02:20:37.769 [FXGL Background Thread 1 ] DEBUG InitAppTask          - Initializing UI
+02:20:37.773 [FXGL Background Thread 1 ] DEBUG InitAppTask          - Initialization Complete
+02:20:37.774 [FXGL Background Thread 1 ] INFO  InitAppTask          - Game initialization took: 0,256 sec
+02:20:37.801 [JavaFX Application Thread] DEBUG Input                - Clearing active input actions
+02:20:37.801 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from disk: /assets/ui/css/fxgl_dark.css
+02:20:37.813 [JavaFX Application Thread] DEBUG AppStateMachine      - LoadingState -> PlayState
+02:20:39.002 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from disk: /assets/textures/brick_blue.png
+02:20:39.008 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from disk: /assets/textures/brick_metal.png
+02:20:39.011 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_blue.png@50.0x20.0
+02:20:39.012 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_blue.png@50.0x20.0
+02:20:39.013 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_blue.png@50.0x20.0
+02:20:39.014 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_blue.png@50.0x20.0
+02:20:39.016 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_metal.png@50.0x20.0
+02:20:39.017 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_metal.png@50.0x20.0
+02:20:39.018 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_metal.png@50.0x20.0
+02:20:39.019 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_blue.png@50.0x20.0
+02:20:39.020 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_metal.png@50.0x20.0
+02:20:39.022 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_blue.png@50.0x20.0
+02:20:39.024 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_blue.png@50.0x20.0
+02:20:39.025 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_metal.png@50.0x20.0
+02:20:39.027 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_metal.png@50.0x20.0
+02:20:39.029 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_blue.png@50.0x20.0
+02:20:39.030 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_blue.png@50.0x20.0
+02:20:39.032 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_metal.png@50.0x20.0
+02:20:39.033 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_blue.png@50.0x20.0
+02:20:39.035 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_metal.png@50.0x20.0
+02:20:39.036 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_metal.png@50.0x20.0
+02:20:39.038 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_metal.png@50.0x20.0
+02:20:39.039 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_metal.png@50.0x20.0
+02:20:39.040 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_blue.png@50.0x20.0
+02:20:39.041 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_metal.png@50.0x20.0
+02:20:39.042 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_metal.png@50.0x20.0
+02:20:39.043 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_blue.png@50.0x20.0
+02:20:39.044 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_metal.png@50.0x20.0
+02:20:39.045 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_metal.png@50.0x20.0
+02:20:39.046 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_metal.png@50.0x20.0
+02:20:39.047 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_blue.png@50.0x20.0
+02:20:39.048 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_blue.png@50.0x20.0
+02:20:39.049 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_blue.png@50.0x20.0
+02:20:39.051 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_blue.png@50.0x20.0
+02:20:39.052 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_blue.png@50.0x20.0
+02:20:39.053 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_blue.png@50.0x20.0
+02:20:39.054 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_metal.png@50.0x20.0
+02:20:39.055 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_blue.png@50.0x20.0
+02:20:39.056 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_metal.png@50.0x20.0
+02:20:39.058 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_blue.png@50.0x20.0
+02:20:39.059 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_blue.png@50.0x20.0
+02:20:39.060 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_blue.png@50.0x20.0
+02:20:39.062 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_blue.png@50.0x20.0
+02:20:39.063 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_metal.png@50.0x20.0
+02:20:39.065 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_metal.png@50.0x20.0
+02:20:39.067 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_blue.png@50.0x20.0
+02:20:39.068 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_blue.png@50.0x20.0
+02:20:39.070 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_metal.png@50.0x20.0
+02:20:39.071 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_metal.png@50.0x20.0
+02:20:39.072 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_blue.png@50.0x20.0
+02:20:39.074 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_metal.png@50.0x20.0
+02:20:39.075 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_metal.png@50.0x20.0
+02:20:39.076 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_blue.png@50.0x20.0
+02:20:39.077 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_metal.png@50.0x20.0
+02:20:39.078 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_blue.png@50.0x20.0
+02:20:39.079 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_metal.png@50.0x20.0
+02:20:39.080 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_metal.png@50.0x20.0
+02:20:39.081 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_blue.png@50.0x20.0
+02:20:39.082 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_blue.png@50.0x20.0
+02:20:39.083 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_blue.png@50.0x20.0
+02:20:39.084 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_blue.png@50.0x20.0
+02:20:39.085 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_blue.png@50.0x20.0
+02:20:39.086 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_metal.png@50.0x20.0
+02:20:39.087 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_blue.png@50.0x20.0
+02:20:39.088 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_metal.png@50.0x20.0
+02:20:39.089 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_blue.png@50.0x20.0
+02:20:39.090 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_blue.png@50.0x20.0
+02:20:39.091 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_blue.png@50.0x20.0
+02:20:39.092 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_metal.png@50.0x20.0
+02:20:39.094 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_blue.png@50.0x20.0
+02:20:39.095 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_blue.png@50.0x20.0
+02:20:39.097 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_metal.png@50.0x20.0
+02:20:39.098 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_metal.png@50.0x20.0
+02:20:39.099 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_metal.png@50.0x20.0
+02:20:39.101 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_metal.png@50.0x20.0
+02:20:39.102 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_blue.png@50.0x20.0
+02:20:39.103 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_metal.png@50.0x20.0
+02:20:39.104 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_blue.png@50.0x20.0
+02:20:39.105 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_metal.png@50.0x20.0
+02:20:39.107 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_blue.png@50.0x20.0
+02:20:39.108 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_blue.png@50.0x20.0
+02:20:39.109 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_metal.png@50.0x20.0
+02:20:39.110 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_blue.png@50.0x20.0
+02:20:39.111 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_blue.png@50.0x20.0
+02:20:39.112 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_blue.png@50.0x20.0
+02:20:39.113 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_blue.png@50.0x20.0
+02:20:39.114 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_blue.png@50.0x20.0
+02:20:39.114 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_blue.png@50.0x20.0
+02:20:39.115 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_metal.png@50.0x20.0
+02:20:39.116 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_blue.png@50.0x20.0
+02:20:39.116 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_blue.png@50.0x20.0
+02:20:39.117 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_blue.png@50.0x20.0
+02:20:39.118 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_metal.png@50.0x20.0
+02:20:39.119 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_blue.png@50.0x20.0
+02:20:39.121 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_metal.png@50.0x20.0
+02:20:39.123 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_metal.png@50.0x20.0
+02:20:39.124 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_metal.png@50.0x20.0
+02:20:39.125 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_blue.png@50.0x20.0
+02:20:39.126 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_blue.png@50.0x20.0
+02:20:39.127 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_metal.png@50.0x20.0
+02:20:39.128 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_blue.png@50.0x20.0
+02:20:39.129 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_blue.png@50.0x20.0
+02:20:39.130 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_metal.png@50.0x20.0
+02:20:39.131 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_blue.png@50.0x20.0
+02:20:39.132 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_blue.png@50.0x20.0
+02:20:39.133 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_blue.png@50.0x20.0
+02:20:39.134 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_metal.png@50.0x20.0
+02:20:39.135 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_metal.png@50.0x20.0
+02:20:39.136 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_metal.png@50.0x20.0
+02:20:39.137 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_blue.png@50.0x20.0
+02:20:39.138 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_blue.png@50.0x20.0
+02:20:39.138 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_metal.png@50.0x20.0
+02:20:39.149 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_blue.png@50.0x20.0
+02:20:39.150 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_blue.png@50.0x20.0
+02:20:39.151 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_blue.png@50.0x20.0
+02:20:39.152 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_metal.png@50.0x20.0
+02:20:39.152 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_metal.png@50.0x20.0
+02:20:39.153 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_metal.png@50.0x20.0
+02:20:39.154 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_metal.png@50.0x20.0
+02:20:39.155 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_blue.png@50.0x20.0
+02:20:39.155 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_metal.png@50.0x20.0
+02:20:39.156 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_blue.png@50.0x20.0
+02:20:39.158 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_blue.png@50.0x20.0
+02:20:39.159 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_metal.png@50.0x20.0
+02:20:39.160 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_metal.png@50.0x20.0
+02:20:39.161 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_blue.png@50.0x20.0
+02:20:39.162 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_blue.png@50.0x20.0
+02:20:39.163 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_blue.png@50.0x20.0
+02:20:39.164 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_blue.png@50.0x20.0
+02:20:39.164 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_blue.png@50.0x20.0
+02:20:39.165 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_metal.png@50.0x20.0
+02:20:39.166 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_metal.png@50.0x20.0
+02:20:39.166 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_metal.png@50.0x20.0
+02:20:39.167 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_blue.png@50.0x20.0
+02:20:39.168 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_blue.png@50.0x20.0
+02:20:39.169 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_metal.png@50.0x20.0
+02:20:39.169 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_metal.png@50.0x20.0
+02:20:39.170 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_metal.png@50.0x20.0
+02:20:39.171 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_blue.png@50.0x20.0
+02:20:39.171 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_blue.png@50.0x20.0
+02:20:39.172 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_blue.png@50.0x20.0
+02:20:39.173 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_metal.png@50.0x20.0
+02:20:39.174 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_metal.png@50.0x20.0
+02:20:39.174 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_metal.png@50.0x20.0
+02:20:39.175 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_metal.png@50.0x20.0
+02:20:39.176 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_blue.png@50.0x20.0
+02:20:39.177 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_blue.png@50.0x20.0
+02:20:39.178 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_metal.png@50.0x20.0
+02:20:39.179 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_blue.png@50.0x20.0
+02:20:39.179 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_blue.png@50.0x20.0
+02:20:39.180 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_metal.png@50.0x20.0
+02:20:39.181 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_blue.png@50.0x20.0
+02:20:39.182 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_blue.png@50.0x20.0
+02:20:39.182 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_metal.png@50.0x20.0
+02:20:39.183 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_metal.png@50.0x20.0
+02:20:39.184 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_metal.png@50.0x20.0
+02:20:39.184 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_metal.png@50.0x20.0
+02:20:39.185 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_metal.png@50.0x20.0
+02:20:39.186 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_metal.png@50.0x20.0
+02:20:39.187 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_blue.png@50.0x20.0
+02:20:39.188 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_metal.png@50.0x20.0
+02:20:39.189 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_metal.png@50.0x20.0
+02:20:39.190 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_metal.png@50.0x20.0
+02:20:39.190 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_metal.png@50.0x20.0
+02:20:39.191 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_blue.png@50.0x20.0
+02:20:39.192 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_metal.png@50.0x20.0
+02:20:39.192 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_blue.png@50.0x20.0
+02:20:39.193 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_blue.png@50.0x20.0
+02:20:39.193 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_blue.png@50.0x20.0
+02:20:39.194 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_blue.png@50.0x20.0
+02:20:39.195 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_blue.png@50.0x20.0
+02:20:39.195 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_metal.png@50.0x20.0
+02:20:39.197 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_blue.png@50.0x20.0
+02:20:39.198 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_metal.png@50.0x20.0
+02:20:39.199 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_metal.png@50.0x20.0
+02:20:39.199 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_metal.png@50.0x20.0
+02:20:39.200 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_blue.png@50.0x20.0
+02:20:39.201 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_metal.png@50.0x20.0
+02:20:39.202 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_metal.png@50.0x20.0
+02:20:39.203 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_metal.png@50.0x20.0
+02:20:39.204 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_metal.png@50.0x20.0
+02:20:39.205 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_blue.png@50.0x20.0
+02:20:39.206 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_blue.png@50.0x20.0
+02:20:39.206 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_blue.png@50.0x20.0
+02:20:39.207 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_metal.png@50.0x20.0
+02:20:39.208 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_metal.png@50.0x20.0
+02:20:39.208 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_blue.png@50.0x20.0
+02:20:39.209 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_metal.png@50.0x20.0
+02:20:39.210 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_blue.png@50.0x20.0
+02:20:39.211 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_blue.png@50.0x20.0
+02:20:39.212 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_metal.png@50.0x20.0
+02:20:39.213 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_metal.png@50.0x20.0
+02:20:39.214 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_metal.png@50.0x20.0
+02:20:39.215 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_metal.png@50.0x20.0
+02:20:39.216 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_metal.png@50.0x20.0
+02:20:39.216 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_metal.png@50.0x20.0
+02:20:39.217 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_metal.png@50.0x20.0
+02:20:39.217 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_metal.png@50.0x20.0
+02:20:39.218 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_metal.png@50.0x20.0
+02:20:39.218 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/brick_metal.png@50.0x20.0
+02:20:42.920 [JavaFX Application Thread] DEBUG FXGL                 - Exiting FXGL
+02:20:42.920 [JavaFX Application Thread] DEBUG FXGL                 - Shutting down background threads
+02:20:42.921 [JavaFX Application Thread] DEBUG FXGL                 - Saving FXGL system data
+02:20:42.925 [JavaFX Application Thread] DEBUG DesktopFSService     - Writing to: system\fxgl.bundle
+02:20:42.932 [JavaFX Application Thread] DEBUG FXGL                 - Closing logger and exiting JavaFX

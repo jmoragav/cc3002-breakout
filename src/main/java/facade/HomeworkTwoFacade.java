@@ -181,10 +181,19 @@ public class HomeworkTwoFacade {
     public boolean winner() {
         return game.winner();
     }
+
+    /**
+     * Add a GUI observer to the game
+     * @param o GUI observer to that will be watching the game
+     */
     public void addedToaGUI(Observer o){
         game.addObserver(o);
 
     }
+
+    /**
+     * Reset the entire game
+     */
 
     public void resetGame(){
         game= new Game(3);

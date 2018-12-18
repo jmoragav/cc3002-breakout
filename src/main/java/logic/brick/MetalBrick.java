@@ -2,7 +2,7 @@ package logic.brick;
 
 
 import logic.visitor.BrickVisitor;
-import logic.visitor.GuiBrickVisitor;
+
 
 /**
  * Implementation of a MetalBrick from the game Breakout
@@ -13,10 +13,7 @@ public class MetalBrick extends AbstractBrick {
         super(10,0);
     }
 
-    @Override
-    public void acceptGuiBrickVisitor(GuiBrickVisitor o) {
-        o.VisitMetalBrick(this);
-    }
+
 
     @Override
     public boolean isMetalBrick() {

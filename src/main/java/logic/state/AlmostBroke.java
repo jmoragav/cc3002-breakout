@@ -1,7 +1,10 @@
 package logic.state;
 
 import logic.brick.Brick;
-
+/**
+ * Implementation of the state AlmostBroke of a Brick from the game Breakout
+ * @author Joaquin Moraga
+ */
 public class AlmostBroke extends AbstractState {
     private Brick brick;
 

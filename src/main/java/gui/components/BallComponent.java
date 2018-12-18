@@ -4,6 +4,10 @@ import com.almasb.fxgl.core.math.Vec2;
 import com.almasb.fxgl.entity.component.Component;
 import com.almasb.fxgl.physics.PhysicsComponent;
 
+/**
+ * Component of a ball , this class has methods to limit the velocity of the ball and give the ball certain velocity
+ * @autor Joaquin Moraga
+ */
 public class BallComponent extends Component {
 
     private PhysicsComponent physics;

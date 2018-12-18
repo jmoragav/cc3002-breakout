@@ -117,13 +117,9 @@ public class PlayableLevel extends Observable implements Level , Observer , Bric
 
     @Override
     public void setNextLevel(Level level) {
-        if (hasNextLevel()) {
-            Level temp = next.getNextLevel();
+
             next = level;
-            next.setNextLevel(temp);
-        } else {
-            next = level;
-        }
+
 
 
     }

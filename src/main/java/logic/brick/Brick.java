@@ -3,7 +3,7 @@ package logic.brick;
 import logic.state.State;
 import logic.visitor.BrickVisitor;
 import logic.level.Level;
-import logic.visitor.GuiBrickVisitor;
+
 
 /**
  * Interface that represents a brick object.
@@ -60,17 +60,53 @@ public interface Brick {
      */
     void acceptBrickVisitor(BrickVisitor o);
 
-    void acceptGuiBrickVisitor(GuiBrickVisitor o);
+    /**
+     * Gets whether the brick object is a MetalBrick or not
+     * @return true if is a MetalBrick , false otherwise
+     */
 
     boolean isMetalBrick();
+    /**
+     * Gets whether the brick object is a WoodenBrick or not
+     * @return true if is a WoodenBrick , false otherwise
+     */
 
     boolean isWoodenBrick();
 
+    /**
+     * Gets whether the brick object is a GlassBrick or not
+     * @return true if is a GlassBrick , false otherwise
+     */
+
     boolean isGlassBrick();
 
+    /**
+     * Set the current state on the brick
+     * @param state
+     */
+
     void setState(State state);
+
+    /**
+     * Gets whether the state on the brick object is Normal or not
+     * @return true if is Normal, false otherwise
+     */
+
     boolean isNormal();
+    /**
+     * Gets whether the state on the brick object is Hitted or not
+     * @return true if is Hitted, false otherwise
+     */
     boolean isHitted();
+    /**
+     * Gets whether the state on the brick object is AlmostBroke or not
+     * @return true if is AlmostBroke, false otherwise
+     */
     boolean isAlmostBroke();
+
+    /**
+     * Get the name of the brick texture
+     * @return the name of the brick texture saved in assets
+     */
     String getTexture();
 }

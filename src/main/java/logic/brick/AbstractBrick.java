@@ -45,10 +45,10 @@ public abstract class AbstractBrick extends Observable implements Brick {
     public void hit() {
         if (Hitpoints != 0) {
             Hitpoints =Hitpoints-1;
-            if((Hitpoints==2 && isWoodenBrick()) || (Hitpoints==4 && isMetalBrick())){
+            if((Hitpoints==2 && isWoodenBrick()) || (Hitpoints==3 && isMetalBrick())){
                 setState(new AlmostBroke(this));
             }
-            if(Hitpoints==8 && isMetalBrick()){
+            if(Hitpoints==7 && isMetalBrick()){
                 setState(new Hitted(this));
             }
             if(Hitpoints==0){

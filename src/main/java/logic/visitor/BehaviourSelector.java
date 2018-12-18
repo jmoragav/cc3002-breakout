@@ -2,54 +2,66 @@ package logic.visitor;
 
 import com.almasb.fxgl.entity.component.Component;
 import gui.components.BrickComponent;
-import gui.types.GameTypes;
-import javafx.scene.paint.Color;
-import javafx.scene.shape.Rectangle;
-import javafx.scene.shape.Shape;
+
 import logic.brick.Brick;
-import logic.brick.GlassBrick;
+
 import logic.brick.MetalBrick;
-import logic.brick.WoodenBrick;
 
-import static gui.types.GameTypes.G_BRICK;
-import static gui.types.GameTypes.M_BRICK;
-import static gui.types.GameTypes.W_BRICK;
-
-public class BehaviourSelector implements GuiBrickVisitor {
+/**
+ * BehaviourSector is an object that will determinate the sound of a brick
+ * and the component of this using visitor pattern
+ * @author Joaquin Moraga
+ */
+public class BehaviourSelector implements BrickVisitor {
 
     private Component component;
-    private GameTypes type;
+
     String sound;
 
 
     public BehaviourSelector(Brick brick){
-        brick.acceptGuiBrickVisitor(this);
+        brick.acceptBrickVisitor(this);
         component = new BrickComponent(brick);
     }
-    @Override
-    public void VisitGlassBrick(GlassBrick glassBrick) {
-        sound = "GlassHit.wav";
 
-           type= G_BRICK;
-    }
-
+    /**
+     * The game visits a {@link MetalBrick}
+     * and assign the sound field to the correspondent sound name
+     * @param metalBrick the brick that indicates the sound name
+     */
     @Override
     public void VisitMetalBrick(MetalBrick metalBrick) {
         sound = "MetalHit.wav";
 
-        type= M_BRICK;
     }
+
+    /**
+     * The game visits a {@link logic.brick.WoodenBrick} or {@link logic.brick.GlassBrick}
+     * and assign the sound field to the correspondent sound name
+     * @param brick the brick that indicates the sound name
+     */
 
     @Override
-    public void VisitWoodenBrick(WoodenBrick woodenBrick) {
-        sound = "WoodenHit.wav";
-
-        type=W_BRICK;
+    public void VisitBrickWithPoints(Brick brick) {
+        if (brick.isWoodenBrick()){
+            sound = "WoodenHit.wav";
+        }
+        else{
+            sound = "GlassHit.wav";
+        }
     }
 
 
-    public GameTypes getType(){return type;}
+    /**
+     * Get the component of a brick for the GUI
+     * @return Brick Component
+     */
     public Component getComponent(){return component;}
+
+    /**
+     * Get the sound name of the brick
+     * @return name of the sound file
+     */
     public String getSound(){
         return sound;
     }

@@ -1,7 +1,6 @@
 package logic.brick;
 
 import logic.visitor.BrickVisitor;
-import logic.visitor.GuiBrickVisitor;
 
 /**
  * Implementation of a GlassBrick from the game Breakout
@@ -13,10 +12,6 @@ public class GlassBrick extends AbstractBrick  {
         super(1,50);
     }
 
-    @Override
-    public void acceptGuiBrickVisitor(GuiBrickVisitor o) {
-        o.VisitGlassBrick(this);
-    }
 
     @Override
     public boolean isMetalBrick() {

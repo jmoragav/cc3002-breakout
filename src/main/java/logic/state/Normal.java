@@ -1,6 +1,10 @@
 package logic.state;
 
 import logic.brick.Brick;
+/**
+     * Implementation of the state Normal of a Brick from the game Breakout
+ * @author Joaquin Moraga
+ */
 
 public class Normal extends AbstractState {
     private Brick brick;
